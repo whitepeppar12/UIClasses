@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n = prompt("Enter value");
+			n = parseInt(n);
+			var reminder;
+			var sum = 0;
+			while (n > 0 ) {
+				reminder = n % 10;
+				sum = sum + reminder;
+				n = n / 10;
+				n = parseInt(n);
+				if (n == 0 && sum > 9) {
+					n = sum;
+					sum = 0;
+				}
+
+			}
+
+			console.log(sum);
+		</script>
+	</body>
+</html>

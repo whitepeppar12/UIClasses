@@ -1,0 +1,16 @@
+html
+	head
+		title
+			| Page to demonstrate jades
+		link(rel="stylesheet" type="text/css" href="/StudentMangement-Project/css/styles.css")
+		script(type="text/javascript" src="javascripts/lib/jquery.js")
+	body
+		|About to show Product Details on this
+
+		each details in productDetails
+			ul
+				li Product Name: #{details.productName}
+				li Product Price: #{details.price}
+				li Product Manufacture: #{details.manu}
+				li Product Seller: #{details.seller}
+				li Product Rating: #{details.rating}
