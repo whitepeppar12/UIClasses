@@ -59,6 +59,30 @@ Features of MongoDB :
 
 
 
+Commands through which we can interact with DB:
+
+db - Returns the current database in use
+
+use <dbname> - Creates the database if its not there, if its there, makes it as current database.
+
+show collections - Returns all the collection within the current db
+
+db.<collectionname>.insert({<json object>}) - Used to insert a document in a collection
+
+db.collectionName.find() - Returns all the documents within the collection.
+
+db.collectionName.find().limit(10) - Returns top 10  documents within the collection.
+
+db.<collectionname>.insertOne({<json object>}) - Used to insert a single document in a collection
+
+db.<collectionname>.insertMany(<Array of json object>) - Used to insert a multiple document to a collection.
+
+etc.
+
+
+
+
+
 
 
 
