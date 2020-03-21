@@ -6,11 +6,34 @@
 	</head>
 	<body>
 		<script type="text/javascript">
-			var a = 190;
-			var name = "RAJ";
-			function displayMsg() {
+
+			function readData() {
+				var a = prompt("enter vlue of a");
+				var b = prompt("enter vlue of b");
+
+				a = parseInt(a);
+				b = parseInt(b);
 				
+				addValues(a, b);
+				subValues(a, b);
 			}
+
+			function addValues(a, b) {				
+				var result = a + b;
+				console.log("the sum is " + result)
+
+			}
+
+			function subValues(test, p2){
+				var res = test - p2;
+				console.log("the substractionis " + res);
+			}
+
+			function ThirdPartyMethod() {
+				console.log("a is " + a);
+			}
+			readData();
+			ThirdPartyMethod();
 		</script>
 	</body>
 </html>
