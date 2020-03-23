@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var data = {
+				name: Teena,
+				age: 20,
+				'gender': 'Male',
+				"location": "Hyderabad",
+				marks: [34,34, 40, 53,49],
+				"total": 0,
+				avg: 0
+			};
+
+
+			for (var i = 0 ; i < data.marks.length; i++) {
+				data.total += data.marks[i];
+			}
+			data.avg = data.total / data.marks.length;
+
+			console.log("name " + data.name);
+			console.log("Avg is " + data.avg);
+			console.log(data);
+		</script>
+	</body>
+</html>

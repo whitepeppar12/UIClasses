@@ -6,7 +6,7 @@ function loadStudentDetails(){
 		dataType: 'JSON',
 		success: function(res){
 			console.log(res);
-			showStudentDetails(res.sDetails);
+			showStudentDetails(res.sdetails);
 		},
 		error: function(err){
 			console.log("error")

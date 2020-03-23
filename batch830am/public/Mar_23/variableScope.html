@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>
+			Scope of variables.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			function readData() {
+				var a = prompt("enter vlue of a");
+				var b = prompt("enter vlue of b");
+
+				a = parseInt(a);
+				b = parseInt(b);
+				
+				var res1 = addValues(a, b);
+				var res2 = subValues(a, b);
+
+				console.log("the sum is " + res1);
+				console.log("the substractionis " + res2);
+			}
+
+			function addValues(a, b) {				
+				var add = a + b;
+				return add;
+			}
+
+			function subValues(test, p2) {
+				var sub = test - p2;
+				
+				return sub;
+			}
+
+			
+			readData();
+		</script>
+	</body>
+</html>

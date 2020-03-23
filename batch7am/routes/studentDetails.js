@@ -1,51 +1,44 @@
 var express = require('express');
 var router = express.Router();
 
+var mongodb = require('mongodb');
+
+var MongoClient = mongodb.MongoClient;
+
+
+var url = 'mongodb://localhost:27017';
+
+
 /* GET home pagequery. */
 router.get('/', function(req, res, next) {
 
+	MongoClient.connect(url, function(err, client) {
+		var db = client.db("SchoolMngmnt");
+
+
+		var collection = db.collection('StudentDetails');
+
+		var collection2 = db.collection('collectionname');
+
+		collection.find({}).toArray(function(err, details) {
+			console.log("details");
+
+			console.log(details);
+
+			var data = {
+				sdetails: details
+			};
+
+
+
+			data = JSON.stringify(data);
+			res.send(data);
+			client.close();
+		});
+		
+	});
 	
-	var data = {
-		sDetails: [
-			{
-				name: 'RAJ',
-				age: 20,
-				gender: 'Male',
-				location: 'Hyderbad',
-				picture: ''
-			},
-			{
-				name: 'Teena',
-				age: 20,
-				gender: 'Female',
-				location: 'Pune',
-				picture: ''
-			},
-			{
-				name: 'Krish',
-				age: 22,
-				gender: 'Male',
-				location: 'Mumbai',
-				picture: ''
-			},
-			{
-				name: 'Meena',
-				age: 15,
-				gender: 'Female',
-				location: 'Delhi',
-				picture: ''
-			},
-			{
-				name: 'Prasad',
-				age: 20,
-				gender: 'Male',
-				location: 'Hyderbad',
-				picture: ''
-			}
-		]
-	};
-	data = JSON.stringify(data);
-	res.send(data);
+	
 });
 
 module.exports = router;
