@@ -11,8 +11,11 @@ function readUserData() {
           console.log("success");
           console.log(res);
           if (res.msg == "Valid") {
-
-               loadUIToMasterPage('sdetails');
+               if (data.id == 'admin') {
+                     loadUIToMasterPage('admin');
+               } else {
+                    loadUIToMasterPage('sdetails');
+               }
           } else {
                $(".errBlock").show(500);
           }
@@ -45,6 +48,9 @@ function loadUIToMasterPage(type) {
      case 'register':
           $(".main_container").loadTemplate($("#newSignupTmplt"))
           break;
+     case 'admin':
+          $(".main_container").loadTemplate($("#adminTmplt"))
+          break;
   }
 }
 $(document).ready(function(){
@@ -54,5 +60,32 @@ $(document).ready(function(){
 
 
 function readRegisterDetails() {
-     loadUIToMasterPage('login');
+     var data = {};
+     data.id = $("#signup_id").val();
+     data.pwd = $("#signup_pwd").val();
+     data.mailId = $("#signup_mailid").val();
+     console.log(data);
+
+
+     $.ajax({
+          url: 'http://localhost:8080/user/signup',
+          method: 'POST',
+          dataType: 'JSON',
+          data: data,
+          success: function(res) {
+               console.log("successful");
+               console.log(res);
+               if (res.msg == 'Data Inserted') {
+                    loadUIToMasterPage('login');
+               } else {
+                    // show error msg
+               }
+          }, 
+          error: function(err) {
+               console.log("error");
+               console.log(err);
+          }
+     });
+
+     // 
 }

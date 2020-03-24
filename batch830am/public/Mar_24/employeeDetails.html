@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>
+			Demonstrating employee details with passing params and returning values.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+
+			function readEmpData() {
+				var empName, age, gender, bsal, totalsal, tax, taxpercent;
+				empName = prompt("enter employee name");
+				age = prompt("enter age");
+				gender = prompt("etner emp gender");
+				bsal = prompt("enter emp basic salary");
+				bsal  = parseInt(bsal);
+				var data =  getPfAndHra(bsal);
+				totalsal = data.tSal;
+				getTotalTax(gender);
+				displayEmployeeDetails(empName, age, gender, totalsal);
+			}
+
+			function getPfAndHra(bsal) {
+				var pf = ( 12 * bsal ) / 100;
+				var hra = (25 * bsal ) / 100;
+				var tSal = getTotalSal(pf, hra, bsal);
+				var data = {
+					pf: pf,
+					hra: hra,
+					tSal, tSal
+				}
+				return data;
+			}
+
+			function getTotalSal(pf, hra, bsal) {
+				console.log(pf)
+				console.log(hra)
+				totalsal = pf + hra + bsal;
+				return totalsal;
+			}
+
+			function getTotalTax(gender) {
+				console.log('totalsal')
+				console.log(totalsal)
+				if (gender == 'male') {
+					if (totalsal > 50000) {
+						taxpercent = 10;
+					} else{
+						taxpercent = 5;
+					}
+				} else {
+					if (totalsal > 50000) {
+						taxpercent = 5;
+					} else{
+						taxpercent = 0;
+					}
+				}
+				tax = ( totalsal * taxpercent ) / 100;
+			}
+
+			function displayEmployeeDetails(empName, age, gender) {
+				console.log("Employee details");
+				console.log("employee name "  + empName);
+				console.log("employee gender " + gender);
+				console.log("Total Sal" + totalsal);
+				console.log("TAv vlaue is " + tax);
+			}
+
+			readEmpData();
+		</script>
+	</body>
+</html>

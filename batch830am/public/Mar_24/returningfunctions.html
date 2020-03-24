@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			function addValues() {
+				var a = 10;
+				var b = 40;
+				var c = a + b;
+				return function(){
+					return c;
+				};
+			}
+			var result = addValues();
+			var sample = result();
+			console.log("c value is " + sample);
+		</script>
+	</body>
+</html>

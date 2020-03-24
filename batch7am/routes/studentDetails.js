@@ -18,8 +18,7 @@ router.get('/', function(req, res, next) {
 
 		var collection = db.collection('StudentDetails');
 
-		var collection2 = db.collection('collectionname');
-
+		
 		collection.find({}).toArray(function(err, details) {
 			console.log("details");
 

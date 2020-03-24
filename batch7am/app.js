@@ -8,6 +8,7 @@ var logger = require('morgan');
 var loginValidationRouter = require("./routes/loginValidation");
 var studentDetailsRouter = require("./routes/studentDetails");
 var productDetailsRouter = require("./routes/productDetails");
+var newSignupRouter = require("./routes/newSignup");
 
 var app = express();
 
@@ -24,6 +25,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/login/validation', loginValidationRouter);
 app.use('/get/studentDetails', studentDetailsRouter);
 app.use('/show/prodDetails', productDetailsRouter);
+app.use('/user/signup', newSignupRouter);
+
 app.listen(8080, function(){
 	console.log("Server is listing at 8080");
 })
