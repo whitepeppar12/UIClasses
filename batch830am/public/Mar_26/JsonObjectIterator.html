@@ -1,0 +1,62 @@
+<html>
+	<head>
+		<title>
+			Iterrating over a json object
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*var data = [
+				"Raj",
+				20,
+				"male",
+				"hyderabad"
+			];
+
+			for (var i = 0 ; i < data.length; i++) {
+				console.log(data[i]);
+			}
+
+
+*/
+
+			
+			function isValidKey(key) {
+				var validKeys = ["name", "age", "gender"];
+				var isValid = false;
+				for (var i = 0; i < validKeys.length; i++ ) {
+					if (key == validKeys[i]) {
+						isValid = true;
+						break;
+					}
+				}
+				return isValid;
+			}
+
+
+
+			var sdetails = {
+				"name": "Teena",
+				'age': 20,
+				gender: 'Female',
+				'location': "Hyderabad",
+				"pin": 7979879
+			};
+
+
+			for (var temp in  sdetails ) {
+				/*if (isValidKey(temp)) {
+					console.log(sdetails[temp]);
+				} */
+				console.log(sdetails[temp]);
+
+			}
+
+
+			var data = [434, 34,34];
+			for (var index in data){
+				console.log(index)
+			}
+		</script>
+	</body>
+</html>
