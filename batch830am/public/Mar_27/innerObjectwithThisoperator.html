@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>
+					Emp name: raj
+				</li>
+				<li>
+					Emp gender: male
+				</li>
+				<li>
+					Total sal: data.totalsal
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var data = {
+				name: "RAJ",
+				height: '6.7',
+				personalData: {
+					age: 20,
+					height: '4.5inc',
+					displayPersnlData: function(){
+						console.log("height" + this.height);
+
+					}
+				},
+				displayData: function() {
+					console.log("name is " + this.name);
+					console.log("age is " + this.personalData.age)
+					this.personalData.displayPersnlData();
+				}
+			}
+
+			data.displayData();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>
+			Demonstrating this operator
+		</title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+		
+			var empDetails = {
+				name: "test",
+				pf: 0,
+				readEmpData: function() {
+					empDetails.name = prompt("enter emp name");
+					this.bsal = prompt("enter bsal");
+					empDetails.bsal = parseInt(bsal);
+					this.gender = prompt("enter gender");
+					empDetails.getTotalSal();
+				},
+				getTotalSal: function(){
+					empDetails.pf =( empDetails.bsal * 12) / 100;
+					this.hra =( this.bsal * 25) / 100;
+					empDetails.totalSal = empDetails.pf + this.hra + empDetails.bsal;
+				},
+				displayEmpData: function() {
+					empDetails.readEmpData();
+					console.log('name ' + empDetails.name);
+					console.log("bsal" + this.bsal);
+					console.log("totalSal " + empDetails.totalSal);
+				}
+
+			};
+			empDetails.othermethod = function() {
+				console.log('name is ' + this.name);
+
+			}
+			empDetails.displayEmpData();
+		
+
+		</script>
+	</body>
+</html>
