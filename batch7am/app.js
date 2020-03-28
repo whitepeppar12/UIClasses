@@ -4,6 +4,7 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+var http = require("http");
 
 var loginValidationRouter = require("./routes/loginValidation");
 var studentDetailsRouter = require("./routes/studentDetails");
@@ -11,6 +12,9 @@ var productDetailsRouter = require("./routes/productDetails");
 var newSignupRouter = require("./routes/newSignup");
 
 var app = express();
+
+var noOfUsers = 0;
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -27,7 +31,21 @@ app.use('/get/studentDetails', studentDetailsRouter);
 app.use('/show/prodDetails', productDetailsRouter);
 app.use('/user/signup', newSignupRouter);
 
-app.listen(8080, function(){
+var server = http.createServer(app);
+var io = require('socket.io')(server);
+io.on("connection", function(socket){
+	console.log("one user got connected");
+	noOfUsers++;
+	console.log("total numbers of user connected are " + noOfUsers);
+
+	socket.on("userMsgSend", function(data){
+		console.log("received " + data );
+
+		socket.broadcast.emit("UserMSg", data);
+	})
+});
+
+server.listen(8080, function(){
 	console.log("Server is listing at 8080");
 })
 
