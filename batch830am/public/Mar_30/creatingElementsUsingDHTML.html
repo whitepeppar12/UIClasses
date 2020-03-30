@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			Demonstrating creating dynamic elements using js.
+		</div>
+		<div id="container">
+
+		</div>
+		<script type="text/javascript">
+
+			function crateMsgBlock() {
+				var id = prompt("enter what id u wnated for element");
+				var divElement = document.createElement("div");
+				divElement.innerText = "Hello every one, Very Good morning..";
+				divElement.setAttribute("id", id);
+				divElement.setAttribute("class", "abc sample");
+				divElement.style.border = "1px solid";
+				divElement.style.background = "blue";
+
+				document.querySelector("#container").append(divElement);
+
+				console.log(divElement);
+			}
+
+			crateMsgBlock();
+		</script>
+	</body>
+</html>
