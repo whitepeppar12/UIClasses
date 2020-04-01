@@ -8,13 +8,13 @@ var loginCollection = "LoginDetails";
 
 /* GET home pagequery. */
 router.post('/', function(req, res, next) {
-	console.log("user input");
-	console.log(req.body);
 	var data = {
 		msg: 'invalid'
 	};
 	MongoClient.connect(dbUrl, function(err, client){
 		var db = client.db(dataBase);
+
+		
 		var collection = db.collection(loginCollection);
 		collection.find(req.body).toArray(function(err, details){
 			

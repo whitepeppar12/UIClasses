@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>
+			Student Progress card generator
+		</title>
+		<link rel="stylesheet" type="text/css" href="stdapp.css">
+		<script type="text/javascript" src="stdApp.js"></script>
+	</head>
+	<body>
+		<div class="title">
+			Student Progress card Generator
+		</div>
+		<ul class="sDetails">
+			<li>
+				Student Name: <input type="text" id='sname'>
+			</li>
+			<li>
+				Student Age: <input type="text" id='sage'>
+			</li>
+			<li>
+				Class: 
+				<select id="sClass">
+					<option>Class II</option>
+					<option>Class III</option>
+					<option>Class IV</option>
+					<option>Class V</option>
+				</select>
+			</li>		
+			<li>
+				Gender: 
+				M: <input type="radio" name="gender">
+				F: <input type="radio" name="gender">
+			</li>
+			<li id="userMarks">
+				Subject Marks:<br/>
+				Maths <input type="text" id="m1">
+				Science <input type="text" id="m2">
+				Computers <input type="text" id="m3">
+				Social <input type="text" id="m4">
+				Languages <input type="text" id="m5">
+
+			</li>
+			<li>
+				<input type="button" value="Get Progress Card" onclick="readData()">
+			</li>
+		</ul>
+		<div class="detailsBlock">
+			<div class="title">Student Progress Card</div>
+		
+		</div>
+	</body>
+</html>

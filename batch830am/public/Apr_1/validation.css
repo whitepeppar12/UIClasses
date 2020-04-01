@@ -1,0 +1,31 @@
+.title {
+	text-align: center;
+	font-size: 17px;
+	color: green;
+	margin: 10px;
+
+}
+
+.container {
+	border: 1px solid blue;
+	width: 500px;
+	margin: 10px auto;
+}
+
+li {
+	list-style: none;
+	border: 1px solid;
+	background: #ccc;
+	margin: 5px;
+	padding: 5px;
+}
+
+.error {
+	color: red;
+	font-size: 11px;
+}
+
+.acterr,
+.unameError {
+	display: none;
+}
