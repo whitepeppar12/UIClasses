@@ -19,6 +19,7 @@ function readUserInfo() {
 	}
 	userInfo.pwd = document.querySelector("#upwd").value;
 	var rpwd = document.querySelector("#rpwd").value;
+	
 
 	userInfo.gender = document.querySelector('input[name="gender"]:checked').value;
 	userInfo.country = document.querySelector("#userCountry").value;
