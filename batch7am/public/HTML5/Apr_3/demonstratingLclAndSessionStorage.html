@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>
+			Demonstrating sessionStorage nd session storage
+		</title>
+		<style type="text/css">
+			.header {
+				border: 1px solid;
+				background: #ccc;
+				margin: 5px;
+				padding: 10px;
+				text-align: right;
+
+			}
+
+			.wlcmeblk  {
+				text-align: center;
+				margin: 40px;
+				padding: 30px;
+				color: black;
+				font-size: 18px;
+				font-weight: bold;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<select id="themeSelector" onchange="getTheme(event)">
+				<option>Red</option>
+				<option>Green</option>
+				<option>Yellow</option>
+				<option>Blue</option>
+			</select>
+		</div>
+		<div>
+			<input type="text" id="userName" placeholder="Enter user name">
+			<input type="button" value="Get In" onclick="readData()">
+		</div>
+		<div class="wlcmeblk">
+
+		</div>
+		<script type="text/javascript">
+	
+			if (sessionStorage.getItem("uname") != null) {
+				showWlmMSg(sessionStorage.getItem("uname"));
+			}
+
+			if (sessionStorage.getItem("userTheme") != null) {
+				applyTheme(sessionStorage.getItem("userTheme"))
+			}
+
+
+			function getTheme(event) {
+				var themeSelected = event.target.value;
+				sessionStorage.setItem("userTheme", themeSelected);
+
+				console.log(themeSelected);
+				applyTheme(themeSelected);
+			}
+
+			function applyTheme(themeName) {
+				document.querySelector("body").style.background = themeName;
+			}
+			function readData () {
+				var uname = document.querySelector("#userName").value;
+				sessionStorage.setItem("uname", uname);
+
+
+				showWlmMSg(uname);
+
+			}
+
+			function showWlmMSg(name) {
+				var msg = "Welcome to our page Mr." + name;
+				document.querySelector(".wlcmeblk").innerHTML = msg;
+			}
+		</script>
+	</body>
+</html>
