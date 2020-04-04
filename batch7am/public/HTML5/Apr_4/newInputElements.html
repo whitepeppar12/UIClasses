@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>
+			New set of input elements.
+		</title>
+		<style type="text/css">
+			li {
+				list-style: none;
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+				background: #ccc;
+			}
+			ul {
+				width: 500px;
+				margin: 20px auto;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="http://www.abc.com" method="GET">
+			<ul>
+				<li>
+					<input type="text" name="uname" placeholder="enter user name" required>
+				</li>
+				<li>
+					<input type="number" placehoder="Age" min="10" max="30">
+				</li>
+				<li>
+					<input type="color" placeholder="Ur fav color">
+				</li>
+				<li>
+					Price range: <input type="range" min="1000" max="10000" onchange="showSelectedRange()" id="priceRange">
+					<span id="selectdRange"></span>
+				</li>
+				<li>
+					<input type="datetime-local" format="...">
+				</li>
+				<li>
+					<input type="week">
+				</li>
+				<li>
+					<input type="email" required placeholder="email">
+				</li>
+				<li>
+					<input type="url" required placeholder="pic url"> 
+				</li>
+				<li>
+					<input type="submit" value="SaveData">
+				</li>
+			</ul>
+		</form>
+		<script type="text/javascript">
+			function showSelectedRange() {
+				console.log("vlue change");
+				var selectedRange = document.querySelector("#priceRange").value;
+				document.querySelector("#selectdRange").innerHTML = selectedRange;
+			}
+		</script>
+	</body>
+</html>
