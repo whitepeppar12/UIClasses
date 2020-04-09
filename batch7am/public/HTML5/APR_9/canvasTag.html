@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Canvas tag
+		</title>
+		<style type="text/css">
+			#mycontainer {
+				width: 700px;
+				height: 600px;
+				border: 2px solid #ccc;
+				float: left;
+			}
+			.container {
+				border: 2px solid;
+				width: 300px;
+				height: 600px;
+				background: red;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="">
+			Demonstrating CANVAS Tag
+		</div>
+		<canvas id="mycontainer"></canvas>
+		<div class="container"></div>
+		<script type="text/javascript">
+
+			var element = document.querySelector("#mycontainer");
+			var ctx = element.getContext("2d");
+			/*var x = 5;
+			cvar y = 5;
+			tx.fillStyle = "red"; // setting background
+			setInterval(function(){
+				ctx.fillRect(x, y, 20, 50);  //(x, y, width, height)
+				x += 5;
+				y += 5;
+			}, 1000); 
+		ctx.moveTo(20, 20);
+		ctx.lineTo(80, 80);
+		ctx.stroke();
+
+
+		ctx.moveTo(20, 20);
+		ctx.lineTo(50, 90);
+		ctx.stroke(); */
+
+		/*ctx.beginPath();
+		ctx.arc(95, 50, 40, 0, 2*Math.PI);
+		ctx.stroke(); */
+
+		ctx.font = "20px Arial ";
+		ctx.fillText("Hello ...", 170, 50);
+		ctx.strokeText("Hello ...", 10, 50);
+			
+
+
+		</script>
+	</body>
+</html>

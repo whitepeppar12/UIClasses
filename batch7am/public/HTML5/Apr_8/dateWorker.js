@@ -11,3 +11,6 @@ function getLatestDate() {
 setInterval(function(){
 	getLatestDate();
 }, 1000);
+
+
+VAR DATA = 89;
