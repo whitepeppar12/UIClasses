@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.clockContainer {
+				border: 1px solid;
+				border-radius: 50%;
+				width: 200px;
+				height: 200px;
+				margin: 200px auto;
+				position: relative;
+
+			}
+			.needle {
+				background-image: linear-gradient(to right, #fff 50%, blue 50%);
+				width: 98%;
+				height: 5px;
+				position: absolute;
+				top: 50%;
+				animation: needlestyles 5s infinite;
+			}
+
+			@keyframes needlestyles{
+				0% {
+					transform: rotate(2deg);
+				}
+				100% {
+					transform: rotate(360deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="clockContainer">
+			<div class="needle"></div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				text-align: center;
+				width: 250px;
+				height: 250px;
+				background: green;
+				margin: 350px auto;
+				transform: rotate(5deg);
+				border-radius: 50%;
+				animation: myrotationStyles 5s infinite;
+			} 
+
+			@keyframes myrotationStyles {
+				5% {
+					transform: rotateX(5deg);
+				}
+				100% {
+					transform: rotateX(360deg);
+				}
+			}
+			.textContainr {
+				font-size: 30px;
+				color: green;
+				position: absolute;
+				font-weight: bold;
+				animation: textstyles 3s infinite;
+			}
+
+			@keyframes textstyles {
+				0% {
+					top: 2%;
+				}
+				100% {
+					top: 99%;
+				}
+			}
+
+			.container3 {
+				width: 170px;
+				height: 170px;
+				border: 2px solid;
+				background: #dec122;
+				margin: 60px;
+				display: inline-block;
+			}
+			
+			.container4,
+			.container2 {
+				width: 170px;
+				height: 170px;
+				border: 2px solid;
+				background: #dec122;
+				margin: 60px;
+				animation: skewstyles 2s infinite;
+				animation-direction: alternate;
+				display: inline-block;
+			}
+			@keyframes skewstyles {
+				0% {
+					transform: skew(20deg);
+				}
+				100% {
+					transform: skew(-20deg);
+				}
+			}
+			.container3 {
+				background: yellow;
+				background-image: url("https://images.pexels.com/photos/1546901/pexels-photo-1546901.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+			}
+			.container4 {
+				background: grey;
+			}
+		</style>
+	</head>
+	<body>	
+		<div class="textContainr">
+			INDIA
+		</div>
+		<div class="container">
+			CONTENT
+		</div>
+		<div class="container2">
+			Content
+		</div>
+		<div class="container3">
+			Content
+		</div>
+		<div class="container4">
+			Content
+		</div>
+	</body>
+</html>
