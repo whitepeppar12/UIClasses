@@ -1,0 +1,60 @@
+CSs 'linear-gradient'
+
+The linear-gradient() is a css function which creates an image consisting of a progressive transition between two or more colors along a stright lines.
+
+Using css3 linear gradients we could add smooth transitions between two or more specified colors.
+
+CSS3 supports two types of linear gradients T
+
+1. Linear Gradients
+	These Gradients goes in direction left/right/up/down or diagonally
+
+2.Radial Gradients:
+
+	These Gradients goes to center of container
+
+
+In order to create a linear gradient for sure we need to add minimum of two color stops which render smooth transitions among. While Adding transition we can even specify starting point or a direction or an angle.
+
+
+Note:
+
+	linear-gradient has to be added to css 'background-image' property
+
+eg:
+
+	background-image: linear-gradient(red, green)
+
+with direction:
+
+	linear-gradient(to right bottom, blue, pink, yellow);
+
+		direction could be:
+
+			to left
+			to right
+			to left bottom
+			to right top
+			to right bottom
+			etc.
+
+with direction as angle.
+
+	linear-gradient(60deg, red, blue);
+
+
+Repeating Linear Gradients:
+
+	background-image: repeating-linear-gradient(red, yellow 5%, blue 4%, pink 4%);
+
+Radial Gradients:
+
+	using which the gradients can be specified with a center
+	By Default the radial gradient  shape is ellipse, and position is center, we can still change the positon and shape
+
+
+	radial-gradient(red, green, blue);
+	radial-gradient(red 5%, green 10%, blue 6%);
+	radial-gradient(circle, red , green , blue ); // with shape
+
+	

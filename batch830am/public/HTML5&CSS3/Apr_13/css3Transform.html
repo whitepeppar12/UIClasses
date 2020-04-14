@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>
+			Demonstrating css3 Transformations.
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				margin: 100px auto;
+				text-align: center;
+				background: green;
+				color: #fff;
+				font-size: 15px;
+				width: 250px;
+				height: 100px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Apply" onclick="applyAnimation()"> 
+		<div class="container">
+			CONTENT
+		</div>
+		<script type="text/javascript">
+			function applyAnimation() {
+				var container = document.querySelector(".container");
+				var degVal = 5;
+				setInterval(function(){
+					degVal += 5;
+					container.style.transform = 'rotate(' + degVal + 'deg)';
+					if (degVal == 360) {
+						degVal = 0;
+					}
+				}, 100);
+
+				
+			}
+		</script>
+	</body>
+</html>
