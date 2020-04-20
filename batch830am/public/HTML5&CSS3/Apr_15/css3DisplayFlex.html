@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+			Css3 Display Flex
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				margin: 20px;
+				padding: 10px;
+				background: yellow;
+				
+				height: 600px;
+				align-items: center;
+				justify-content: center;
+				/*flex-direction: column;
+				flex-wrap: wrap;
+
+				flex-flow: column wrap;*/
+				
+			}
+			.item {
+				background: blue;
+				width: 100px;
+				height: 100px;
+				padding: 20px;
+				margin: 5px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="Sort" onclick="applySort()">
+		<div class="container">
+			<div class="item">ONE</div>
+			
+			
+		</div>
+		<script type="text/javascript">
+			function applySort() {
+				document.querySelector(".container").style['flex-direction'] = 'column-reverse';
+			}
+		</script>
+	</body>
+</html>

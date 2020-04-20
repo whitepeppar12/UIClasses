@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title>
+			Demonstrating  css display flex
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				margin: 20px;
+				padding: 10px;
+				background: yellow;				
+				height: 600px;			
+				display: flex;	
+				flex-wrap: wrap;
+
+			}
+			.item {
+				background: blue;
+				width: 100px;
+				height: 100px;
+				padding: 20px;
+				margin: 5px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item" style="flex-grow:1">1</div>
+			<div class="item" style="flex-grow:1; align-self:center;">2</div>
+			<div class="item" style="flex-grow:3;flex-shrink:5">HERE</div>
+			<div class="item" style="flex-grow:2">4</div>			
+			
+		</div>
+	</body>
+</html>
