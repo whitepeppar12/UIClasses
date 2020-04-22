@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Arrow functions.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*function displyMsg() {
+				...
+			}
+
+			var displayMSg = function() {
+				....
+			} */
+
+			var displayMsg = () => {
+				console.log("Hello all")
+			}
+
+			//displayMsg();
+
+
+			var sdetails = {
+				name: "RAJ",
+				age: 20,
+				displayData: function() {
+
+					console.log("NAme is " + this.name);
+					console.log("age is " + this.age);
+
+					setTimeout(() => {
+						console.log("NAme is " + this.name);
+						console.log("age is " + this.age);
+					}, 3000)
+				}
+			}
+
+			sdetails.displayData();
+
+
+			var addValues = (a, b) => {
+				var result = a + b;
+				console.log("sum is " + result);
+			}
+
+			addValues(23, 45)
+		</script>
+	</body>
+</html>
