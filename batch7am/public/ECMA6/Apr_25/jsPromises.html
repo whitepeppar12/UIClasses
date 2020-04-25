@@ -15,7 +15,7 @@
 			}
 
 			addValues(-23, 45); */
-
+			// this mehto is for adding vlues
 			function addValues(a, b) {
 				var promise = new Promise(function(resolver, rejecter){
 					if (a < 1 || b < 1) {
@@ -26,9 +26,11 @@
 						resolver(result);
 					}
 				});
-				
+				return promise;
 			}
-			addValues(-34, 56).then(successcall).catch(errCall);
+
+			var promise1 = addValues(-34, 56);
+			promise1.then(successcall).catch(errCall);
 
 			function successcall(res) {
 				console.log("result is " + res);
