@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function SchoolDetails() {
+				this.schoolName = "ABC Schhol";
+				this.schoolLoc = "Hyd"
+			}
+
+			function StudentDetails(obj) {
+				this.name = obj.name;
+				this.age = obj.age;
+				this.gender = obj.gender;
+				this.marks = obj.marks;
+				this.getGrade = function() {
+					console.log(this)
+					this.grade = "";
+					this.total = 0;
+					for (var i = 0 ; i < this.marks.length; i++) {
+						this.total = this.total + this.marks[i];
+					}
+					this.avg = this.total/this.marks.length;
+					if (this.avg >= 40) {
+						this.grade = "Passed";
+					} else {
+						this.grade = "You have a surprise";
+					}
+				}
+				this.displayData = function() {
+					this.getGrade();
+					var msg = `My name is ${this.name}`;
+					console.log(msg)
+					console.log("STUDENT DETILS");
+					console.log("Name : " + this.name);
+					console.log("AGe " + this.age);
+					console.log("Gender " + this.gender);
+					console.log("AVG " + this.avg);
+					console.log("Grade " +this.grade );
+					console.log("school name " + this.schoolName)
+				}
+			}
+
+
+			StudentDetails.prototype = new SchoolDetails();
+
+			var data1 = {
+				name: "Raj",
+				age: 20,
+				gender: 'MAle',
+				marks: [234,234,2,42,3]
+			}
+			var s1 = new  StudentDetails(data1);
+			s1.displayData();
+
+			var data2 = {
+				name: "TTeena",
+				age: 22,
+				gender: 'FEmale',
+				marks: [22334,11,2,42,3]
+			}
+			var s2 = new StudentDetails(data2);
+			s2.displayData();
+
+		</script>
+	</body>
+</html>

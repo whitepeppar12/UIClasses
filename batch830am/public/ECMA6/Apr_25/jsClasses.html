@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>
+			Demonstrating js classes, constuctors, super keyword
+		</title>
+
+	</head>
+	<body>
+		<input type="button" value="Click me" id="userbtn">
+		<script type="text/javascript">
+
+			class schoolDetails {
+				constructor() {
+					this.schoolName = "ABC school";
+				}
+			}
+
+			class studentDetails extends schoolDetails {
+				constructor(name, age, gender) {
+					super();
+					this.sname = name;
+					this.sAge = age;
+					this.sGender = gender;
+				};
+				
+				displayDetails = function() {
+					console.log("Student details");
+					console.log("School name is " + this.schoolName);
+					console.log("Name is " + this.sname);
+					console.log("Age is " + this.sAge);
+					console.log("Gender is " + this.sGender);
+
+				}
+			}
+
+			var s1 = new studentDetails("Raj", 20, 'Male');
+			
+			document.querySelector("#userbtn").addEventListener("click", function(){
+				s1.displayDetails();
+			});
+			/*var s2 = new studentDetails("Teena", 10, "Female");
+			s2.displayDetails(); */
+
+		</script>
+	</body>
+</html>

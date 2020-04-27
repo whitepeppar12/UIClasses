@@ -55,10 +55,10 @@
 		document.querySelector("#pBar").style.width = count + '%';
 		document.querySelector("#pBar").setAttribute("aria-valuenow", count);
 		if (count == 100) {
-			cancelInterval(loadIntr);
+			clearInterval(loadIntr);
 		}
 
-	}, 1000);
+	}, 100);
 </script>
 	</body>
 </html> 

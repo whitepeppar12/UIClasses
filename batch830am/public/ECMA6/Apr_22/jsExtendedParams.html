@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var  addValues = (a, b, ...c) => {
+				console.log(c)
+				var result = 0;
+				result = a + b;
+				c.forEach(function(value, index){
+					result += value;
+				})
+				console.log("the sum is " + result);
+			}
+
+			addValues(12, 44, 11, 45, 67, 44, 55);
+
+
+			/*var marks = [34, 56, 78];
+			var m1 = marks[0];
+			var m2 = marks[1];
+			var m3 = marks[2]; */
+
+			var m1, m2, m3;
+			[m1, m2, m3] = [34, 56 ,78];
+			[name, age, gender, total] = ["raj", 23, "male", 3456.7]
+			console.log(m1)
+			console.log(m2)
+			console.log(m3)
+
+
+
+		</script>
+	</body>
+</html>
