@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>
+			Demonstrating JS Closures
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var b = 90;
+		var a = 100;
+		var data = (function(){
+			var a = 10;
+			var username = "RAj";
+			console.log("value of a is " + a);
+
+			console.log("value of bs is " + b);
+			
+			
+
+			return {
+				username: username,
+				showmsg: function() {
+					console.log("good morning every one.")
+				}
+			}
+		})();
+
+		console.log("value of a is " + a);
+		
+
+		console.log("user name is " + data.username)
+		data.showmsg();
+		
+
+		</script>
+	</body>
+</html>
