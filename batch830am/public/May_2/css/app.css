@@ -1,0 +1,23 @@
+ul {
+	border: 2px solid;
+	border-radius: 10px;
+	background: #ccc;
+	width: 600px;
+	margin: 20px auto;
+	padding: 20px;
+}
+li {
+	list-style: none;
+	border: 1px solid;
+	background: #fff;
+	margin: 5px;
+	padding: 5px;
+}
+
+.title {
+	text-align: center;
+	border: 1px solid;
+	font-weight: bold;
+	font-size: 20px;
+	color: green;
+}
