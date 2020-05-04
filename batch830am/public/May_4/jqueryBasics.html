@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title></title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				height: 200px;
+				width: 300px;
+			}
+
+			.highlightBox {
+				text-align: center;
+				font-size: 20px;
+				font-weight: bold;
+				background: green;
+			}
+		</style>
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+	</head>
+	<body>
+		<input type="button" value="apply" onclick="applyChanges()">
+		<div class="container" id="block">HELLO</div>
+		
+		<script type="text/javascript">
+			function applyChanges() {
+				var $, jQuery;
+
+				/*var existingClass = document.querySelector("#block").getAttribute("class");
+				var newClass= "highlightBox";
+
+				var applyingClasses = existingClass + ' ' + newClass
+				document.querySelector("#block").setAttribute("class", applyingClasses);*/
+
+				$("#block").addClass("highlightBox");
+
+
+			}
+
+			function addClass() {
+				console.log("hello")
+			}
+		</script>
+	</body>
+</html>
