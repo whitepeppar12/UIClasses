@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>
+			Demonstrating CSS priority order
+		</title>
+		<style type="text/css">
+			.container {
+				width: 150px;
+				height: 150px;
+				font-size: 40px;
+			}
+			#msgBlock {
+				color: #fff;
+				font-size: 20px !important;
+			}
+			p {
+				font-size: 15px;
+			}
+
+			img {
+				width: 100px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<p style="background-color:blue;font-size: 30px;" class="container" id="msgBlock">
+			Good morning every one.
+		</p>
+		<img src="https://i.ytimg.com/vi/SbXIj2T-_uk/maxresdefault.jpg" />
+
+		<img src="file:///C:/UI-Classes/UIClasses/Batch7am_May_2020/May_5/images/cars.jpg" />
+	</body>
+</html>
