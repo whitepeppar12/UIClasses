@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Pseudo Elements And Classes
+		</title>
+		<style type="text/css">
+			.container {
+				width: 400px;
+				height: 200px;
+			}
+			a {
+				text-decoration: none;
+
+			}
+
+			a:focus {
+				background: yellow;
+			}
+
+			a:hover {
+				text-decoration: underline;
+				color: green;
+			}
+
+			.container:hover {
+				
+				text-align: center;
+				border: 5px  dotted green;
+				background: grey;
+				color: #fff;
+			}
+
+			h3:first-child {
+				color: red;
+				text-decoration: underline;
+			}
+			h3:last-child {
+				border: 2px solid;
+			}
+			h3:nth-child(2) {
+				background: yellow;
+			}
+
+		</style>
+	</head>
+	<body>
+		Click to visit abc page <a href="http://www.abc.com">Link</a>
+		<a href="http://www.amazon.com">Amazon</a>
+		<a href="http://www.gmail.com">Gmail</a>
+		<a href="http://www.google.com">Google</a>
+		<p class="container">
+			Hello every one
+		</p>
+		<div>
+			<h3 class="highlight">2. Teena</h3>
+			<h3 >4. Neha</h3>
+			<h3>1. raj</h3>
+			
+			
+			
+			<h3>5. Abc</h3>
+			<h3>3. PRasad</h3>
+		</div>
+	</body>
+</html>
