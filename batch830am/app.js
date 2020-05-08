@@ -7,6 +7,9 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
+var prodRouter = require("./routes/productDetails");
+
+
 var app = express();
 
 // view engine setup
@@ -21,6 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+app.use("/get/data/productdetails", prodRouter);
 
 app.listen(8081, function(){
 	console.log("server is listing at 8081")
