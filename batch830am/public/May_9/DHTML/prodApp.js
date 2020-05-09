@@ -34,9 +34,11 @@ function getProductData(){
 	$(".loadingBlock").show();
 	$.ajax({
 		url: 'http://localhost:8081/get/data/productdetails',
-		
 		method: 'GET',
 		dataType: 'JSON',
+		/*dataType: 'JSONP',
+		crossDomain: true,
+		jsonpCallback: 'parseEmpData', */
 		success: function(res) {
 			$(".loadingBlock").hide();
 			loadProductDetails(res.productDetails);

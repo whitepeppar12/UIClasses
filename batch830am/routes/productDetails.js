@@ -38,6 +38,7 @@ router.get('/', function(req, res, next) {
 
 
 	data = JSON.stringify(data);
+	//data = "parseEmpData(" + data + ")";
 	setTimeout(function(){
 		res.send(data);
 	}, 5000)
