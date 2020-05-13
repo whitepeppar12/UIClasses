@@ -10,7 +10,15 @@ router.get('/', function(req, res, next) {
 				"price": "$456",
 				"manu": "Samsung",
 				"discount": "%15",
-				"imgUrl": "https://i.dell.com/sites/csimages/Video_Imagery/all/xps_7590_touch.png"
+				"imgUrl": "https://i.dell.com/sites/csimages/Video_Imagery/all/xps_7590_touch.png",
+				images: ["one.png", "two.png", "three.png"];
+				comments: [
+					{
+						name: "abc",
+						rating: '4/5',
+						des: "Its very good"
+					}
+				]
 			},
 			{
 				"name": "Mobile",
