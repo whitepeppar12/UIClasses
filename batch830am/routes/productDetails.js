@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 				"manu": "Samsung",
 				"discount": "%15",
 				"imgUrl": "https://i.dell.com/sites/csimages/Video_Imagery/all/xps_7590_touch.png",
-				images: ["one.png", "two.png", "three.png"];
+				images: ["one.png", "two.png", "three.png"],
 				comments: [
 					{
 						name: "abc",

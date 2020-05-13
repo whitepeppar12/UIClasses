@@ -6,6 +6,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
+var matchRouter = require('./routes/match1');
+var matchRouter2 = require('./routes/match2');
 
 var prodRouter = require("./routes/productDetails");
 
@@ -32,6 +34,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 app.use("/get/data/productdetails", prodRouter);
+
+app.use('/get/matchDetails/match1', matchRouter);
+app.use('/get/matchDetails/match2', matchRouter2);
 
 app.listen(8081, function(){
 	console.log("server is listing at 8081")
