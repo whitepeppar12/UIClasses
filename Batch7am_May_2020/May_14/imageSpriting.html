@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Image Spriting
+		</title>
+		<style type="text/css">
+			.details {
+				border: 1px solid;
+			}
+			img {
+				width: 100px;
+				height: 120px;
+			}
+			.imgContainer {
+				border: 1px solid;
+				width: 100px;
+				height: 100px;
+				background-image: url("images/spritingimages.png");
+			}
+			
+			.faculty2 {
+				background-position: -12px -111px;
+			}
+			.faculty3 {
+				background-position: 129px -14px;
+			}
+			li {
+				list-style: none;
+			}
+			ul {
+				margin: 0;
+				padding: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Faculty Details of  a College
+		</h3>
+		<ul>
+			<li class="details">
+				<div class="imgContainer "></div>
+				<div>Name: Prasad</div>
+				<div>Qualification: MCA</div>
+				<div>Aae: 50 Years</div>
+				<div>Subject: Computers</div>
+			</li>
+			<li class="details">
+				<div class="imgContainer faculty2"></div>
+				<div>Name: Teena</div>
+				<div>Qualification: MBA</div>
+				<div>Aae: 40 Years</div>
+				<div>Subject: Accounts</div>
+			</li>
+			<li class="details">
+				<div class="faculty3 imgContainer"></div>
+				<div>Name: Krish</div>
+				<div>Qualification: BCA</div>
+				<div>Aae: 30 Years</div>
+				<div>Subject: Statistics</div>
+			</li>
+			<li class="details">
+				<img src="images/spritingimages.png" />
+				<div>Name: Raj</div>
+				<div>Qualification: Bcom</div>
+				<div>Aae: 28 Years</div>
+				<div>Subject: Civics</div>
+			</li>
+		</ul>
+		<div>
+			book details..
+		</div>
+	</body>
+</html>
