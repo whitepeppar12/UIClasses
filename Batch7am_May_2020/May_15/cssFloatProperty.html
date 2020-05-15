@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>
+			Demonstrating CSS Float Property
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				width: 120px;
+				height: 130px;
+				text-align: center;
+
+			}
+			.container1 {
+				background: green;
+				float: left;
+			}
+			.container2 {
+				background: black;
+				color: #fff;
+				border: 2px solid green;
+				float: right;
+			}
+			.container3 {
+				background: grey;
+				float: right;
+			}
+			.container4 {
+				background: blue;
+				clear: both;
+				width: 150px;
+				height: 150px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container1 container">
+			Content 1
+		</div>
+		<div class="container2 container">
+			Content 2
+		</div>
+		<div style="clear:both;"></div>
+		<div class="container3 container">
+			Content 3
+		</div>
+		<div class="container4 container">
+			Content 4
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+Steps to install node js and create node server with express
+
+
+Step 1: Download and install latest node js installation file from "https://nodejs.org/en/download/"
+
+Step 2: After installation of above file, open command prompt and check for successfull installation, by giving below command
+
+	node -v
+
+	The above command returns the version number of node been installed in machine.
+
+Step 3: Install express and express-generator modules.
+	
+		i. open command prompt
+		2. give command as   -    npm install express -g
+		3. give command as   -    npm install express-generator -g
+
+Step 4: Under command prompt, go to the foldere where we want to create a server
+
+step 5: to create a server with user defined server name give below command
+
+		express servername     - Server name is user defined
+
+			eg:
+				express webapplication
+		After the above command, check and confirm, the folder structure got created in specified location.
+
+Step  6:
+
+	in command prompt go into the server folder and give below command to install dependency modules
+
+		npm install
+
+Step 7:
+
+	open app.js file and at line 24 give the below instructions.
+
+
+		app.listen(8081, function(){
+			console.log("server is listing at 8081");
+		});
+
+Step 8:
+	Under command prompt, under server folder, give below command to start the server
+
+		npm start
+
+Step 9:
+
+	under server folder, under public folder, copy the static resources which can be accessable from server
+
+Step 10:
+
+	under browser check for successfull running of server by hitting url 
+
+		http://localhost:8081
+		
