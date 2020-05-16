@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>
+			Adding Animations to dom elements.
+		</title>
+		<style type="text/css">
+			.container1,
+			.container2 {
+				border: 2px solid;
+				height: 150px;
+				width: 150px;
+				text-align: center;
+				background: green;
+				margin: 50px;
+			}
+		</style>
+		<script type="text/javascript" src="../jquery.js"></script>
+	</head>
+	<body>
+		<div>
+			Demonstraing Jqyry Animations
+		</div>
+		<input type="button" value="Show" onclick="dojob('show')">
+		<input type="button" value="Hide" onclick="dojob('hide')">
+		<input type="button" value="Toggle" onclick="dojob('tog')">
+		<div class="container1">
+				Content
+		</div>
+		<div class="container2">
+				Content
+		</div>
+		<script type="text/javascript">
+			function dojob(type) {	
+				switch (type) {
+					case 'show':
+						$(".container1").show(3000, function(){
+							alert("done")
+						});
+						$(".container2").show(3000, function(){
+							alert("done")
+						});
+						break;
+					case 'hide':
+						$(".container1").hide(5000);
+						$(".container2").hide(5000);
+						break;
+					case 'tog':
+						$(".container").toggle(300);
+						break;
+				}
+			}
+		</script>
+	</body>
+</html>

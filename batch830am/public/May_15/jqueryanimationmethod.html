@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>
+			Adding Animations to dom elements.
+		</title>
+		<style type="text/css">
+			.container1,
+			.container2 {
+				border: 2px solid;
+				height: 150px;
+				width: 90px;
+				text-align: center;
+				background: green;
+				margin: 50px;
+				position: absolute;
+				transition: transform 2s;
+			}
+			.header {
+				animation: myblinker 3s infinite;
+			}
+			@keyframes myblinker {
+				1% {
+					opacity: 0;
+					
+				}
+				25% {
+					opacity: 0.5;
+					
+				}
+				50% {
+					opacity: 1;
+				},
+				75% {
+					opacity:  0.5;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+		</style>
+		<script type="text/javascript" src="../jquery.js"></script>
+	</head>
+	<body>
+		<div>
+			Demonstraing Jqyry Animations
+		</div>
+		<input type="button" value="Animate" onclick="dojob()">
+		
+		<div class="container1">
+			<blink>	Content</blink>
+		</div>
+
+		<h3 class="header">
+			HELLO EVERY ONE
+		</h3>
+		
+		<script type="text/javascript">
+			function dojob(type) {	
+				//$(".container1").css({height: "200px"});
+
+
+				$(".container1").css({"transform": 'rotate(20deg)'})
+				/*$(".container1").animate({
+					height: '200px',
+					
+					opacity: 0.4,
+					top: '20px',
+					transform: 'roateX(360deg)'
+				}, 2000) */
+			}
+		</script>
+	</body>
+</html>
