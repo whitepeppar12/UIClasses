@@ -1,0 +1,106 @@
+<html>
+	<head>
+		<title>
+			Assignment02 CSS Float Property
+		</title>
+		<style type="text/css">
+			.container {
+				border: 2px solid;
+				width: 120px;
+				height: 120px;				
+				text-align: center;				
+
+			}
+			.block01 {
+				background: red;
+				float: left;
+			}
+			.block02 {
+				background: green;
+				float: right;
+			}
+			.block03 {
+				background: #64663f;
+				float: left;				
+			}
+			.block04 {
+				background: #ff8962;
+				float: right;
+				/*clear: both;*/
+			}
+			.block05 {
+				background: #84254a;
+				float: left;				
+			}
+			.block06 {
+				background: #ca34ff;
+				float: left;				
+			}
+			.block07 {
+				background: #23313d;
+				float: left;				
+			}
+			.block08 {
+				background: blue;
+				float: left;
+			}
+			.block09 {
+				background: #26e0d5;
+				float: right;
+			}
+			h4{
+				margin-top: 48px;
+				color: white;
+			}
+			.containerSpacing{
+				padding-top: 10px;
+				padding-bottom: 10px
+			}
+			#box-padding {
+				float: left;
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1 style="text-align: center;color: blue;">Block Game</h1>
+		</div>	
+		<div class="block01 container">
+			<h4>Block 01 </h4>
+		</div>
+		<div class="block02 container">
+			<h4>Block 02 </h4>
+		</div>
+		<div class="containerSpacing" style="clear:both;"></div>
+		<div class="block03 container">
+			<h4>Block 03 </h4>
+		</div>
+		<div class="block04 container">
+			<h4>Block 04 </h4>
+		</div>
+		<div id="box-padding"></div>
+		<div class="block05 container">
+			<h4>Block 05 </h4>
+		</div>
+		<div class="containerSpacing" style="clear:both;"></div>	
+		<div style="float: right;">
+			<div class="block06 container">
+				<h4>Block 06 </h4>
+			</div>
+			<div id="box-padding"></div>
+			<div class="block07 container">
+				<h4>Block 07 </h4>
+			</div> 
+		</div>
+		<div class="containerSpacing" style="clear:both;"></div>		
+		<div class="block08 container">
+			<h4>Block 08 </h4>
+		</div>
+		<div class="containerSpacing" style="clear:both;"></div>	
+		<div class="block09 container">
+			<h4>Block 09 </h4>
+		</div>
+		<div class="containerSpacing" style="clear:both;"></div>		
+	</body>
+</html>
