@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>
+			Demonstrating Positioned absolute element.
+		</title>
+		<style type="text/css">
+			.grandParent_main,
+			.grandParent_1,
+			.parent {
+				margin: 20px;
+				padding: 20px;
+				border: 1px solid;
+			}
+			.grandParent_1 {
+				width: 400px;
+				height: 500px;
+			}
+			.grandParent_main {
+				width: 500px;
+				height: 600px;
+			}
+			.parent {
+				width: 300px;
+				height: 400px;
+			}
+			.otherelement {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+			}
+			.box {
+				width: 130px;
+				height:120px;
+				text-align: center;
+				text-decoration: underline;
+				border: 1px solid;
+				background: red;
+				position: absolute;
+				top: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="otherelement">
+			Hello
+		</div>
+		<div class="grandParent_main" >
+			<div class="grandParent_1">
+				<div class="parent container" > 
+					<div class="box"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
