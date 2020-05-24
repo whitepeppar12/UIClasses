@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<title>
+			Demonstrating html input elements.
+		</title>
+		<style type="text/css">
+			li {
+				border: 1px solid;
+				margin: 5px;
+				padding: 5px;
+				list-style: none;
+				height: 30px;
+			}
+			ul {
+				width: 500px;
+				border: 2px dotted;
+				margin: 10px;
+				padding: 10px;
+
+			}
+			.usrBtn {
+				float: right;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<form method="POST" action="http://abcpqryz.com/dta/sample">
+			<h3>Student registration page</h3>
+			<ul>
+				<li>
+					<label>Enter user name: </label>
+					<input type="text" name="username">
+				</li>
+				<li>
+					<label>Enter user account id</label>
+					<input type="text" name="user_id">
+				</li>
+				<li>
+					<label>User Account Pwd</label>
+					<input type="password" name="user_pwd">
+				</li>
+				<li>
+					Gender: 
+					<input type="radio" value="male" name="gender"> Male
+					<input type="radio" value="female" name="gender"> Female
+				</li>
+				<li>
+					Known Languages:
+					<input type="checkbox" value="eng" name="lng_eng"> English
+					<input type="checkbox" value="tel" name="lng_tel"> Telugu
+					<input type="checkbox" value="hin" name="lng_hin"> Hindi
+					<input type="checkbox" value="mar" name="lng_mar"> Marati
+					<input type="checkbox" value="od" name="lng_odia"> Odia
+				</li>
+				<li>
+					Country:
+					<select name="userCountry">
+						<option>India</option>
+						<option>China</option>
+						<option>Japan</option>
+						<option selected>NKoria</option>
+						<option>USA</option>
+					</select>
+				</li>
+				<li>
+					About urself:
+					<textarea name="about"></textarea>
+				</li>
+				<li>
+					<input type="submit" value="Get Registered" class="usrBtn">
+				</li>
+			</ul>
+		</form>
+	</body>
+</html>

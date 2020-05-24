@@ -1,0 +1,45 @@
+Following are the tags used under table tag to render content in the form
+of row wise and column wise
+
+table - Parent tag holds all table content
+
+
+thead - Holds the header content
+
+
+tbody - Holds the actual body of table tag
+
+tr - Holds a table row
+
+th - Hold the table header cell
+
+td - Holds the table data cell
+
+tfoot - Holds teh table footer
+
+Syntax:
+
+	<table>
+		<thead>
+			<tr>
+				<th>Heading 1</th>
+				<th>Heading 2</th>
+				<th>Heading 3</th>
+				...
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>..</td>
+				<td>..</td>
+				<td>..</td>
+				...
+			</tr>
+			<tr>
+				<td>..</td>
+				<td>..</td>
+				<td>..</td>
+				...
+			</tr>
+		</tbody>
+	</table>

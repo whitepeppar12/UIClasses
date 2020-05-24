@@ -1,0 +1,47 @@
+
+HTML Input elements
+
+Following ate the predefined input elements been supported in html, using which we could able to read  data from user.
+
+<input type="text"> - Used to read text data.
+
+<input type="password"> - Used to read sensitive data
+
+<input type="checkbox"> - creates a check box
+
+<input type="radio"> - Creates a radio
+
+<Select>
+	<option>...</option>
+	<option>...</option>
+</select> - used to create a drop down with multiple values and user could able to select one at a time.
+
+
+<textarea></textarea> - Used to create a multi line text container.
+
+<input type="button" value="bbb"> - Used to create a button, capable of taking user action.
+
+<input type="submit"> - Used to create a button, which can be added only inside a form tag, and on click of submit button, form button takes data and sends to specified server
+
+
+HTML Form Tag:
+
+	A predefined tag using which we could able to send user given data to server.
+
+	Syntax:
+
+		<form action="path of server" method="GET/POST">
+			...
+			...
+		</form>
+
+Form takes two mandatry arributes action and method
+
+action - Atrribute through which we can specify the path of serve to which data to be sent
+
+method - Attribute through we can specify the type of communication to server secured or non secured.
+
+On click of submit button with in the form tag, form tag automatically reads out all the data from all the input elements witin it and sends to the specified server.
+
+Note: 
+	In order to make form tag to read particular value from input elemnts, for sure every element within the form tag has to be added with a name attribute, so that the value will be mapped with the given name and will be sent to server. Any input element without name attribute will not be read by form tag.
