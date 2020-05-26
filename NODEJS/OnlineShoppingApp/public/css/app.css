@@ -1,0 +1,29 @@
+.header {
+	border: 1px solid;
+	text-align: center;
+	margin: 5px;
+	padding: 10px;
+}
+
+.details {
+	list-style: none;
+	float: left;
+	margin: 5px;
+}
+
+.indiProdDetails li {
+	border: 1px solid;
+	list-style: none;
+	margin: 5px;
+	padding: 5px;
+}
+.indiProdDetails {
+	width: 300px;
+	border: 1px solid blue;
+
+}
+
+.indiProdDetails img {
+	width: 150px;
+	height: 150px;
+}

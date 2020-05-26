@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>
+			Online shopping application
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<script type="text/javascript" src="js/lib/jquery.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.loadTemplate-1.4.4.min.js"></script>
+		<script type="text/javascript" src="js/loadAppData.js"> </script>
+	</head>
+	<body>
+		<div class='header'>Online shopping appliction</div>
+		<div class="productDetailsContainer">
+			<ul class="detailsHolder">
+				
+			</ul>
+		</div>
+
+		<script id="prodDetailsTmplt">
+			<li class="details">
+				<ul class="indiProdDetails">
+					<li>Product Name: <span data-content="name"></span></li>
+					<li>Product Price: <span data-content="price"></span></li>
+					<li>Disount: <span data-content="discount"></span></li>
+					<li> Manufacturer <span data-content="manu"></span></li>
+					<li>Seller Name: <span data-content="sellerDetails"></span></li>
+					<img data-src="mainimageUrl"/>
+				</ul>
+			</li>
+		</script>
+	</body>
+</html>
