@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid;
+        }
+        .headline{
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px dotted black;
+            color: white;
+            background-color: rgb(54, 53, 53);
+        }
+        .personal-details, .address-details, .education-details, .about-details{
+            position: relative;
+            border: 1px dotted black;
+            margin: 10px;
+            padding: 1opx;
+            margin-top: 50px;
+        }
+        .about-details{
+            position: relative;
+            border: 1px dotted black;
+            margin: 10px;
+            padding: 1opx;
+            margin-top: 20px;
+            
+        }
+        ul{
+            margin-top: 50px;
+        }
+        ul li{
+            line-height: 30px;
+            height: 30px;
+            padding: 5px;
+            list-style: none;
+        }
+        .input{
+            width: 300px;
+        }
+        label{
+            font-weight: 600;
+        }
+        .class{
+            position: absolute;
+            top: 50px;
+            right: 525px;
+        }
+        .personal-box, .address-box, .education-box{
+            border: 1px dotted;
+            position: absolute;
+            top: -35px;
+            z-index: 100;
+            color: white;
+            background-color:rgb(146, 142, 142);
+            padding: 0px 30px;
+        }
+        .country {
+            position: absolute;
+            top: 50px;
+            right: 500px;
+        }
+        .Pincode{
+            position: absolute;
+            top: 90px;
+            right: 250px;
+        }
+        label.about{
+            position: absolute;
+            left: 50px;
+            bottom: 90px;
+        }
+        .about-text{
+            width: 800px;
+            margin: 20px 160px;
+            
+        }
+        .userbtn{
+            position: absolute;
+            padding:20px 30px;
+            background-color: rgb(54, 53, 53);;
+            color: white;
+            border-radius: 50%;
+            right: 100px;
+            bottom: 5px;
+
+            
+        }
+       .sub-btn{
+           position: relative;
+       }
+
+    </style>
+    <div class="container">
+        <div class="headline">
+            <h3>Student Details Registration Page</h3>
+        </div>
+        <div class="form">
+            <form action="" method="GET">
+                <div class="personal-details">
+                    <ul>
+                    <li>
+                        <label for="">Name:</label>
+                        <input type="text" name="name" id="" class="input">
+                    </li>
+                    <li>
+                        <label for="">Age :</label>
+                        <input type="text" name="age" id="" class="input">
+                    </li>
+                    <li>
+                        <label for="">Gender:</label>
+                        <input type="radio" name="gender" id="" value="male">Male
+                        <input type="radio" name="gender" id="" value="female">Female
+                    </li>
+                    <li class="class">
+                        <label for="">Class:</label>
+                        <select name="" id="">
+                            <option value="10th" name="class">10th</option>
+                            <option value="11th" name="class">11th</option>
+                            <option value="12th" name="class">12th</option>
+                        </select>
+                    </li>
+                    <div class="personal-box">
+                        <h4>Personal Details</h4>
+                    </div>
+                </ul>
+                </div>
+                <!-- address Info -->
+                <div class="address-details">
+                    <ul>
+                    <li>
+                        <label for="">Door No:</label>
+                        <input type="text" name="name" id="" class="input">
+                    </li>
+                    <li>
+                        <label for="">Street Name:</label>
+                        <input type="text" name="age" id="" class="input">
+                    </li>
+                    <li >
+                        <label for="">State:</label>
+                        <select name="" id="">
+                            <option value="Maharashtra" name="State">Maharashtra</option>
+                            <option value="Gujrat" name="State">Gujrat</option>
+                            <option value="Punjab" name="State">Punjab</option>
+                            <option value="West-Bengal" name="State">West Bengal</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">District:</label>
+                        <select name="" id="">
+                            <option value="Mumbai" name="District">Mumbai</option>
+                            <option value="Pune" name="District">Pune</option>
+                            <option value="Nashik" name="District">Nashik</option>
+                            <option value="Nagpur" name="District">Nagpur</option>
+                        </select>
+                    </li>
+                    <li class="country">
+                        <label for="">Country:</label>
+                        <select name="" id="">
+                            <option value="India" name="Country">India</option>
+                            <option value="USA" name="Country">USA</option>
+                            <option value="UAE" name="Country">UAE</option>
+                            <option value="UK" name="Country">UK</option>
+                        </select>
+                    </li>
+                    <li class="Pincode">
+                        <label for="">Pincode:</label>
+                        <input type="text" name="age" id="" class="input">
+                    </li>
+                    <div class="address-box">
+                        <h4>Address Details</h4>
+                    </div>
+                </ul>
+                </div>
+                <!-- Education Details -->
+                <div class="education-details">
+                    <ul>
+                    <li >
+                        <label for="">Qualification:</label>
+                        <select name="" id="">
+                            <option value="BE" name="qualification">BE</option>
+                            <option value="MBA" name="qualification">MBA</option>
+                            <option value="BCA" name="qualification">BCA</option>
+                            <option value="MCA" name="qualification">MCA</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="">Language:</label>
+                        <input type="checkbox" name="language" id="" value="marathi">Marathi
+                        <input type="checkbox" name="language" id="" value="hindi">Hindi
+                        <input type="checkbox" name="language" id="" value="english">English
+                        <input type="checkbox" name="language" id="" value="tamil">Tamil
+
+                    </li>
+                    <div class="education-box">
+                        <h4>Education Details</h4>
+                    </div>
+                </ul>
+                </div>
+                <!-- ABout yourself -->
+                <div class="about-details">
+                    <label class="about" for="">About Yourself:</label>
+                    <textarea class="about-text" name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <!-- Submit button -->
+                <div class="sub-btn">
+               <ul>
+                <li>
+                    <input type="submit" value="Submit Info" class="userbtn">
+                </li>
+                </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
