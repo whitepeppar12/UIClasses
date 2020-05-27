@@ -3,6 +3,7 @@ var express = require("express");
 var router = express.Router();
 
 router.get("/", function(req, res, next){
+	console.log(req.query);
 	var data = {
 		pDetails: [
 			{
@@ -47,6 +48,18 @@ router.get("/", function(req, res, next){
 			}
 		]
 	};
+
+	if (req.query.key) {
+		var temp ={
+			pDetails: []
+		};
+		for (var i = 0 ; i < data.pDetails.length; i++) {
+			if (data.pDetails[i].name == req.query.key) {
+				temp.pDetails.push(data.pDetails[i]);
+			}
+		}
+		data = temp;
+	}
 
 	data = JSON.stringify(data);
 

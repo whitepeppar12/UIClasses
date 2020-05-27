@@ -4,15 +4,46 @@
 			Online shopping application
 		</title>
 		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 		<script type="text/javascript" src="js/lib/jquery.js"></script>
 		<script type="text/javascript" src="js/lib/jquery.loadTemplate-1.4.4.min.js"></script>
 		<script type="text/javascript" src="js/loadAppData.js"> </script>
 	</head>
 	<body>
 		<div class='header'>Online shopping appliction</div>
+		<div class="loginBlock">
+			<h4 style="text-align:center;">User login</h4>
+			<ul class="loginDetails">
+				<li>
+					Enter user id: <input type="text" id="uid">
+				</li>
+				<li>
+					Enter acnt Pwd: <input type="password" id="upwd">
+				</li>
+				<li>
+					<div class="link">New Signup?</div>
+					<div class="link">forgotPwd ?</div>
+				</li>
+				<li>
+					<input type="button" value="Login" onclick="validateUser()"> 
+				</li>
+				<li class="invalidCrd">
+					UID / PWD is incorrect, plz try again
+				</li>
+			</ul>
+		</div>
 		<div class="productDetailsContainer">
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-4">
+					<input type="text" class="form-control userSearch" id="userSearchKey">
+				</div>
+				<div class="col-md-4">
+					<input type="button" value="Search" class="btn btn-primary" onclick="searchData()">
+				</div>
+				<div class="col-md-2"></div>
+			</div>
 			<ul class="detailsHolder">
-				
 			</ul>
 		</div>
 

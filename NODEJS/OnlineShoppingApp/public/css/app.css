@@ -27,3 +27,44 @@
 	width: 150px;
 	height: 150px;
 }
+
+.link {
+	display: inline;
+	margin: 5px;
+	color: blue;
+	cursor: pointer;
+}
+
+.link:hover {
+	text-decoration: underline;
+}
+
+.loginDetails {
+	border: 1px solid;
+	margin: 20px auto;
+	padding: 10px;
+	height: 300px;
+	width: 350px;
+}
+
+.loginDetails li {
+	list-style: none;
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+}
+
+.invalidCrd {
+	display: none;
+	text-align: center;
+	color: red;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.userSearch {
+	width: 400px !important;
+}
+.productDetailsContainer {
+	display: none;
+}
