@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>Student Details</H3>
+    <Script>
+        var firstname, lastname;
+        var math, english, hindi, marathi;
+        var total, percentage;
+
+        firstname = "Mehul";
+        lastname = "Kapadni";
+        math = 40;
+        english =38;
+        hindi = 28;
+        marathi = 30;
+        total = math+english+hindi+marathi;
+        percentage = (total/400)*100;
+        console.log("Name:"+firstname+" "+lastname);
+        console.log("Subjects Marks")
+        console.log("Math:"+math, "English:"+english, "Hindi:"+hindi, "Marathi:"+marathi);
+        console.log("Total Marks:" +total);
+        console.log("Percentage:" +percentage)
+        if(percentage>60)
+        {
+            console.log("Student is passed with first class");
+            if(percentage>=80)
+            {
+                console.log("student is passed with Dist class");
+            }
+        }
+        else if(percentage>40)
+        {
+            console.log("studnet is pass");
+        }
+        else
+        {
+            console.log("student is fail");
+        }
+
+
+
+    </Script>
+</body>
+</html>
