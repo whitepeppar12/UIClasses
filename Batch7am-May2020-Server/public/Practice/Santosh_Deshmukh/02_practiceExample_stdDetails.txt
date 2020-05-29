@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+	<h1>JAva Script Program 2</h1>
+	<script type="text/javascript">
+			var st_name="RAJ";
+			var st_agr=27;
+			var st_gender="Male";
+			var st_obtMark=90.5;
+			var st_totMark=100;
+			var st_avgMark=90.50;
+			console.log("Name :" +st_name);
+			console.log("Age :" +st_agr);
+			console.log("Obt. Marks :" +st_obtMark);
+			console.log("Total Marks : :" +st_totMark);
+			console.log("Avg Marks :" +st_avgMark);
+		</script>
+</HEAD>
+<BODY>
+</BODY>
+</HTML>
