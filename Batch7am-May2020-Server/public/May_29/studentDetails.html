@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>
+			Demonstrating operations on student details.
+		</title>
+	</head>
+	<body>
+		<h3>Student details...</h3>
+		<script type="text/javascript">
+			console.log("Student details page")
+			var studentName = "Teena";
+			var sAge = 20;
+			var sGender = 'Male';
+			var m1 = 22;
+			var m2 = 90;
+			var m3 = 90;
+			var m4 = 80;
+			var total = m1 + m2 + m3 + m4;
+			var avg = total / 4;
+
+			console.log("Student name is " + studentName);
+			console.log("Student age is", sAge);
+			console.log("Total marks " + total);
+			console.log("avg marks " + avg);
+			/*if (avg < 40) {
+				console.log("Student got failed");
+			}
+			
+			if (avg >= 40) {
+				console.log("student got passed");
+			} */
+			if (avg > 40) {
+				console.log("Student got Passed");
+				if (avg >= 90) {
+					console.log("got distinction...");
+				}
+			} else {
+				console.log("student got failed");
+			} 
+
+
+
+			
+		</script>
+	</body>
+</html>
