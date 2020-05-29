@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>Variable Hoisting</H3>
+    <Script>
+        var name ="Mehul Kapadni";
+        var age =30;
+        console.log(name,age);
+        console.log(gender);
+        var gender = "male";
+      
+        var gender1, name1 ="Mehul Kapadni";
+        var age1 =30;
+        console.log(name1,age1);
+        console.log(gender1);
+        gender1 = "male"
+
+        // After Variable Hoisting 
+
+        var gender2, name2 ="Mehul Kapadni";
+        var age2 =30;
+        console.log(name2,age2);
+        gender2 = "male"
+        console.log(gender2);
+        
+        
+    </Script>
+</body>
+</html>
