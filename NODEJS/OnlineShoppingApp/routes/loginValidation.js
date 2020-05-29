@@ -1,20 +1,25 @@
 var express = require("express");
+var mongodb = require("mongodb");
+var mongoClient = mongodb.MongoClient;
 
 var router = express.Router();
+var url = 'mongodb://localhost:27017/onlineshopping';
+
 
 router.post("/", function(req, res, next){
-	//  - get communiction console.log(req.query);
-	console.log(req.body);
-	var data = {};
-	if (req.body.id == 'admin' && req.body.pwd == "india")  {
-		data.msg = "Valid";
-	} else {
-		data.msg = "Invalid";
-	}
-	
 
-	data = JSON.stringify(data);
-	res.send(data);
+	mongoClient.connect(url, function(err, db) {
+		console.log(db);
+		var collection = db.collection("userlist");
+		collection.find().toArray(function(err, doc){
+			console.log("docs");
+			console.log(doc);
+		})
+		console.log("succsfly connected");
+
+		res.send("data");
+	})
+	
 });
 
 module.exports = router;
