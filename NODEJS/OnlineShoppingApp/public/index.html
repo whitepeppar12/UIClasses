@@ -8,6 +8,7 @@
 		<script type="text/javascript" src="js/lib/jquery.js"></script>
 		<script type="text/javascript" src="js/lib/jquery.loadTemplate-1.4.4.min.js"></script>
 		<script type="text/javascript" src="js/loadAppData.js"> </script>
+		<script type="text/javascript" src="js/signupPage.js"></script>
 	</head>
 	<body>
 		<div class='header'>Online shopping appliction</div>
@@ -21,7 +22,7 @@
 					Enter acnt Pwd: <input type="password" id="upwd">
 				</li>
 				<li>
-					<div class="link">New Signup?</div>
+					<div class="link" onclick="showPage('signup')">New Signup?</div>
 					<div class="link">forgotPwd ?</div>
 				</li>
 				<li>
@@ -29,6 +30,42 @@
 				</li>
 				<li class="invalidCrd">
 					UID / PWD is incorrect, plz try again
+				</li>
+			</ul>
+		</div>
+		<div class="newSignupBlock">
+			<div class="userSignupsuccss">
+				User got signedup succssfuly..
+				click on 
+				<span class="link" onclick="showPage('login')">Login</span> to got to Login page
+
+			</div>
+			<ul class="signupdetails">
+				<li style="text-align: center;">
+					<h3>New User Signup</h3>
+				</li>
+				<li>
+					Enter user account id:
+					<input type="text" id="u_rid">
+				</li>
+				<li>
+					Account Pwd:
+					<input type="password" id="u_rpwd">
+				</li>
+				<li>
+					Renter pwd
+					<input type="password" id="u_rrpwd">
+				</li>
+				<li>
+					Email id:
+					<input type="text" id="u_rmailid">
+				</li>
+				<li>
+					Phone no.
+					<input type="number" id="u_rpno">
+				</li>
+				<li>
+					<input type="button" class="btn btn-primary" value="Register" onclick="readUserData()">
 				</li>
 			</ul>
 		</div>

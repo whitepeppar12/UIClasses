@@ -38,6 +38,7 @@ function validateUser() {
 		data: userDetails
 	});
 	loginReq.done(function(res){
+		console.log("res");
 		console.log(res);
 		if (res.msg == 'Valid') {
 			$(".loginBlock").hide();
@@ -56,3 +57,16 @@ function searchData() {
 
 	getProductData(sData)
 }	
+
+function showPage(pagename) {
+	switch (pagename) {
+		case 'signup':
+			$(".loginBlock").hide();
+			$(".newSignupBlock").show();
+			break;
+		case 'login':
+			$(".loginBlock").show();
+			$(".newSignupBlock").hide();
+			$(".userSignupsuccss").hide();
+	}
+}

@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>
+			Demonstrating operations on student details.
+		</title>
+	</head>
+	<body>
+		<h3>Student details...</h3>
+		<script type="text/javascript">
+			console.log("Student details page")
+			var studentName = prompt("Enter student name");
+			var sAge = prompt("enter student age");
+			
+			var sGender = prompt("enter student gender");
+
+			var m1 = prompt("enter subj 1 marks");
+			m1 = parseInt(m1);
+
+			var m2 = prompt("enter subj 2 marks");
+			m2 = parseInt(m2);
+
+			var m3 = prompt("enter subj 3 marks");
+			m3 = parseInt(m3);
+
+			var m4 = prompt("enter subj 4 marks");
+			m4 = parseInt(m4);
+
+			
+			var total = m1 + m2 + m3 + m4;
+			var avg = total / 4;
+
+			console.log("Student name is " + studentName);
+			console.log("Student age is", sAge);
+			console.log("Total marks " + total);
+			console.log("avg marks " + avg);
+			/*if (avg < 40) {
+				console.log("Student got failed");
+			}
+			
+			if (avg >= 40) {
+				console.log("student got passed");
+			} */
+			if (avg > 40) {
+				console.log("Student got Passed");
+				if (avg >= 90) {
+					console.log("got distinction...");
+				}
+			} else {
+				console.log("student got failed");
+			} 
+
+
+
+			
+		</script>
+	</body>
+</html>
