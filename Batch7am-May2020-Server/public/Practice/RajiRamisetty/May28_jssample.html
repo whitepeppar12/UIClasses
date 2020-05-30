@@ -7,15 +7,37 @@
 		<h3>Employee Details</h3>
 		<script type="text/javascript">
 		 	var empName = "Ravi";
-			var empGender = "male";
+			var gender = "male";
 			var empDepartment = "Automation"; 
 			var basicSal = 50000;
 			var pf= 0.12 * basicSal;
 			var hra= 0.25 * basicSal;
-			var totalSal = basicSal + pf + hra;
+			var totalsal = basicSal + pf + hra;
 			console.log("Employee's name is "+ empName);
-			console.log("Employee's gender is "+ empGender);
-			console.log("Employee's total salary is "+ totalSal);
+			console.log("Employee's gender is "+ gender);
+			console.log("Employee's total salary is "+ totalsal); 
+			if (gender == "male"){
+							if (totalsal > 50000) {
+							console.log("tax percent is 15%")
+							}
+							else if(totalsal > 30000){
+								console.log("tax percent is 10%")
+							}else{
+								console.log("0 tax")
+							}
+			}
+			if(gender == "female"){
+							if (totalsal > 50000) {
+							console.log("tax percent is 10%")
+							}
+							else if(totalsal > 30000){
+								console.log("tax percent is 5%")
+							}else{
+								console.log("0 tax")
+							}
+
+			}
+
 		</script>
 
 	</body>
