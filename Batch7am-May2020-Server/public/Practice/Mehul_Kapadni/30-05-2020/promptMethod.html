@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>Employee Details</H3>
+    <script>
+        var eName = prompt("Enter Your Name:");
+        var age = prompt("Enter Your Age:");
+        var gender = prompt("Enter Your gender");
+        var department = "Software Depertment";
+        var basicSalary = prompt("Enter your basic salary");
+        basicSalary = parseInt(basicSalary);
+        var pf = (12/100)*basicSalary;
+        pf = parseInt(pf);
+        var hra = (25/100)*basicSalary;
+        hra = parseInt(hra);
+        var  totalSalary = basicSalary+pf+hra;
+        totalSalary= parseInt(totalSalary);
+        var tax;
+        tax = parseInt(tax);
+        console.log("Employee Name:" +eName);
+        console.log("Employee Gender:" +gender);
+        console.log("Basic Salary:" +basicSalary);
+        console.log("Employee PF: "+pf);
+        console.log("Employee HRA: "+hra);
+        console.log("Employee Department:" +department);
+        console.log("Employee Basic Salary:"+basicSalary);
+        console.log("EMployee Total Salary:"+totalSalary);
+        if(gender === "male")
+            {
+                if(totalSalary>50000)
+                {
+                    tax=(15/100)*totalSalary;
+                    console.log("applicable tax is:" +tax);
+
+                }
+                else if(totalSalary>30000)
+                {
+                    tax=(10/100)*totalSalary;
+                    console.log("applicable tax is:" +tax);
+
+                }
+                else
+                {
+                    console.log("No tax");
+                }
+            }else if(totalSalary>50000)
+                {
+                    tax=(10/100)*totalSalary;
+                    console.log("applicable tax is:" +tax);
+
+                }
+                else if(totalSalary>30000)
+                {
+                    tax=(5/100)*totalSalary;
+                    console.log("applicable tax is:" +tax);
+
+                }
+                else
+                {
+                    console.log("No tax");
+                }
+               
+
+    </script>
+</body>
+</html>
