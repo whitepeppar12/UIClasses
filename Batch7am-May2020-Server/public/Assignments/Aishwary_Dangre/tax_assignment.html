@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JustSomeJavaScript</title>
+</head>
+
+<body>
+    <script>
+
+        var mName = "Aishu";
+        var mDepartment = "MIDC";
+        var mSalary = 99999;
+        var mTax;
+
+        var fName = "Riya";
+        var fDepartment = "HEPM";
+        var fSalary = 79999
+        var fTax;
+
+        var gender = "Male";
+
+        if (gender == "Male") {
+            if (mSalary > 59999) {
+                mTax = mSalary / 100 * 15;
+                console.log(mTax);
+            }
+            else if (mSalary < 59999) {
+                mTax = mSalary / 100 * 10;
+                console.log(mTax);
+            }
+            else{
+                console.log("0 TAX");
+            }
+        }
+        else if(gender == "Female"){
+            if (fSalary > 39999){
+                fTax = fSalary/100 * 10;
+                console.log(fTax);
+            }
+            else if(fSalary < 39999){
+                fTax = fSalary/100 * 5;
+                console.log(fTax);
+            }
+            else{
+                console.log("0 TAX");
+            }
+        }
+        else{
+            console.log("Gender not defined");
+        }
+
+    </script>
+</body>
+
+</html>

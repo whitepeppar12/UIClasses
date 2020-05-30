@@ -1,0 +1,91 @@
+<html lang="en">
+ <head>
+	<h1> Java script Example 3</h1>
+ </head>
+ <body>
+ </body>
+  <script  type="text/javascript">
+		var empNameM = 'Raj'
+		var empAgeM = 26;
+        var empGenderM = 'Male';
+		var empDeptM = 'Security';
+		var empBasicSalaryM = 51000;
+		var empPfM,empHraM,empTotalSalaryM,empTaxM,empTaxPerM,EmpSaleryDeductionM;
+
+		empPfM = (empBasicSalaryM * 12)/100;
+		empHraM = (empBasicSalaryM * 25)/100;
+		empTotalSalaryM = empBasicSalaryM + empPfM + empHraM;
+		if(empGenderM == 'Male')
+		{
+			if(empTotalSalaryM > 50000)
+			{
+				empTaxM = (empTotalSalaryM * 15)/100;
+				empTaxPerM = 15;
+			}else if(empTotalSalaryM > 30000)
+			{
+				empTaxM = (empTotalSalaryM * 10)/100;
+				empTaxPerM = 10;
+			}else 
+			{
+				empTaxM = 0;
+				empTaxPerM = 0;
+			}
+		}
+		//alert(empTaxM);
+		EmpSaleryDeductionM = empTotalSalaryM - empTaxM;
+		console.log("================================================================");		
+		console.log("The Employee Name is : " + empNameM );
+		console.log("Age : " +empAgeM);
+		console.log("Gneder : " +empGenderM);
+		console.log("Department : " +empDeptM);
+		console.log("Basic Salary : " + empBasicSalaryM); 
+		console.log("PF : " + empPfM);
+		console.log("HRA : " + empHraM);
+		console.log("Total Salary : " + empTotalSalaryM);
+		console.log("Total TAX Amount : " + empTaxM + " With TAX(" +empTaxPerM+"%)");
+		console.log("Total Salary After Deducting Tax : " + EmpSaleryDeductionM);
+		console.log("================================================================");
+		
+		var empNameF = 'Ankita'
+		var empAgeF = 22;
+        var empGenderF = 'Female';
+		var empDeptF = 'Accounts';
+		var empBasicSalaryF = 51000;
+		var empPfF,empHraF,empTotalSalaryF,empTaxF,empTaxPerF,EmpSaleryDeductionF;
+
+		empPfF = (empBasicSalaryF * 12)/100;
+		empHraF = (empBasicSalaryF * 25)/100;
+		empTotalSalaryF = empBasicSalaryF + empPfF + empHraF;
+		if(empGenderF == 'Female')
+		{
+			if(empTotalSalaryF > 50000)
+			{
+				empTaxF = (empTotalSalaryF * 10)/100;
+				empTaxPerF = 10;
+			}else if(empTotalSalaryF > 30000)
+			{
+				empTaxF = (empTotalSalaryF * 5)/100;
+				empTaxPerF = 5;
+			}else 
+			{
+				empTaxF = 0;
+				empTaxPerF = 0;
+			}
+		}
+		console.log("================================================================");		
+		EmpSaleryDeductionF = empTotalSalaryF - empTaxF;
+		console.log("The Employee Name is : " + empNameF );
+		console.log("Age : " +empAgeF);
+		console.log("Gneder : " +empGenderF);
+		console.log("Department : " +empDeptF);
+		console.log("Basic Salary : " + empBasicSalaryF); 
+		console.log("PF : " + empPfF);
+		console.log("HRA : " + empHraF);
+		console.log("Total Salary : " + empTotalSalaryF);
+		console.log("Total TAX Amount : " + empTaxF + " With TAX(" +empTaxPerF+"%)");
+		console.log("Total Salary After Deducting Tax : " + EmpSaleryDeductionF);
+		console.log("================================================================");		
+		
+
+  </script>
+</html>
