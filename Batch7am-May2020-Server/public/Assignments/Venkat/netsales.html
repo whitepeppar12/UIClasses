@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>dicount</title>
+    </head>
+    <body>
+        <script>
+            var pname = "electronics";
+            var grosssales = 10000;
+            var discount;
+            var netsales = grosssales-discount;
+            if(pname == "electronics"){
+                if(grosssales > 50000){
+                    discount = grosssales*5/100;
+                    netsales = (grosssales - discount);
+                    console.log(discount);
+                    console.log(netsales);
+                }
+                else{
+                    discount = grosssales*3/100;
+                    netsales = grosssales - discount;
+                    console.log(discount);
+                    console.log(netsales);
+                }
+            } else if(pname == "cloths"){
+                if(grosssales > 5000){
+                    discount = grosssales*8/100;
+                    netsales = (grosssales - discount);
+                    console.log(discount);
+                    console.log(netsales);
+
+                }
+                else{discount = grosssales*4/100;
+                    netsales = grosssales - discount;
+                    console.log(discount);
+                    console.log(netsales);
+
+                }
+            } else if(pname == "households"){
+                if(grosssales > 70000){
+                    discount = grosssales*10/100;
+                    netsales = (grosssales - discount);
+                    console.log(discount);
+                    console.log(netsales);
+
+
+                }
+                else{discount = grosssales*2/100;
+                    netsales = grosssales - discount;
+                    console.log(discount);
+                    console.log(netsales);
+
+
+                }
+            } 
+        </script>
+
+    </body>
+</html>
