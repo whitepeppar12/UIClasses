@@ -1,0 +1,88 @@
+<html lang="en">
+ <head>
+	<h1> Java script Example 4</h1>
+ </head>
+ <body>
+ </body>
+  <script  type="text/javascript">
+		var empNameM,empAge,empGender,empDept,empBasicSalary,empPf,empHra,empTotalSalary,empTax,empTaxPer,EmpSaleryDeduction;
+		
+		var forLoopVar = prompt("Do you want to calculate Tax(y/n)");
+		do {			
+			if(forLoopVar == 'y' ||  forLoopVar == 'Y')
+			{
+			  do{
+					empName = prompt("Enter Employee Name :");
+					empAge = parseInt(prompt("Enter Employee Age :"));
+					empGender = prompt("Enter Employee Gender :");
+					empDept = prompt("Enter Employee Department :");
+					empBasicSalary = parseInt(prompt("Enter Employee Basic Salary :"));
+					if(empGender == 'Male' || empGender == 'male')
+					{
+						empPf = (empBasicSalary * 12)/100;
+						empHra = (empBasicSalary * 25)/100;
+						empTotalSalary = empBasicSalary + empPf + empHra;				
+						if(empTotalSalary > 50000)
+						{
+							empTax = (empTotalSalary * 15)/100;
+							empTaxPer = 15;
+						}else if(empTotalSalary > 30000)
+						{
+							empTax = (empTotalSalary * 10)/100;
+							empTaxPer = 10;
+						}else 
+						{
+							empTax = 0;
+							empTaxPer = 0;
+						}
+					}else if(empGender == 'Female' || empGender == 'female')
+					{
+						empPf = (empBasicSalary * 12)/100;
+						empHra = (empBasicSalary * 25)/100;
+						empTotalSalary = empBasicSalary + empPf + empHra;
+						if(empTotalSalary > 50000)
+						{
+							empTax = (empTotalSalary * 10)/100;
+							empTaxPer = 10;
+						}else if(empTotalSalary > 30000)
+						{
+							empTax = (empTotalSalary * 5)/100;
+							empTaxPer = 5;
+						}else 
+						{
+							empTax = 0;
+							empTaxPer = 0;
+						}
+					}else{
+						console.log("================================================================");
+						console.log("Soory! You have choosen wrong option");
+						console.log("================================================================");					
+					}
+					EmpSaleryDeduction = empTotalSalary - empTax;
+					console.log("================================================================");	
+					console.log("The Employee Name is : " + empName );
+					console.log("Age : " +empAge);
+					console.log("Gneder : " +empGender);
+					console.log("Department : " +empDept);
+					console.log("Basic Salary : " + empBasicSalary); 
+					console.log("PF : " + empPf);
+					console.log("HRA : " + empHra);
+					console.log("Total Salary : " + empTotalSalary);
+					console.log("Total TAX Amount : " + empTax + " With TAX(" +empTaxPer+"%)");
+					console.log("Total Salary After Deducting Tax : " + EmpSaleryDeduction);
+					console.log("================================================================");
+					forLoopVar = 0;
+					forLoopVar = prompt("Do you want to calculate Tax(y/n)");
+				}while(forLoopVar == 'y' || forLoopVar == 'Y')
+			
+			}else{
+				console.log("================================================================");
+				console.log("Soory! You have choosen wrong option");
+				console.log("================================================================");
+				forLoopVar = 0;
+				forLoopVar = prompt("Do you want to calculate Tax(y/n)");			
+			}
+		}while(forLoopVar == 'Y' || forLoopVar == 'y' || forLoopVar == 'n' || forLoopVar == 'N')	
+
+  </script>
+</html>
