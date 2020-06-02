@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating for loop CS			
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("start");
+			var sum = 0;
+			var startingPoint = prompt("enter starting point");
+			startingPoint = parseInt(startingPoint);
+
+			var endPoint = prompt("enter ending point");
+			endPoint = parseInt(endPoint);
+
+
+			for (var i = startingPoint; i <= endPoint; i++) {
+				if (i % 2 == 0) {
+					
+					sum = sum + i;
+				}
+			}
+			console.log("the sum si " + sum)
+			console.log("END")
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var n = prompt("enter value");
+			n = parseInt(n);
+			var count = 0;
+			for ( var i = 1; i <= n; i++) {
+				if ( n % i == 0) {
+					count++;
+				}
+			}
+			if (count == 2) {
+				console.log(n + " its prime")
+			} else {
+				console.log(n + " not a prime")
+			}
+		</script>
+	</body>
+</html>

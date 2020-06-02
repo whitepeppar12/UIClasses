@@ -12,6 +12,8 @@ router.post('/', function(req, res, next) {
 	mongoClient.connect(url, function(err, client){
 		var db = client.db("onlineshopping");
 		var collection = db.collection("userlist");
+		// check where we arelrdy ahave  auser with same id or not
+		// collection.find({userid: '...'}). 1
 		collection.insert(req.body, function(err){
 			if (err) {
 				data.msg = "Error";
