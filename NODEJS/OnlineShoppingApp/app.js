@@ -10,6 +10,7 @@ var prodDetailsRouter = require('./routes/prodDetails');
 var studentdetailsRouter = require("./routes/studentDetails");
 var loginRouter = require("./routes/loginValidation");
 var signupRouter = require("./routes/newUserSignup");
+var addPRouter = require("./routes/addProduct");
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use("/details/get/studentdata", studentdetailsRouter);
 
 app.use("/user/signup", signupRouter);
 app.use("/data/validation", loginRouter);
+app.use("/add/data/product", addPRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

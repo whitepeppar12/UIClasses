@@ -14,7 +14,11 @@ function getProductData(sData) {
 	dataReq.done(function(res){
 		console.log("Success");
 		console.log(res);
-		showProductDetails(res.pDetails);
+		if (res.pDetails.length == 0) {
+			$(".detailsHolder").html("There are no products matching ur search query")
+		} else {
+			showProductDetails(res.pDetails);
+		}
 	});
 }
 //getProductData();
