@@ -4,23 +4,31 @@ var router = express.Router();
 var url = "mongodb://localhost:27017";
 
 router.get("/", function(req, res, next){
-	console.log(req.query);
+	console.log("req.session");
+	console.log(req.session);
+	console.log("req.session.isUserValid")
+	console.log(req.session.isUserValid)
 	var data = {
 		
 	};
+	if(req.session.isUserValid) {
+		mongoClient.connect(url, function(err, client){
+			var db = client.db("onlineshopping");
+			var collection = db.collection("productDetails");
+			collection.find().toArray(function(err, result){
+				console.log(result);
+				data.pDetails = result;
+				data = JSON.stringify(data);
 
-	mongoClient.connect(url, function(err, client){
-		var db = client.db("onlineshopping");
-		var collection = db.collection("productDetails");
-		collection.find().toArray(function(err, result){
-			console.log(result);
-			data.pDetails = result;
-			data = JSON.stringify(data);
-
-			res.send(data);
-			client.close();
-		})		
-	})
+				res.send(data);
+				client.close();
+			})		
+		});
+	} else {
+		data.msg = "user not logged In";
+		data = JSON.stringify(data);
+		res.send(data);
+	}
 
 	/*if (req.query.key) {
 		var temp ={

@@ -11,7 +11,11 @@
 		<script type="text/javascript" src="js/signupPage.js"></script>
 	</head>
 	<body>
-		<div class='header'>Online shopping appliction</div>
+		<div class='header'>
+
+			Online shopping appliction
+			<span class="link" style="text-align: right;" onclick="userLogout()">LOGOUT</span>
+		</div>
 		<div class="loginBlock">
 			<h4 style="text-align:center;">User login</h4>
 			<ul class="loginDetails">
@@ -24,6 +28,9 @@
 				<li>
 					<div class="link" onclick="showPage('signup')">New Signup?</div>
 					<div class="link">forgotPwd ?</div>
+				</li>
+				<li>
+					<input type="checkbox" id="remPwd"> Remember My Pwd
 				</li>
 				<li>
 					<input type="button" value="Login" onclick="validateUser()"> 

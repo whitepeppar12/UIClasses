@@ -9,6 +9,7 @@ router.get('/', function(req, res, next) {
 	mongoClient.connect(url, function(err, client){
 		var db = client.db("onlineshopping");
 		var collection = db.collection("productDetails");
+		collection.delete({id:"abc"});
 		collection.insert(req.query, function(err){
 			if (err) {
 				data.msg = "error while inserting";
