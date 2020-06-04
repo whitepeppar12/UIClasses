@@ -21,6 +21,7 @@ router.post("/", function(req, res){
 			if (items.length == 1) {
 				data.msg = "Valid";
 				req.session.isUserValid = true;
+				
 			} else {
 				data.msg = "Invalid";
 				req.session.isUserValid = false;

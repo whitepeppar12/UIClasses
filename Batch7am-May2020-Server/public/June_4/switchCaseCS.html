@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Switch case CS
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var result;
+			var firstVal = prompt("enter fidrst value");
+			var scndVal = prompt("enter second value");
+			firstVal = parseInt(firstVal);
+			scndVal = parseInt(scndVal);
+
+			var userSelection = prompt("Choose add / sub / div / mul");
+
+			/*if (userSelection == 'add') {
+				// addition
+				result = firstVal + scndVal;;
+				console.log("the sum is " + result);
+			} else if (userSelection == 'sub') {
+				// substraction
+				result = firstVal - scndVal;
+				console.log("sub is " + result);
+			} else if (userSelection == 'mul') {
+				// multipliaiton
+				result = firstVal * scndVal;
+				console.log("thes mul is " + result);
+			} else if (userSelection == 'div') {
+				// division.
+				result = firstVal / scndVal;
+				console.log("the coffitient is " + result);
+			} else {
+				console.log("its wrong selection");
+			} */
+
+			switch  (userSelection) {
+				case 'add':
+					result = firstVal + scndVal;;
+					console.log("the sum is " + result);
+					break;
+				case 'mul':
+					result = firstVal * scndVal;
+					console.log("thes mul is " + result);
+					break;
+				case 'sub':
+					result = firstVal - scndVal;
+					console.log("sub is " + result);
+					break;
+				case 'div':
+					result = firstVal / scndVal;
+					console.log("the coffitient is " + result);
+					break;
+				default: 
+					console.log("its wrong selection");
+			}
+		</script>
+	</body>
+</html>

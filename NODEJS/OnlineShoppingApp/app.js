@@ -11,8 +11,10 @@ var studentdetailsRouter = require("./routes/studentDetails");
 var loginRouter = require("./routes/loginValidation");
 var signupRouter = require("./routes/newUserSignup");
 var addPRouter = require("./routes/addProduct");
+var empRouter = require("./routes/empDetails");
 var logoutRouter = require("./routes/logout");
 var session = require("express-session");
+
 
 var app = express();
 
@@ -43,6 +45,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use("/product/details", prodDetailsRouter);
 app.use("/user/logout", logoutRouter);
+app.use("/user/empdata", empRouter);
 
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
