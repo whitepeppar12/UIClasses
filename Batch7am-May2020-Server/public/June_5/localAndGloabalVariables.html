@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Local and Global Variables
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var a, b;
+			function readUserData() { // function def , calling function
+				
+				a = prompt("enter first value");
+				b = prompt("enter second value");
+				a = parseInt(a);
+				b = parseInt(b);
+				showResult(); //calling a function
+				console.log("the result is " + result);
+			}
+
+			function showResult() { // definition of function - called function
+				var result = a + b;
+				
+			}
+
+			readUserData();
+			
+			
+		</script>
+	</body>	
+</html>

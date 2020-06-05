@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>
+			Demonstrating operations on student details.
+		</title>
+	</head>
+	<body>
+		<h3>Student details...</h3>
+		<script type="text/javascript">
+			console.log("Student details page")
+			var studentName, sGender, m1, m2, m3, m4;
+			var avg, total;
+			var grade;
+			function readStudnetData() {
+				studentName = prompt("Enter student name");
+				sAge = prompt("enter student age");
+				
+				sGender = prompt("enter student gender");
+
+				m1 = prompt("enter subj 1 marks");
+				m1 = parseInt(m1);
+
+				m2 = prompt("enter subj 2 marks");
+				m2 = parseInt(m2);
+
+				m3 = prompt("enter subj 3 marks");
+				m3 = parseInt(m3);
+
+				m4 = prompt("enter subj 4 marks");
+				m4 = parseInt(m4);
+				getTotAndAvg();
+				getGrade();
+			}
+			function getTotAndAvg(){
+				total = m1 + m2 + m3 + m4;
+				avg = total / 4;
+			}
+			function displayData() {
+				readStudnetData();
+				console.log("Student name is " + studentName);
+				console.log("Student age is", sAge);
+				console.log("Total marks " + total);
+				console.log("avg marks " + avg);
+				console.log("Grade " + grade);
+			}
+
+			function getGrade() {
+				if (avg > 40) {
+					grade = "Passed";
+					if (avg >= 90) {
+						grade = "Distinction"
+					}
+				} else {
+					grade  = "Failed";
+				}
+			}
+			displayData();
+		</script>
+	</body>
+</html>
