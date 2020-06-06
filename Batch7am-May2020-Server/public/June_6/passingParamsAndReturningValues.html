@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating passing params and returning values
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function readValues() {
+				var a, b;
+				a = prompt("enter value of a");
+				a = parseInt(a);
+				b = prompt("enter value of b");
+				b = parseInt(b);
+
+				var result = doSum(a, b);
+				console.log("the sum is " + result);
+			}
+
+			function doSum(p1, b) {
+				var result;
+				result = p1 + b;
+				return result;			
+			}
+
+			readValues(); 
+
+			/*function firstMethod() {
+				var p1= 80, p2 = 99;
+				console.log("frm first method");
+				var temp = showData();
+				console.log("value of a is " + temp);
+				console.log("main method is done");
+
+			}
+
+			function showData() {
+				var a = 90;
+				var b = 100;
+				console.log("hello");
+				return a;
+				console.log("by every one");
+			}
+
+			firstMethod(); */
+
+		</script>
+	</body>
+</html>
