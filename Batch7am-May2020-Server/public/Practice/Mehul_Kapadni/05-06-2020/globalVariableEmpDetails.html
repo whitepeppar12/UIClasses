@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        var eName, age, gender, department, basicSalary;
+        var pf, hra, totalSalary, tax;
+
+        function readUserDetails(){
+            eName = prompt("Enter Full Name:");
+            age = prompt("Enter Your Age:");
+            age = parseInt(age);
+            gender = prompt("Enter Your Gender:");
+            department = prompt("Enter Your Department:");
+            basicSalary = prompt("Enter Your Basic salary:");
+            basicSalary = parseInt(basicSalary);
+        }
+
+        function grossSalary(){
+            pf = (12/100)*basicSalary;
+            hra = (25/100)*basicSalary;
+            totalSalary = basicSalary+pf+hra;
+        }
+
+        function taxDeitals(){
+            if(gender === "male")
+            {
+                if(totalSalary>50000)
+                {
+                    tax=(15/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else if(totalSalary>30000)
+                {
+                    tax=(10/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else
+                {
+                    console.log("No tax");
+                }
+            }else if(totalSalary>50000)
+                {
+                    tax=(10/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else if(totalSalary>30000)
+                {
+                    tax=(5/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else
+                {
+                    console.log("No tax");
+                }
+        }
+
+        function displayEmpInfo(){
+        console.log("Employee Name:" +eName);
+        console.log("Employee Gender:" +gender);
+        console.log("Basic Salary:" +basicSalary);
+        console.log("Employee PF: "+pf);
+        console.log("Employee HRA: "+hra);
+        console.log("Employee Department:" +department);
+        console.log("Employee Basic Salary:"+basicSalary);
+        console.log("Employee Total Salary:"+totalSalary);
+    }
+
+    readUserDetails();
+    grossSalary();
+    displayEmpInfo();
+    taxDeitals();
+    </Script>
+</body>
+</html>
