@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Taxation</title>
+		<script type="text/javascript">
+			var empName = "shiva";
+			var empAge = 23;
+			var gender = "Male";
+			var basicSal = 45000;
+			var pf = (12 * basicSal) / 100;
+			var hra = (15 * basicSal) / 100;
+			var totalSal = basicSal + pf + hra;  
+			var taxPercent = 0;
+			if (gender == "Male") {
+				if (totalSal > 50000) {
+					taxPercent = 15;	
+				}
+				else if (totalSal > 30000) {
+					taxPercent = 10;
+				}
+			}else{
+				if (totalSal > 50000) {
+					taxPercent = 10;
+				}
+				else if (totalSal > 30000) {
+					taxPercent = 5;
+				}
+			}
+			var taxValue = (totalSal * taxPercent) / 100;
+			console.log("Employee Name is " +empName);
+			console.log("Employee Age is " + empAge);
+			console.log("Gender is " +gender);
+			console.log("Employee total salary is " + totalSal);
+			console.log("Employee Tax value is " +taxValue);
+		</script>
+	</head>
+	<body>
+		<h3>Employee Taxation...</h3>
+	</body>
+</html>
