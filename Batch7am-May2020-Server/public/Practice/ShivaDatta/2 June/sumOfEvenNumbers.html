@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>sum of even numbers</title>
+		<script type="text/javascript">
+			var startPoint =prompt("Enter starting point");
+			startPoint = parseInt(startPoint);
+			var endPoint =prompt("Enter ending point");
+			endPoint = parseInt(endPoint);
+			var sum = 0;
+			for (var i = startPoint; i <= endPoint; i++) {
+				if (i % 2 == 0){
+					sum = sum + i;
+				}
+			}
+			console.log("Sum of even numbers from startPoint"+startPoint+" to endPoint "+endPoint+" :" + sum);
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>
