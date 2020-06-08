@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			DEmonstrating arrays DS
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var sname = "PRasad";
+			var age = 50;
+			var gender = "Male";
+
+			//var marks = new Array(10)
+			var marks = [90, 89, 99, 100, 12, 56, 67, 89];
+			console.log(marks);
+			console.log("length is " + marks.length);
+			
+			// var total = marks[0] + marks[1] + marks[2] + marks[3];
+			var total = 0;
+			for (var i = 0; i < marks.length; i++) {
+				total = total + marks[i];
+			}
+
+			var avg = total / marks.length;
+			console.log("the name is " + sname);
+			for (var i = 0; i < marks.length; i++) {
+				console.log("subject  " +  (i + 1) + " marks " + marks[i]);
+			}
+			console.log("Total is" + total);
+			console.log("Avg is " + avg);
+		</script>
+	</body>	
+</html>

@@ -1,0 +1,23 @@
+.charCodeAt(<index>) - Returns the ASCII value of chareter which is at given position
+
+
+.substr(startindex, length) - To find the substring from givn string
+
+
+.charAt(<index>) - Returns the charecter at given position
+
+.split(<optional seperator>) - splipts the given string as an array, with provided seperator
+
+
+
+.includes("<string>") - checks if teh provided string exists in given string or not.
+
+.replace("what", "with") - Used to replace some occurence of strings with given string
+
+.slice(start, totalnoofvalues) - Used to find the substring
+
+.indexOf("Charrecter") - Used to find the index of given string/charecter
+
+.tolowercae() & .touppercase() - Used to convert string to lowercase/upercase
+
+etc.

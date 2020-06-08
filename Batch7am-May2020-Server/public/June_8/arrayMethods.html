@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Array methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var data = [34, 56, 67, 89, 90, 124, 56,78, 99];
+
+			console.log(data);
+
+			data.push(100);
+
+			console.log(data);
+
+			data.unshift(101);
+
+			console.log(data);
+			//---------------
+
+			data.pop();
+			console.log(data);
+
+			data.shift();
+			console.log(data);
+			//---------------
+
+			data.splice(2, -1, 200, 120, 231);
+			console.log(data);
+
+			//----
+
+			console.log(data.join("  "));
+
+
+
+		</script>
+	</body>
+</html>
