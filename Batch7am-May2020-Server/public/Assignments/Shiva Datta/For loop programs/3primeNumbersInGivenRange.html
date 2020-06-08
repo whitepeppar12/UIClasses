@@ -1,0 +1,25 @@
+<html>
+	<head>
+	<title>Display prime numbers</title>
+	</head>
+	<script type="text/javascript">
+
+	var startNum = parseInt(prompt("Enter start number:"));
+	var endNum = parseInt(prompt("Enter end number:"));
+	var count = 0;
+		for (var j = startNum ; j <= endNum; j++) {
+				count=0;
+			for(var i = 1; i <= j; i++){
+					if(j % i == 0){
+						count++;
+					}
+			}
+			if(count == 2){
+			 		console.log("The prime is " +j);
+			}
+		}
+	</script>
+	<body>
+		<h2>Prime Number in given range ....</h2>
+	</body>
+</html>
