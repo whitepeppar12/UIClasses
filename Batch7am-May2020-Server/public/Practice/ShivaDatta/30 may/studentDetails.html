@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Student Details</title>
+		<script type="text/javascript">
+			var studentName = prompt("Enter your name");
+			var age = prompt("Enter your age");
+			var s1 = prompt("Enter your Subject 1 marks");
+			s1 = parseInt(s1);
+			var s2 = prompt("Enter your Subject 2 marks");
+			s2 = parseInt(s2);
+			var s3 = prompt("Enter your Subject 3 marks");
+			s3 = parseInt(s3);
+			var s4 = prompt("Enter your Subject 4 marks");
+			s4 = parseInt(s4);
+			var total = s1 + s2 + s3 + s4;
+			var avg = total / 4;
+
+			console.log("Student name is "+studentName);
+			console.log("Student age is "+ age);
+			console.log("Subject 1 marks :"+ s1);
+			console.log("Subject 2 marks :"+ s2);
+			console.log("Subject 3 marks :"+ s3);
+			console.log("Subject 4 marks :"+ s4);
+			console.log("Total marks : "+total);
+			console.log("Average marks :"+avg);
+
+			if (avg >= 40) {
+				if (avg >= 90) {
+						console.log("Student is execellent");
+				}else{
+					console.log("Student is Passed");
+					}
+			}else{ 
+				console.log("Student is Failed");
+			}
+		</script>
+	</head>
+	<body>
+		<h3>Student Details</h3>
+	</body>
+</html>

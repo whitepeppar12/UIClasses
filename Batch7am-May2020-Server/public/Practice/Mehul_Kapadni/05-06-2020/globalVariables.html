@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        var a, b;
+        var result;
+        function readUserData(){
+            a= prompt("enter the first number");
+            a= parseInt(a);
+            b= prompt("enter the second number");
+            b= parseInt(b);
+        }
+        function calculate()
+        {
+            result = a+ b;
+            console.log("result:" +result);
+        }
+
+        readUserData();
+        calculate();
+    </Script>
+</body>
+</html>
