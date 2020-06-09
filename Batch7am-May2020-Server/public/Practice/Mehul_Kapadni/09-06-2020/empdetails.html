@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        
+        function readUserDetails(){
+            var eName, age, gender, department, basicSalary;
+            var pf, hra, totalSalary, tax;
+            eName = prompt("Enter Full Name:");
+            age = prompt("Enter Your Age:");
+            age = parseInt(age);
+            gender = prompt("Enter Your Gender:");
+            department = prompt("Enter Your Department:");
+            basicSalary = prompt("Enter Your Basic salary:");
+            basicSalary = parseInt(basicSalary);
+            var gSalary = grossSalary(basicSalary);
+            pf = gSalary[0];
+            hra = gSalary[1];
+            totalSalary = gSalary[2];
+            taxDeitals(gender, totalSalary);
+            var data = [eName, gender, age, pf, hra, department, basicSalary, totalSalary];
+            return data;
+            
+        }
+
+        function grossSalary(basicSalary){
+            var pf, hra, totalSalary;
+            pf = (12/100)*basicSalary;
+            hra = (25/100)*basicSalary;
+            totalSalary = basicSalary+pf+hra;
+            var data = [pf, hra, totalSalary];
+            return data;
+
+        }
+
+        function taxDeitals(gender, totalSalary){
+            var tax;
+
+            if(gender === "male")
+            {
+                if(totalSalary>50000)
+                {
+                    tax=(15/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else if(totalSalary>30000)
+                {
+                    tax=(10/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else
+                {
+                    console.log("No tax");
+                }
+            }else if(totalSalary>50000)
+                {
+                    tax=(10/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else if(totalSalary>30000)
+                {
+                    tax=(5/100)*totalSalary;
+                    console.log("Applicable tax is:" +tax);
+
+                }
+                else
+                {
+                    console.log("No tax");
+                }
+        }
+        function displayEmpInfo(){
+        var details = readUserDetails();
+        console.log("Employee Name:" +details[0]);
+        console.log("Employee Gender:" +details[1]);
+        console.log("Employee Age:" +details[2]);
+        console.log("Employee PF: "+details[3]);
+        console.log("Employee HRA: "+details[4]);
+        console.log("Employee Department:" +details[5]);
+        console.log("Employee Basic Salary:"+details[6]);
+        console.log("Employee Total Salary:"+details[7]);
+    }
+
+    displayEmpInfo();
+    
+   
+    </Script>
+</body>
+</html>

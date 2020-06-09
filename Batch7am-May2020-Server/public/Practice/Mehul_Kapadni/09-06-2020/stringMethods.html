@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var msg = "Good Morning Everyone";
+        console.log(msg);
+
+        console.log(msg.length);
+        console.log(msg.substr(5,8)); //start index, and number of  char
+        console.log(msg.slice(5,8));// start index, end index
+        console.log(msg.charAt(5));
+        console.log(msg.charCodeAt(3));
+        console.log(msg.split(" ")[2]);
+        console.log(msg.includes("Good")); //it will return either true or false
+        console.log(msg.replace(" ", "-")); //it will replace only first occurance 
+        console.log(msg.replace(/ /g,"-")); //to replace all 
+        console.log(msg.indexOf("M"));
+
+
+    </script>
+</body>
+</html>

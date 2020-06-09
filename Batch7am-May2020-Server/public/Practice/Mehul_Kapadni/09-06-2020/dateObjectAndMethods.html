@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sysDate = new Date();
+        console.log(sysDate);
+        document.write(sysDate);
+        var day = ["Sunday","Monday","Tuesday","Wednesday"];
+
+        console.log(sysDate.getDate());
+        console.log(sysDate.getDay());
+        
+        var dateIndex = sysDate.getDay();
+        console.log(day[dateIndex]);
+
+        console.log(sysDate.getMonth());
+        console.log(sysDate.getFullYear());
+        console.log(sysDate.getHours());
+        console.log(sysDate.getMinutes());
+        console.log(sysDate.getSeconds());
+        console.log(sysDate.getMilliseconds());
+
+
+    </script>
+</body>
+</html>
