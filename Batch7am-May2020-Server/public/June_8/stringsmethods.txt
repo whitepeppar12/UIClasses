@@ -6,7 +6,7 @@
 
 .charAt(<index>) - Returns the charecter at given position
 
-.split(<optional seperator>) - splipts the given string as an array, with provided seperator
+.split(<optional seperator>) - splits the given string as an array, with provided seperator
 
 
 

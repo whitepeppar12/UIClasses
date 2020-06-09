@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<title>
+			Demonstrating operations on student details.
+		</title>
+	</head>
+	<body>
+		<h3>Student details...</h3>
+		<script type="text/javascript">
+			
+			function readStudnetData() {
+				var studentName, sGender, marks = [];
+				var grade;
+				studentName = prompt("Enter student name");
+				sAge = prompt("enter student age");
+				
+				sGender = prompt("enter student gender");
+				for (var i = 0 ; i < 5; i++) {
+					marks[i] = prompt("enter subj " + (i + 1) + "marks");
+					marks[i] = parseInt(marks[i]);
+				}
+				var result = getTotAndAvg(marks, sGender);
+				var avg = result[0];
+				var total = result[1];
+				var grade = getGrade(avg);
+				var fullDetails = [studentName, sAge, total, avg, grade];
+				return fullDetails;
+			}
+			function getTotAndAvg(marks, gender) {
+				var avg, total = 0;
+				for (var i = 0 ; i < marks.length; i++) {
+					total += marks[i];
+				}
+				avg = total / 4;
+				var data = [avg, total];
+				return data;
+			}
+			function displayData() {
+				var data = readStudnetData();
+
+				console.log("Student name is " + data[0]);
+				console.log("Student age is", data[1]);
+				console.log("Total marks " + data[2]);
+				console.log("avg marks " + data[3]);
+				console.log("Grade " + data[4]);
+			}
+
+			function getGrade(avg) {
+				if (avg > 40) {
+					grade = "Passed";
+					if (avg >= 90) {
+						grade = "Distinction"
+					}
+				} else {
+					grade  = "Failed";
+				}
+				return grade;
+			}
+			displayData();
+
+			function otherschoolmethod() {
+				grade
+			}
+		</script>
+	</body>
+</html>

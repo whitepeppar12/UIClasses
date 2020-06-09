@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			String methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			var data = "prasad$$50$$hyderabad$$ABC$$Testclg";
+
+			console.log(data.split('$$'))
+
+
+			var msg = "Good morning every one";
+			console.log(msg);
+			console.log(msg.length);
+			console.log(msg.substr(3, 8)); // startindex,  total no. of chars
+			console.log(msg.slice(3, 8)); // startindex, end index
+			console.log(msg.charAt(3));
+
+			console.log(msg.charCodeAt(5));
+
+			//console.log(msg.split('o'));
+
+			console.log(msg.includes("one"))
+			console.log(msg.replace(/good/ig, "@@"));
+
+			console.log(msg.indexOf("one"));
+			/*var marks = 23.45;
+			console.log(typeof(marks));
+			marks = marks.toString()
+			console.log(typeof(marks)); */
+
+
+		</script>
+	</body>
+</html>
