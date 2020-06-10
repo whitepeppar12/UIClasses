@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Functions as variables.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			console.log("hello every one");
+			var count = 0;
+
+
+			/*setTimeout(function() {  
+				console.log("welcome to our webpage");
+				console.log("thx for choosing our page for registration"); 
+			} , 5000); */
+
+			var msgInrtl = setInterval(function() {  
+				count++;
+				console.log("welcome to our webpage");
+				console.log("thx for choosing our page for registration " + count); 
+				if (count == 5) {
+					clearInterval(msgInrtl)
+				}
+			} , 3000);
+
+			console.log("bye for today");
+
+
+		</script>
+	</body>
+</html>
