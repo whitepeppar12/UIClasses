@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Student and emp details
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*var empName = "Teena";
+			var empDep = "IT";
+			var empSal = 30000;
+
+			var sDetails = ["Raj", "Male", 20, [34, 56, 90, 67], 0, 0];
+				
+			console.log("studen deails");
+
+			for (var i = 0 ; i < sDetails[3].length; i++) {
+				sDetails[4] += sDetails[3][i];
+			}
+			sDetails[5] = sDetails[4]/sDetails[3].length;
+			console.log("Name s " + sDetails[0]);
+			console.log("age " + sDetails[1]);
+			console.log("total " + sDetails[4]);
+			console.log("AVG " + sDetails[5]);
+
+			console.log("emp details");
+			console.log("Emp name " + empName);
+			console.log("Department " + empDep);
+			console.log("Sal " + empSal);
+
+			*/
+			var empName = "Teena";
+			var empDep = "IT";
+			var empSal = 30000;
+
+			// var sDetails = ["Raj", "Male", 20, [34, 56, 90, 67], 0, 0];
+			var sDetails = {
+				gender: "Male",
+				"name": "Raj",				
+				'age': 20,
+				
+				"total": 0,
+				"avg": 0,
+				marks: [34, 56, 90, 67]
+			};			
+			console.log("studen deails");
+
+			for (var i = 0 ; i < sDetails.marks.length; i++) {
+				sDetails.total += sDetails.marks[i];
+			}
+			sDetails.avg = sDetails.total/sDetails.marks.length;
+			console.log("Name s " + sDetails.name);
+			console.log("age " + sDetails.age);
+			console.log("total " + sDetails.total);
+			console.log("AVG " + sDetails.avg);
+
+			console.log("emp details");
+			console.log("Emp name " + empName);
+			console.log("Department " + empDep);
+			console.log("Sal " + empSal);
+		</script>
+	</body>
+</html>

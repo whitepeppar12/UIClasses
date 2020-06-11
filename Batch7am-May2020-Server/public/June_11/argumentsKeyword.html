@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			function addValues() {
+				//arguments
+				console.log(arguments);
+				console.log("fun is called")
+				var result = 0;
+				for (var i = 0; i < arguments.length; i++) {
+					result = result + arguments[i];
+				}				
+				console.log("the sum is " + result);
+			}
+
+			function test() {
+				console.log(arguments);
+			}
+
+			addValues(23, 45,7,8,9,90);
+			test();
+
+		</script>
+	</body>
+</html>
