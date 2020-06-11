@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Assignment on Date object and methods...
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var cdate = new Date();
+
+			var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+			var lngMonths = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			//console.log(cdate);
+
+			console.log(cdate.getDate());
+			console.log(cdate.getMonth());
+			console.log(cdate.getFullYear());
+
+			var dayIndex = cdate.getDay();
+			var dateIndex = cdate.getDate();
+			var MonthIndex = cdate.getMonth();
+			var YearIndex = cdate.getFullYear();
+            var YearTwoN = YearIndex.toString().slice(2, 3);
+            console.log(typeof(YearIndex.toString()));
+
+		    console.log("Date Format (MM/DD/YYYY) : "+ (MonthIndex+1) +"/"+ dateIndex +"/"+ YearIndex);
+			console.log("Date Format (DD/MM/YYYY) : "+ dateIndex +"/"+ (MonthIndex+1) +"/"+ YearIndex);
+			console.log("Date Format (DD/MM/YYYY) : "+ dateIndex +"/"+ (MonthIndex+1) +"/"+ YearIndex.toString().slice(2, 4));
+			console.log("Date Format (MM/DD/YYYY) : "+ days[dayIndex] +", "+ lngMonths[MonthIndex] +" "+ dateIndex +"th "+ YearIndex);
+			console.log("Date Format (MM/DD/YYYY) : "+ lngMonths[MonthIndex] +" "+ dateIndex +"th "+ YearIndex);
+			//console.log(days[dayIndex]);
+
+			//console.log(cdate.getMonth())
+			//Sun mon tue wed
+			//0    1   2   3
+
+			//console.log(cdate.getMinutes())
+		</script>
+	</body>
+</html>
