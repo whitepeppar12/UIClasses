@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        
+        empDetails = {
+            eName : "Mehul Kapadni",
+            age : 29,
+            gender : "Male",
+            department : "Analytics",
+            basicSalary : 60000,
+            pf : 0,
+            hra : 0,
+            totalSalary : 0,
+            tax : 0
+        }
+
+            empDetails.pf = (12/100)*empDetails.basicSalary;
+            empDetails.hra = (25/100)*empDetails.basicSalary;
+            empDetails.totalSalary = empDetails.basicSalary+empDetails.pf+empDetails.hra;
+            
+         
+        console.log("Employee Name:" +empDetails.eName);
+        console.log("Employee Gender:" +empDetails.age);
+        console.log("Employee Age:" +empDetails.gender);
+        console.log("Employee PF: "+empDetails.department);
+        console.log("Employee HRA: "+empDetails.basicSalary);
+        console.log("Employee Department:" +empDetails.department);
+        console.log("Employee Basic Salary:"+empDetails.basicSalary);
+        console.log("Employee Total Salary:"+empDetails.totalSalary);
+
+        if(empDetails.totalSalary>50000)
+        {
+            empDetails.tax=(15/100)*empDetails.totalSalary;
+            console.log("Applicable tax is:" +empDetails.tax);
+        }
+        else if(empDetails.totalSalary>30000)
+        {
+            empDetails.tax=(10/100)*empDetails.totalSalary;
+            console.log("Applicable tax is:" +empDetails.tax);
+        }
+        else
+        {
+            console.log("No tax");
+        }
+   
+    </Script>
+</body>
+</html>

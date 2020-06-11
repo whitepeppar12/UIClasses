@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count = 0;
+        console.log("*******Hello EveryOne ********");
+
+        var interval = setInterval(function(){
+        count++;
+        console.log("Thank you attending th course" +count);
+        if(count==5){
+            clearInterval(interval);
+        }
+        }, 3000); //callback function passed as a parameter
+
+        console.log("Take Care All")
+    </script>
+</body>
+</html>

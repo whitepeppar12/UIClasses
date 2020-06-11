@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+
+        var details = ["Mehul", 29,"Male",[56,78,67],0,0];
+
+        for(var i=0;i<details[3].length;i++)
+        {
+            details[4] +=details[3][i];
+        }
+
+        details[5]=details[4]/details[3].length;
+
+        console.log("Name:" +details[0]);
+        console.log("Age:" +details[1]);
+        console.log("Gender:" +details[2]);
+        console.log("Total:" +details[4]);
+        console.log("Avg:" +details[5]);
+    </Script>
+</body>
+</html>
