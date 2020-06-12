@@ -1,0 +1,93 @@
+<html lang="en">
+ <head>
+	<h1> Java script Example Json Object</h1>
+ </head>
+ <body>
+ </body>
+	<script  type="text/javascript">
+		var empData = {
+                "empName" : "raj",
+                empAge : 26,
+                "empGender": "Male",
+                "empDept": "Security",
+                "empBasicSalary": 51000
+			};
+		var empPf,empHra,empTotalSalary,empTax,empTaxPer,EmpSaleryDeduction;
+
+		empPf = (empData.empBasicSalary * 12)/100;
+		empHra = (empData.empBasicSalary * 25)/100;
+		empTotalSalary = empData.empBasicSalary + empPf + empHra;
+		if(empData.empGender == 'Male')
+		{
+			if(empTotalSalary > 50000)
+			{
+				empTax = (empTotalSalary * 15)/100;
+				empTaxPer = 15;
+			}else if(empTotalSalary > 30000)
+			{
+				empTax = (empTotalSalary * 10)/100;
+				empTaxPer = 10;
+			}else 
+			{
+				empTax = 0;
+				empTaxPer = 0;
+			}
+		}
+		//alert(empTax);
+		EmpSaleryDeduction = empTotalSalary - empTax;
+		console.log("================================================================");		
+		console.log("The Employee Name is : " +empData.empName );
+		console.log("Age : " +empData.empAge);
+		console.log("Gneder : " +empData.empGender);
+		console.log("Department : " +empData.empDept);
+		console.log("Basic Salary : " +empData.empBasicSalary); 
+		console.log("PF : " + empPf);
+		console.log("HRA : " + empHra);
+		console.log("Total Salary : " + empTotalSalary);
+		console.log("Total TAX Amount : " + empTax + " With TAX(" +empTaxPer+"%)");
+		console.log("Total Salary After Deducting Tax : " + EmpSaleryDeduction);
+		console.log("================================================================");
+		
+		/*var empNameF = 'Ankita'
+		var empAgeF = 22;
+        var empGenderF = 'Female';
+		var empDeptF = 'Accounts';
+		var empBasicSalaryF = 51000;
+		var empPfF,empHraF,empTotalSalaryF,empTaxF,empTaxPerF,EmpSaleryDeductionF;
+
+		empPfF = (empBasicSalaryF * 12)/100;
+		empHraF = (empBasicSalaryF * 25)/100;
+		empTotalSalaryF = empBasicSalaryF + empPfF + empHraF;
+		if(empGenderF == 'Female')
+		{
+			if(empTotalSalaryF > 50000)
+			{
+				empTaxF = (empTotalSalaryF * 10)/100;
+				empTaxPerF = 10;
+			}else if(empTotalSalaryF > 30000)
+			{
+				empTaxF = (empTotalSalaryF * 5)/100;
+				empTaxPerF = 5;
+			}else 
+			{
+				empTaxF = 0;
+				empTaxPerF = 0;
+			}
+		}
+		console.log("================================================================");		
+		EmpSaleryDeductionF = empTotalSalaryF - empTaxF;
+		console.log("The Employee Name is : " + empNameF );
+		console.log("Age : " +empAgeF);
+		console.log("Gneder : " +empGenderF);
+		console.log("Department : " +empDeptF);
+		console.log("Basic Salary : " + empBasicSalaryF); 
+		console.log("PF : " + empPfF);
+		console.log("HRA : " + empHraF);
+		console.log("Total Salary : " + empTotalSalaryF);
+		console.log("Total TAX Amount : " + empTaxF + " With TAX(" +empTaxPerF+"%)");
+		console.log("Total Salary After Deducting Tax : " + EmpSaleryDeductionF);
+		console.log("================================================================");		
+		*/
+
+  </script>
+</html>
