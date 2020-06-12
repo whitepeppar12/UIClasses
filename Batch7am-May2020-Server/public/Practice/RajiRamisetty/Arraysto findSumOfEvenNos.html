@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		To find sum of even numbers using arrays
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var data = [];
+		var n = prompt("enter the max no of values");
+		n = parseInt(n);
+		for(i = 0; i< n; i++) {
+			data[i] = prompt("enter value for position"+ (i+1));
+			data[i] = parseInt(data[i]);
+		}
+		var sum = 0;
+		for(i = 0; i< n; i++) {	
+			if(data[i] % 2 == 0){
+				sum = sum + data[i];
+			}
+		}
+		console.log("sum is"+ sum);
+	</script>
+</body>
+</html>
