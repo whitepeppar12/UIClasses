@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var details = {
+            "name" : "Mehul",
+            "age"  : 29,
+            "gender" : "Male",
+            "location" : "Pune",
+            "marks" : [67,78,89],
+            total : 0,
+            avg : 0
+        }
+
+        for(var i=0;i<details.marks.length;i++)
+        {
+            details.total +=details.marks[i]; 
+        }
+        
+        details.avg = details.total/details.marks.length;
+        console.log("Name:" +details.name);
+        console.log("Age:" +details.age);
+        console.log("Gender:" +details.gender);
+        console.log("Location:" +details.location);
+        console.log("Total:" +details.total);
+        console.log("Avg:" +details.avg);
+        
+    </script>
+</body>
+</html>

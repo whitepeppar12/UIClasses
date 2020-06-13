@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        function addtion() //not passed parameters still we will able to execute functon using "ARGUMENTS"
+        {
+            console.log(arguments);
+            var results = 0;
+            for(var i=0;i<arguments.length;i++)
+            {
+                results = results+arguments[i];
+            }
+            console.log("Sume Is:" +results);
+        }
+
+        addtion(10,11,13,14);
+    </Script>
+</body>
+</html>

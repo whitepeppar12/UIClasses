@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        var contactDetails = {
+            name: "Mehul Kapadni",
+            address: {
+                officeAddress: {
+                    pin: 411021,
+                    doorNo: "A407/Pebbles",
+                    nationality: "Indian"
+
+                },
+                personalAddress: {
+                    doorNo:"A1002/Pebbels",
+                    location:"Pune",
+                    country: "India"
+                }
+            },
+            contactNo: {
+                officeNO: +910207749730,
+                personal: [9922000000, 8989890000, 7878789090]
+
+            },
+            mailId: {
+                official: "mehul.kapadni@abc.com",
+                personalEmail: ["mehul.kapadni@gmail.com","mehul.kapadni@yahoo.com"]
+            },
+            nationality: "Indian",
+            dob: {
+                month: 12,
+                day: 02,
+                year: 1999
+            },
+            SocialId: {
+                facebook: "mehul.kapadni",
+                twitter: "mk02d99",
+                linkedin: "mdk1999"
+            }
+        }
+
+        for(temp in contactDetails){
+            console.log(contactDetails[temp]);
+        }
+    </Script>
+</body>
+</html>

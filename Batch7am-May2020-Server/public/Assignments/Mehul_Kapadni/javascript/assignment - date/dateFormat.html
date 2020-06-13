@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var userInput = prompt("Enter Your Choice:");
+        userInput = parseInt(userInput);
+
+        // function uDate(){
+        // var userDate = new Date();
+        // var dd = userDate.getDay();
+        // var mm = userDate.getMonth()+1;
+        // var yyyy = userDate.getFullYear();
+        // var fdate = [dd,mm,yyyy];
+        // return fdate
+        // }
+
+    switch(userInput) {
+        case 1:
+        var userDate = new Date();
+        var dd = userDate.getDate();
+        var mm = userDate.getMonth()+1;
+        var yyyy = userDate.getFullYear();
+        console.log("MM/DD/YY::" +mm+"/"+dd+"/"+yyyy);
+        break;
+        
+        case 2:
+        var userDate = new Date();
+        var dd = userDate.getDate();
+        var mm = userDate.getMonth()+1;
+        var yyyy = userDate.getFullYear();
+        console.log("DD/MM/YY::" +dd+"/"+mm+"/"+yyyy);           
+        break;
+
+        case 3:
+        var userDate = new Date();
+        var dd = userDate.getDate();
+        var mm = userDate.getMonth()+1;
+        var yyyy = userDate.getFullYear();
+        console.log("DD-MM-YY::" +dd+"-"+mm+"-"+yyyy);           
+        break;
+
+        case 4:
+        var userDate = new Date();
+        var dd = userDate.getDate();
+        var mm = userDate.getMonth()+1;
+        var yyyy = userDate.getFullYear();
+        var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+        var dayName = days[userDate.getDay()];
+        var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        var mm = months[userDate.getMonth()];
+        console.log("Day, Month Date Year::" +dayName+ ","+mm+" "+dd+" "+yyyy);           
+        break;
+
+        case 5:
+        var userDate = new Date();
+        var dd = userDate.getDate();
+        var mm = userDate.getMonth()+1;
+        var yyyy = userDate.getFullYear();
+        var months = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
+        var mm = months[userDate.getMonth()];
+        console.log("Month Date Year::"+mm+" "+dd+" "+yyyy);           
+        break;
+
+  default:
+        console.log("Not Executed");
+}
+    </script>
+</body>
+</html>
