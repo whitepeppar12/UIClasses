@@ -1,0 +1,45 @@
+Following are predefined methods supported under "document" object, through which we could able to refer any DOM element with in the page.
+
+document.getElementById("<id of element>") - Returns the reference of any element having the specified id.
+
+document.getElementByTagName("tag name") - Returns the list of all the tags having the provided name.
+
+document.getEleemntByClassName("<class name>") - Returnst the reference of list of all elements having provided class name.
+
+
+-----
+
+document.querySelector("<pattern>") - A method been supported from HTML5, through which we could able to refer any DOM element with any pattern (classname, tagname, id etc);
+
+	eg:
+
+		document.querySelector("#abc") - Retruns reference of dom element with id abc
+
+
+		document.querySelector(".abc") - Retruns reference of dom element with class name abc
+
+		document.querySelector("abc") - Retruns reference of dom element with tagname abc
+
+		document.querySelectorAll(".abc") - Returns an array of elemnts having class name as abc.
+
+		document.querySelector("#abc.pqr") - Returns an element having id as abc and it also has a class 'pqr'
+
+		document.querySelector("div .abc") - REturns all teh elements with class name as abc, but should be children of div tag.
+		etc.
+
+Following are predefined methods been supported on document object, through which refered dom elements can be operated.
+
+
+	element.getAttribute("attr name") - Returns the corresponding value of an attribute
+
+	element.setAttribute("atrname", "value") - Sets a new attribute along with value.
+
+	element.innerHTML -> Through which we can either set or get the inner html value of an element.
+
+	element.innerText - Through which we can either set or get teh inner text value of an element.
+
+	element.append(<othe element>) - Through which we can append any element as child to other element.
+
+	element.style -> through which we could refer any css propertyof any element.
+
+	

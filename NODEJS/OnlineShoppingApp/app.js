@@ -21,6 +21,27 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+var filename;
+var storage =   multer.diskStorage({
+  destination: function (req, file, callback) {
+    callback(null, './uploads');
+  },
+  filename: function (req, file, callback) {
+     filename = file.fieldname + '-' + Date.now() + '.jpg';
+    callback(null, file.fieldname + '-' + Date.now() + '.jpg');
+  }
+});
+var upload = multer({ storage : storage}).single('streamfile');
+
+app.post('/uploadProfilePicture',function(req,res){
+    upload(req,res,function(err) {
+        if(err) {
+          console.log(err);
+            return res.end("Error uploading file.");
+        }
+        res.end("File is uploaded" + filename);
+    });
+});
 
 /*app.post('/fileupload', upload.single('streamfile'), function (req, res) {
     console.log('req.file', req.file);

@@ -5,7 +5,7 @@
 	<script type="text/javascript" src="js/lib/jquery.js"></script>
 </head>
 <body>
-	<form action="/fileupload123" method="post" enctype="multipart/form-data">
+	<form action="/uploadProfilePicture123" method="test" enctype="multipart/form-data">
 		<li>Enter product Name: <input type="text" name="pname"></li>
 			<li>Enter product price: <input type="text" name="price"></li>
     <input type="file" name="streamfile">
@@ -18,9 +18,9 @@
         console.log(formData);
         formData.append("streamfile", uploadfile);
 
-        console.log('uploadfile', uploadfile, uploadfile.type);
+       
 
-        var localurl = '/fileupload'
+        var localurl = '/uploadProfilePicture'
         $.ajax({ 
             url: localurl,  // googleCloud
             data: formData, 
@@ -29,7 +29,10 @@
             type: 'POST', 
             success: function(data){ 
                 console.log('response data', data);
-            } 
+            }, error: function(err){
+                console.log("err");
+                console.log(err);
+            }
         });
     });
 </script>
