@@ -15,6 +15,16 @@ var empRouter = require("./routes/empDetails");
 var logoutRouter = require("./routes/logout");
 var session = require("express-session");
 
+const Cryptr = require('cryptr');
+const cryptr = new Cryptr('helloeveryoneaskjdfhaksjdfhaskdfjhasldkfjahlsdfkj');
+ 
+const encryptedString = cryptr.encrypt('india');
+const decryptedString = cryptr.decrypt(encryptedString);
+
+console.log("encripted");
+console.log(encryptedString);
+console.log("decript " + decryptedString)
+
 
 var app = express();
 
@@ -22,24 +32,31 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 var filename;
+
 var storage =   multer.diskStorage({
   destination: function (req, file, callback) {
-    callback(null, './uploads');
+    callback(null, './public/uploads');
   },
   filename: function (req, file, callback) {
      filename = file.fieldname + '-' + Date.now() + '.jpg';
     callback(null, file.fieldname + '-' + Date.now() + '.jpg');
   }
 });
-var upload = multer({ storage : storage}).single('streamfile');
+
+
+var upload = multer({ storage : storage}).single('prodImage');
 
 app.post('/uploadProfilePicture',function(req,res){
-    upload(req,res,function(err) {
+    upload(req, res, function(err) {
         if(err) {
           console.log(err);
             return res.end("Error uploading file.");
         }
-        res.end("File is uploaded" + filename);
+        var data = {
+          msg: "success",
+          imageUrl: '/uploads/' + filename
+        }
+        res.send(JSON.stringify(data));
     });
 });
 

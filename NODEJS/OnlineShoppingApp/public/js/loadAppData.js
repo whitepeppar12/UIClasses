@@ -39,6 +39,7 @@ var showProductDetails = (pDetails) => {
 }
 
 function validateUser() {
+	alert("test")
 	var userDetails = {};
 	userDetails.id = $("#uid").val();
 	userDetails.pwd = $("#upwd").val();
@@ -49,9 +50,7 @@ function validateUser() {
 	} else {
 		localStorage.removeItem("userDetails")
 	}
-	return;
 
-	console.log(userDetails);
 	var loginReq = $.ajax({
 		url: 'http://localhost:8081/data/validation',
 		dataType: 'JSON',

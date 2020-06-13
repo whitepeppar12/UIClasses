@@ -16,7 +16,12 @@
 			<li>Enter manufacturer: <input type="text" id="manufacturer"></li>
 			<li>Enter discount: <input type="text" id="discount"></li>
 			<li>Enter Seller name: <input type="text" id="sname"></li>
-			<li>Enter product image url: <input type="text" id="imgurl"></li>
+			<li>
+				<form enctype="multipart/form-data" >
+					<input type="file"   name="prodImage"> <input type="button" value="upload Image" id="filesubmit" onclick="uploadImage()">
+				</form>
+			</li>
+			<li style="display:none;">Enter product image url: <input type="text" id="imgurl"></li>
 			<li>
 				<input type="button" class="btn btn-primary" value="Add product" onclick="readProductData()">
 			</li>
