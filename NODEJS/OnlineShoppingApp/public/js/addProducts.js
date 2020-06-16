@@ -26,6 +26,8 @@ function uploadImage() {
 	var uploadfile = $("input[name=prodImage]")[0].files[0];
     var formData = new FormData();    
     formData.append("prodImage", uploadfile);
+
+
     var uploadImageWebService = '/uploadProfilePicture'
     $.ajax({ 
         url: uploadImageWebService, 
@@ -43,4 +45,6 @@ function uploadImage() {
             console.log(err);
         }
     });
+
+    
 }

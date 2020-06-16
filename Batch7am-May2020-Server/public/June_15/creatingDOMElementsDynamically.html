@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Creating DOM Elements dynamically.
+		</title>
+
+	</head>
+	<body>
+		<h4>
+			Demonstrating Dynamic elements through js
+		</h4>
+		<div id="container" class="abc">
+			
+		</div>
+		
+		<script type="text/javascript">
+			var a = 20;
+			var b = 30;
+			var result = a + b; 
+			var divTag = document.createElement("div");
+			
+			divTag.setAttribute("id", "sample");
+			divTag.setAttribute("class", "test");
+
+			divTag.innerHTML = "The sum of two numbers is " + result;
+			divTag.style.background = "green";
+			divTag.style.color = "yellow";
+
+			console.log(divTag);
+
+			// document.getElementByTagName("div")
+			// document.getElementByClassname("abc")
+
+			document.getElementById("container").append(divTag);
+
+
+
+		</script>
+	</body>
+</html>

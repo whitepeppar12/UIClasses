@@ -1,0 +1,33 @@
+li {
+	list-style: none;
+	border: 1px solid;
+	margin: 3px;
+	padding: 3px;
+	background: #fff;
+}
+
+.details {
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+	width: 300px;
+	float: left;
+}
+img {
+	width: 150px;
+	height: 150px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	border: 1px solid;
+	color: green;
+	margin: 5px;
+	padding: 3px;
+	text-align: center;
+	font-weight: bold;
+}
