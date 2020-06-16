@@ -1,0 +1,32 @@
+<html>
+	<head>
+		Prime
+	</head>
+	<body>
+		<script type="text/javascript">
+			var n=prompt("Enter number");
+		
+			for(var j=1;j<=n;j++)
+			{
+				var flag=0;
+				for(var i=2;i<j; i+=1)
+				{
+					if(n%2==0)
+					{
+						flag=1;
+					
+					}
+				}
+				if(flag==0)
+				{
+					console.log(j+" is prime");
+				}
+				else {
+					console.log(j+" is not prime");
+				}
+				
+			}	
+		
+		</script>
+	</body>
+</html>
