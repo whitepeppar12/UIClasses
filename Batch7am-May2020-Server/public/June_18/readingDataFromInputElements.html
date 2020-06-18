@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Reading Data from input elements.
+		</title>
+		<style type="text/css">
+			ul {
+				width: 500px;
+				border: 1px solid;
+				margin: 5px;
+				padding: 10px;
+			}
+			li {
+				list-style: none;
+				border: 1px solid;
+				background: #ccc;
+				margin: 10px;
+				padding: 10px;
+
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				Enter first value: <input type='text' id="fval" onkeypress="return validateData(event)">
+			</li>
+			<li>
+				Enter Second value: <input type='text' id="sval" onkeypress="return validateData(event)">
+			</li>
+			<li>
+				<input type="button" value="Get Result" onclick="getResult(event)">
+			</li>
+			<li>
+				<div>
+					The sum is: <span></span>
+				</div>
+			</li>
+		</ul>		
+		
+		<script type="text/javascript">
+			function getResult() {
+				var a = document.querySelector("#fval").value;
+				a = parseInt(a);
+				var b = document.querySelector("#sval").value;
+				b = parseInt(b);
+				var result = a + b;
+				console.log(result);
+				document.querySelector("span").innerText =  result;
+
+				console.log(document.querySelector("#fval"))
+			}
+
+			function validateData(event) {
+				console.log(event.charCode);
+				if ((event.charCode >= 97 && event.charCode < 122) || (event.charCode >= 65 && event.charCode <= 90)){
+					return false;
+				} else {
+					return true;
+				}
+				/*if (char) {
+					return false;
+				} else {
+					return true;
+				}*/			
+			}
+
+		</script>
+	</body>
+</html>
