@@ -1,0 +1,31 @@
+.container {
+	
+	width: 500px;
+	margin: 30px auto;
+}
+
+ul {
+	margin: 10px;
+	padding: 10px;
+}
+
+li {
+	list-style: none;
+	border: 1px solid;
+	background: #ccc;
+	margin: 5px;
+	padding: 5px;
+}
+
+.marksContainer input {
+	width: 50px;
+}
+
+.errMsg {
+	color: red;
+	font-size: 15px;
+}
+
+#nameErr {
+	display: none;
+}

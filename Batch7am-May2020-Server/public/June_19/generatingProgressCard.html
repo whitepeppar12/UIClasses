@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Reading Student data and generating Progress card
+		</title>
+		<link rel="stylesheet" type="text/css" href="sDetails.css">
+		<script type="text/javascript" src="sDetails.js"></script>
+	</head>
+	<body>
+		<h3 style="text-align: center;">Progress card genertor</h3>
+		<div class="container">
+			<ul>
+				<li>
+					Enter student name: <input type="text" id="sname" onkeypress="return validateName(event)">
+					<div class="errMsg" id="nameErr">
+						Name is mandry field
+					</div>
+				</li>
+				<li>
+					Age: <input type="text" id="sage">
+				</li>
+				<li>
+					Gender: <input type="radio" value="male" name="gender" > M
+						    <input type="radio" value="female" name="gender"> F
+				</li>
+				<li class="marksContainer">
+					Marks:
+						<input type="text" placeholder="m1" id="m1">
+						<input type="text" placeholder="m2" id="m2"> 
+						<input type="text" placeholder="m3" id="m3"> 
+						<input type="text" placeholder="m4" id="m4"> 
+						<input type="text" placeholder="m5" id="m5"> 
+				</li>
+				<li>
+					<input type="button" value="Get Progress Card" onclick="readUserInput()">
+				</li>
+			</ul>
+		</div>
+		<div id="container"></div>
+	</body>
+</html>
