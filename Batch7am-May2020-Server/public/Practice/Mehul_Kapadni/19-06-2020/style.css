@@ -1,0 +1,54 @@
+body{
+    margin-left: 450px;
+}
+.container {
+    margin: 10px;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px dotted black;
+}
+
+h3{
+    border: 1px dotted;
+    margin: 10px;
+    padding: 20px;
+    max-width: 600px;
+    background-color: skyblue;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+li{
+    height: 25px;
+    list-style:none;
+    padding: 5px 5px;
+    margin: 5px;
+    border: 1px solid black;
+    background: rgb(235, 233, 233);
+}
+
+.studentDetails li{
+    height: 25px;
+    list-style:none;
+    padding: 5px 5px;
+    margin: 5px;
+    border: 1px solid black;
+    background: rgb(245, 227, 203);
+}
+li input{
+    padding: 3px 10px;
+    width: 150px;
+}
+
+/* .studentDetails{
+    display: none;
+} */
+.btn{
+    padding: 10px 20px;
+    margin-left: 250px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: skyblue;
+    border: 1px dotted !important;
+    font-weight: 600;
+}

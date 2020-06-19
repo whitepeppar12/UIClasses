@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Employee Salary Details</h3>
+    <div class="container">
+        <li>Employee Name: <input type="text" name="" id="name" onkeypress="return textValidation(event)"></li>
+        <li>Employee Age: <input type="text" name="" id="age" onkeypress="return numValidation(event)"></li>
+        <li>Gender: <input type="radio" name="gender" id="" value="Male">Male
+                    <input type="radio" name="gender" id="" value="Female">Female
+        </li>
+        <li>
+            <label >Department:</label>
+            <select name="" id="department">
+                <option value="">Marketing</option>
+                <option value="" selected>Analytics</option>
+                <option value="">Development</option>
+                <option value="">Testing</option>
+            </select>
+        </li>
+        <li>Basic Salary: <input type="text" name="" id="basicSalary" onkeypress="return numValidation(event)"></li>
+    </div>
+    <input type="button" value="Get Salary Slip" class="btn" onclick="getSalarySlip(event)">
+    <!-- <h3 id="salaryDetailsH3">Employee Salary Slip</h3>
+    <div class="container1" id="salaryDetails"></div> -->
+
+
+    <script src="app.js"></script>
+</body>
+</html>
