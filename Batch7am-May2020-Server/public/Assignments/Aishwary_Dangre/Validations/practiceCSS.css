@@ -1,0 +1,13 @@
+table{
+    margin-right: auto;
+    margin-left: auto;
+    border-collapse: collapse;
+}
+
+td{
+    color: yellow;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
