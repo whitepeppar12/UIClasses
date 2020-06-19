@@ -1,0 +1,19 @@
+h3 {
+	text-align: center;
+	border: 1px solid;
+	margin: 5px;
+	padding: 5px;
+}
+.container {
+	border: 1px solid;
+	margin: 20px auto;
+	padding: 10px;
+	width: 600px;
+}
+li {
+	list-style: none;
+	border: 1px solid;
+	margin: 5px;
+	background: #ccc;
+	padding: 5px;
+}
