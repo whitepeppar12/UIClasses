@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        HardOne
+    </title>
+    <link rel="stylesheet" type="text/css" href="practiceCSS.css">
+</head>
+
+<body style="background-color: black;">
+
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td colspan="3">Student Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Student Name</td>
+                    <td>:</th>
+                    <td><input type="text" id="rname"></td>
+                </tr>
+                <tr>
+                    <td>Student Marks</td>
+                    <td>:</th>
+                    <td><input type="text" id="rmarks" onkeypress="return validateNumbers(event)"></td>
+                </tr>
+                <tr>
+                    <td>Student Age</td>
+                    <td>:</th>
+                    <td><input type="text" id="rage" onkeypress="return validateNumbers(event)"></td>
+                </tr>
+                <tr>
+                    <td>Student Address</td>
+                    <td>:</th>
+                    <td><input type="text" id="raddr"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <input type="button" onclick="onSubmit()" style="width: 150px;" value="IT WORKS">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script type="text/javascript" src="practiceJS.js"></script>
+</body>
+
+</html>
