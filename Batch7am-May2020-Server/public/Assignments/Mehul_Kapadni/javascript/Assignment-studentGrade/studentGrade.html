@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Student Details</h3>
+    <div class="container">
+        <li>Enter Student Name: <input type="text" id="name" onkeypress="return textValidation(event)"></li>
+        <li>Enter Student Age: <input type="text" id="age" onkeypress="return numValidation(event)"></li>
+        <li>Enter Student Class: <input type="text" id="sClass" onkeypress="return numValidation(event)"></li>
+        <li>Enter Mark of English: <input type="text" id="sub1" onkeypress="return numValidation(event)"></li>
+        <li>Enter Mark of Math: <input type="text" id="sub2" onkeypress="return numValidation(event)"></li>
+        <li>Enter Mark of Marathi: <input type="text" id="sub3" onkeypress="return numValidation(event)"></li>
+        <li>Enter Mark of History: <input type="text" id="sub4" onkeypress="return numValidation(event)"></li>
+        <li>Enter Mark of Science: <input type="text" id="sub5"onkeypress="return numValidation(event)"></li>
+        <div class="studentDetails">
+            <li><b>Student Name:</b> <span id="sName"></span></li>
+            <li><b>Student Age: </b><span id="sAge"></span></li>
+            <li><b>Student Class: </b><span id="sClasss"></span></li>
+            <li><b>Total Marks: </b><span id="tMarks"></span></li>
+            <li><b>Percentage: </b> <span id="percen"></span></li>
+            <li><b>Grade: </b><span id="sGrade"></span></li>
+        </div>
+      </div>
+
+      <input type="button" value="Get Grade" class="btn" onclick="getGrade(event)">
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -53,13 +53,12 @@ function addProduct(pData) {
 	var imgtag  = document.createElement("img");
 	imgtag.setAttribute("src", pData.imagePath);
 	li4.append(imgtag);
+
 	ulTag.append(li4);
 
 	divTag.append(ulTag);
 
 	document.querySelector(".container").append(divTag);
-
-
 }
 
 function showProductDetails() {
@@ -67,4 +66,3 @@ function showProductDetails() {
 		addProduct(data[i]);
 	}
 }
-

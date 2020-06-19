@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .container {
+            margin: 10px;
+            padding: 20px;
+            max-width: 600px;
+            border: 1px dotted black;
+        }
+
+        li{
+            list-style:none;
+            padding: 20px 30px;
+            margin: 10px;
+            border: 1px solid black;
+            background: lightgray;
+        }
+        li input{
+            padding: 10px 20px;
+        }
+    </style>
+
+    <div class="container">
+    <li>Enter First Number: <input type="text" id="fval" onkeypress="return validation(event)"></li>
+    <li>Enter second Number: <input type="text" id="sval" onkeypress="return validation(event)"></li>
+    <li><input type="button" value="Get Result" onclick="getResult(event)"></li>
+    <li>The Result is: <span></span></li>
+    </div>
+
+    <script>
+        function getResult(){
+            var fNumber = document.querySelector("#fval").value;
+            fNumber = parseInt(fNumber);
+            var sNumber = document.querySelector("#sval").value;
+            sNumber = parseInt(sNumber);
+
+            var result = fNumber+sNumber;
+            document.querySelector("span").append(result);
+        }
+
+        function validation(event){
+            if ((event.charCode >= 48 && event.charCode <= 57))
+            {
+                return true;
+            } else 
+            {
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
