@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Inheritance between Two static objectss...
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+
+			var sellerData = {
+				sellerName: 'Indian Electronics',
+				sellerLocation: 'Punjab',
+				sellerRating: '4.3/5',
+				displaySellerInfo: function() {
+					console.log("Sellr name " + this.sellerName);
+					console.log("SEller Location " + this.sellerLocation);
+				}
+			}
+			
+			var product1 = {
+				name: 'laptop',
+				price: '$345',
+				manu: 'HTC',
+				sellerRating: '3/5',
+				dipslayProdDetails: function() {
+					console.log("product Name " + this.name);
+					console.log("Manufacturer " + this.manu);
+					console.log("Price " + this.price);
+					console.log("seller Details");
+					this.displaySellerInfo();
+					console.log("sellerRating " + this.sellerRating);
+				}
+			}
+
+
+			
+			var product2 = {
+
+				name: 'Mobile',
+				price: 'Rs. 58000',
+				manu: 'Moto',
+				dipslayProdDetails: function() {
+
+					console.log("product Name " + this.name);
+					console.log("Manufacturer " + this.manu);
+					console.log("Price " + this.price);
+					console.log("seller Details");
+					this.displaySellerInfo();
+					console.log("sellerRating " + this.sellerRating);
+				}
+			}
+			product2.__proto__ = sellerData;
+
+			var product3 = {
+				name: 'TV',
+				price: 'Rs. 120000',
+				manu: 'Sony Bravia',
+				dipslayProdDetails: function() {
+					console.log("product Name " + this.name);
+					console.log("Manufacturer " + this.manu);
+					console.log("Price " + this.price);
+					console.log("seller Details");
+					this.displaySellerInfo();
+					console.log("sellerRating " + this.sellerRating);
+				}
+			}
+
+			product3.__proto__ = sellerData;
+			product1.__proto__ = sellerData;
+
+			product1.dipslayProdDetails();
+			product2.dipslayProdDetails();
+			product3.dipslayProdDetails();
+
+
+
+		</script>
+	</body>
+</html>

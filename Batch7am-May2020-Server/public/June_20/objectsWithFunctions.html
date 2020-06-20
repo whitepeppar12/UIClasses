@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Objects with Methods.
+		</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+		/*	var sname = "Raj";
+			var age = 20;
+			var gender = "Male";
+			var m1 = 40;
+			var m2 = 70;
+			var m3 = 90;
+
+			var total = m1 + m2 + m3;
+			var avg = total / 3;
+			var grade;
+			if (avg > 40) {
+				grade = "Passed";
+			} else {
+				grade = "Surprise";
+			}
+
+		*/
+		/*	var sname = "Raj";
+			var age = 20;
+			var gender = "Male";
+			var m1 = 40;
+			var m2 = 70;
+			var m3 = 90;
+			var total, avg,grade;
+
+			function  getTotalAndAvg() {
+				total = m1 + m2 + m3;
+				avg = total / 3;
+			}
+
+			function getGrade() {
+				if (avg > 40) {
+					grade = "Passed";
+				} else {
+					grade = "Surprise";
+				}
+			}
+			getTotalAndAvg();
+			getGrade();
+			*/
+
+			/*var sname = "Raj";
+			var age = 20;
+			var gender = "Male";
+			var marks = [23, 67, 89];
+			var total, avg,grade;
+
+			function  getTotalAndAvg() {
+				total = 0;
+				for (var i = 0 ; i < marks.length; i++) {
+					total = total + marks[i];
+				}
+				avg = total / marks.length;
+			}
+
+			function getGrade() {
+				if (avg > 40) {
+					grade = "Passed";
+				} else {
+					grade = "Surprise";
+				}
+			}
+			getTotalAndAvg();
+			getGrade(); */
+
+			var empdata = {
+				name: "krish",
+				displaymethod: function() {
+						console.log(this.name)
+				}
+			}
+
+			var sdata = {
+				name: "RAJ",
+				age: 20,
+				gender: 'Male',
+				marks: [34, 56, 87],
+				total: 0,
+				avg: 0,
+				grade: '',
+				getTotalAndAvg: function() {
+					this.total = 0;
+					for (var i = 0 ; i < sdata.marks.length; i++) {
+						sdata.total = sdata.total + this.marks[i];
+					}
+					sdata.avg = sdata.total / sdata.marks.length;
+					this.getGrade();
+				},
+				getGrade: function() {
+
+					if (sdata.avg > 40) {
+						sdata.grade = "Passed";
+					} else {
+						this.grade = "Surprise";
+					}
+				},
+				showProgressCard: function() {
+					sdata.getTotalAndAvg();
+					
+					console.log("Studnt DAta");
+					console.log("name is " + sdata.name);
+					console.log("age is " + this.age);
+					console.log("Total is " + sdata.total);
+					console.log("grade is " + this.grade); 
+
+				/*	for (var temp in sdata) {
+						if (typeof(sdata[temp]) != 'function') {
+							console.log(temp);
+
+							console.log(sdata[temp]);
+						}
+					}*/
+				}
+			}
+			
+
+			 
+			sdata.showProgressCard();
+		</script>
+	</body>
+</html>

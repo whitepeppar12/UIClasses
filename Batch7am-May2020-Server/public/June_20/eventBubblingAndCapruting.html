@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating dynamic Event handling, event bubbling and capruting.
+		</title>
+		<style type="text/css">
+			.container {
+				border: 1px solid;
+				text-align: center;
+				margin: 40px auto;
+				padding: 20px;
+				width: 250px;
+				height: 200px;
+				background: #ccc;
+			}
+			.childContainer {
+				border: 2px solid;
+				background: yellow;
+				width: 150px;
+				height: 150px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<select>
+			<option>click</option>
+			<option>blur</option>
+			<option>focus</option>
+		</select>
+		<div  class="container">
+			Parent Content
+			<div class="childContainer">
+				child
+			</div>
+		</div>
+		<script type="text/javascript">
+			
+			
+
+			document.querySelector(".container").addEventListener( "click",  function(){ 
+				console.log("from parent");
+			}, false);
+
+			document.querySelector(".childContainer").addEventListener( "click",  function(){ 
+				console.log("am frm child");
+			}, false);
+
+
+
+		</script>
+	</body>
+</html>
