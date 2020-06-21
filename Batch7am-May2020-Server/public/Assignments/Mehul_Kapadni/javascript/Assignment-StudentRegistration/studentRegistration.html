@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Registration</title>
+</head>
+<body>
+    <h3>Student Details</h3>
+    <div class="container">
+        <li>Student Name: <input type="text" name="" id="sName"></li>
+        <li>Student Age : <input type="text" name="" id="sAge"></li>
+
+        <li>Country:
+        <select id="countySel">
+            <option value="" selected="selected">-- Select Country --</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+        </select></li>
+        <li>State:
+        <select id="stateSel">
+            <option value="" selected="selected">-- Select State--</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Karnataka">Karnataka</option>
+        </select></li>  
+        <li>City: 
+        <select id="citySel">
+            <option value="" selected="selected">-- Select City--</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+            <option value="Nashik">Nashik</option>
+        </select></li>  
+    
+        <input type="button" value="Registration" onclick="getDetails()" class="btn">
+        
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

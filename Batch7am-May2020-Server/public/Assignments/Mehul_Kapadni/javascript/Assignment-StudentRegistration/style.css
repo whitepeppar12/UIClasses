@@ -1,0 +1,48 @@
+body{
+    margin-left: 450px;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px dotted black;
+    max-width: 500px;
+    padding: 20px;
+    background: rgb(191, 206, 221);
+    max-width: 600px;
+}
+
+.container,.displayData{
+    max-width: 600px !important;
+    padding: 20px;
+    border: 1px dotted black;
+}
+
+li{
+    list-style: none;
+    margin-top: 10px;
+    background: rgb(229, 226, 226);
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+li input{
+    padding: 10px 10px;
+    width: 300px;
+    height: 20px;
+}
+
+select{
+    padding: 10px 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.btn{
+    background:rgb(191, 206, 221);
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    margin-left: 450px;
+}

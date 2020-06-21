@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Student Details</title>
+</head>
+<body>
+    <h3>Student Details</h3>
+    <div class="container">
+        <li>Student Name: <input type="text" name="" id="sName"></li>
+        <li class="sGender">Student Gender:
+            <input type="radio" name="gender" id="" value="Male">Male
+            <input type="radio" name="gender" id="" value="Female">Female
+        </li>
+        <li>Student Age : <input type="text" name="" id="sAge"></li>
+        <li>Country:
+            <select id="countySel">
+                <option value="" selected="selected">-- Select Country --</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="South Africa">South Africa</option>
+                <option value="England">England</option>
+            </select></li>
+            <input type="button" value="Registration" onclick="getDetails()" class="btn">
+     </div> 
+     <h3>Registered Student Details</h3>
+     <div class="container2">
+         <table class="css-serial">
+             <thead>
+                 <tr>
+                     <th>Sr. No</th>
+                     <th>Name</th>
+                     <th>Gender</th>
+                     <th>Age</th>
+                     <th>Country</th>
+                     <th>Operations</th>
+                 </tr>
+             </thead>
+         </table>
+     </div>
+     <script src="app.js"></script>   
+</body>
+</html>
