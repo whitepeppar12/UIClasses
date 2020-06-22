@@ -1,0 +1,23 @@
+.container {
+	border: 1px solid;
+	width: 600px;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+.title, ul, li {
+	margin: 5px;
+	padding: 5px;
+}
+
+li {
+	list-style: none;
+	border: 1px solid;
+
+}
+
+.title {
+	text-align: center;
+	border: 1px solid;
+
+}
