@@ -1,0 +1,36 @@
+body{
+    margin-left: 200px;
+}
+
+h3{
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid black;
+    max-width: 800px;
+    padding: 20px;
+    background: rgb(191, 206, 221);
+}
+
+.container, .container2{
+    max-width: 800px !important;
+    padding: 20px;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+
+li{
+    list-style: none;
+    margin-top: 10px;
+    background: rgb(229, 226, 226);
+    border: 1px dotted black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn{
+    background:rgb(191, 206, 221);
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    margin-left: 650px;
+}
