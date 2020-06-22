@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demonstrating inheritance between static and dynamic object 
+        </title>
+        <script type="text/javascript" src="app.js"> </script>
+        <link rel="stylesheet" type="text/css" href="app.css">
+    </head>
+    <body>
+        <div class="title">
+            Register for ABC public school
+        </div>
+        <div class="container">
+            <ul>
+                <li>
+                    Student name : <input type="text" id="sName">
+                </li>
+                <li>
+                    Student Age : <input type="text" id="sAge">
+                </li>
+                <li>
+                    Country:
+                    <select id="sCountry">
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>japan</option>
+                    </select>
+                </li>
+                <li>
+                    Admission Class:
+                    <select id="sClass">
+                        <option>1st class</option>
+                        <option> 2nd class</option>
+                        <option>3rd class</option>
+                        <option>4th class</option>
+                    </select>
+                </li>
+                <li>
+                    <input type="button" value="Register" onclick="getRegDetails()">
+                </li>
+            </ul>
+            <div id="displayBlock">
+
+            </div>
+        </div>
+    </body>
+</html>
