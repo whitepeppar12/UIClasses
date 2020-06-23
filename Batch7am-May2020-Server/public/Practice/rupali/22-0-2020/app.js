@@ -17,6 +17,5 @@ function showStudentDetails(){
         liTag.innerHTML = temp + ":" + sDetails[temp];
         ulList.append(liTag);
     }
-    console.log(ulList);
     document.querySelector("#displayBlock").append(ulList);
 }

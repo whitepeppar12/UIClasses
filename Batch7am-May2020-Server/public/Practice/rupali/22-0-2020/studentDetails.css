@@ -1,0 +1,13 @@
+li {
+	list-style: none;
+	border: 1px solid;
+	background: #ccc;
+	margin: 5px;
+	padding: 5px;
+}
+
+.dContainer {
+	border: 2px solid;
+	margin: 30px auto;
+	width: 500px;
+} 
