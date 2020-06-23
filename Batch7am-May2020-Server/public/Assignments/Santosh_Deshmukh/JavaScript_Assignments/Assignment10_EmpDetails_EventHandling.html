@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Assignment On DHTML EMP Details</title>
+	<link rel="stylesheet" type="text/css" href="Assignment10_EmpDetails_EventHandling.css">
+	<script type="text/javascript" src="Assignment10_EmpDetails_EventHandling.js"></script>
+ </head>
+ <body>
+	<div class="header">Employee Salary Report Generator.</div>
+	<!--h3 style="text-align: center;">Progress card genertor</h3-->
+	<div class="parentContainer">
+	<div class="container">
+		<h3 style="text-align: center;">Enter Details</h3>
+		<ul>
+			<li>
+				Name : <input type="text" id="empName" onkeypress="return validateName(event)">
+			</li>
+			<li>
+				Age : <input type="text" id="empAge" onkeypress="return validateAge(event)">
+			</li>
+			<li>
+				Gender : <input type="radio" value="male" name="gender" checked> Male
+						 <input type="radio" value="female" name="gender" > Female
+			</li>
+			<li>
+				Dept :	<select name="dept" id="empDept">
+							<option value="IT" selected>IT</option>
+							<option value="Hr">Hr</option>
+						    <option value="Accounts">Accounts</option>
+							<option value="Sales">Sales</option>
+						</select>
+			</li>
+			<li>
+				Basic Salary : <input type="text" id="empBasicSal" onkeypress="return validateSalary(event)">
+			</li>
+			<li style="text-align: center;">
+				<input type="button" value="Submit" onclick="readEmpData()">
+			</li>
+		</ul>
+	</div>
+	<div class="reportContainer">
+		<h3 style="text-align: center;">Salary Slip</h3>
+	</div>
+	</div>
+	<div class="footer">@copy rights 2020
+	</div>	
+ </body> 
+</html>
