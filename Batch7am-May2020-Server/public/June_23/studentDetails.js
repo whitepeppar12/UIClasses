@@ -57,4 +57,6 @@ sdata2.displayData();*/
 
 
 
+var data = {};
 
+data.__proto__ = {};
