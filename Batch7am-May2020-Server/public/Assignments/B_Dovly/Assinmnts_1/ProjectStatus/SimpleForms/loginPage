@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title>SignUp</title>
+		<style type="text/css">
+			body{
+				
+				
+			}
+			.Container{
+				
+				height: 500px;
+				border: 2px solid black;
+				padding: 10px;
+				font-family: cursive;
+				background: #ffe5dc;
+									
+			}
+			button{
+				background: #ccc;
+				border: 2px solid;
+				background-color: pink;
+
+			}
+			button:hover{
+				color: red;
+				font-size: 17px;
+			}
+			header{
+				background: #ddd;
+				height: 40px;
+				border: 2px solid;
+				padding: 5px;
+				text-align: center;
+				
+			}
+			footer{
+				background: #ddd;
+				height: 20px;
+				border: 2px solid;
+				text-align: right;
+			}
+			#SubContainer{
+				position: relative;
+				left: 350px;
+				top: 50px;
+				padding: 15px;
+				border: 2px solid black;
+				border-radius: 30px;
+				width: 550px;
+                background: #eeffe4;
+                text-align: center;
+
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h2>Login Form</h2>
+			</header>
+
+		<div class="Container">
+			<form action="file:///C:/FullStack/UIdesign/public/FinalSubmission.html" method="POST" id="SubContainer">
+			</br>
+				<label>User Name:</label>
+				<input type="text" name="User Name" placeholder="Enter Name" autofocus="entername" /></br></br>
+				<label>PassWord:</label>
+				<input type="password" name="password" placeholder="Enter PassWord" /></br></br>
+				<label>Confirm PassWord:</label>
+				<input type="password" name="password" placeholder="ConfirmPassword"/></br></br>
+				<label>Mobile No:</label>
+				<input type="number" name="mnum" placeholder="Mobile Number"/></br></br>
+				<label>EmailId:</label>
+				<input type="text" name="EmailId" placeholder="Enter Mail Id"/></br></br>
+				<button>Submit</button>
+			</form>
+		</div>
+      <footer><b>@copy right 2020 is dovly</b></footer>
+	</body>
+</html>
