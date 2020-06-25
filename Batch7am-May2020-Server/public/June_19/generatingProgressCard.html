@@ -6,19 +6,37 @@
 		</title>
 		<link rel="stylesheet" type="text/css" href="sDetails.css">
 		<script type="text/javascript" src="sDetails.js"></script>
+		<style type="text/css">
+			.label {
+				float: left;
+				width: 140px;
+			}
+			.inputCntlr {
+				float: left;
+			}
+			li {
+				height: 40px;
+			}
+		</style>
 	</head>
 	<body>
 		<h3 style="text-align: center;">Progress card genertor</h3>
 		<div class="container">
 			<ul>
 				<li>
-					Enter student name: <input type="text" id="sname" onkeypress="return validateName(event)">
-					<div class="errMsg" id="nameErr">
-						Name is mandry field
+					<div class="label">
+						Enter student name: 
+					</div>
+					<div class="inputCntlr">
+						<input type="text" id="sname" onkeypress="return validateName(event)">
+						<div class="errMsg" id="nameErr">
+							Name is mandry field
+						</div>
 					</div>
 				</li>
 				<li>
-					Age: <input type="text" id="sage">
+					<div class="label">Age:</div>
+					<div class="inputCntlr"><input type="text" id="sage"></div>
 				</li>
 				<li>
 					Gender: <input type="radio" value="male" name="gender" > M

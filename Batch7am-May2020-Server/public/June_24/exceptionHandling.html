@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Exception handling
+		</title>
+	</head>
+	<body>
+		<div id="abc"></div>
+		<script type="text/javascript">
+			console.log("hello every one.");
+			console.log("demonstrating Exception hadlng");
+
+			try {
+				console.log("inside try block")
+				document.querySelector("#abc").innerHTML = "Hi every one";
+				console.log("done with try bock");
+			} catch(error){
+				console.log("error got generated");
+				console.log(error);
+			}
+
+			console.log("done with everything");
+
+		</script>
+	</body>
+</html>
