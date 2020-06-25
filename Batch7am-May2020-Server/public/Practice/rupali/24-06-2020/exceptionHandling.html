@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Exception handling
+        </title>
+    </head>
+    <body>
+     <!-- <div id="abc"></div>-->  
+        <script type="text/javascript">
+            console.log("Hello Everyone");
+            console.log("demonstrating Exception hadlng");
+            var a = 10;
+            try{
+                console.log("inside try block")
+				document.querySelector("#abc").innerHTML = "Hi every one";
+                try{
+                    console.log("done with try bock");
+                    var result = a + b;
+                    console.log("result is : ", result)
+                }catch(err){
+                    console("Error in inner try block");
+                }
+				
+            }catch(error){
+                console.log("error got generated");
+				console.log(error);
+            }
+            console.log("done with everything");
+        </script>
+    </body>
+</html>
