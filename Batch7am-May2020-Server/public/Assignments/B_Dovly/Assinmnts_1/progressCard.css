@@ -1,0 +1,35 @@
+.container{
+	width: 500px;
+	margin: 10px auto;
+	border: 2px solid #ddd;
+
+}
+ul{
+	margin: 10px;
+	padding: 10px;
+}
+h3{
+	width: 500px;
+	margin: 10px auto;
+	border: 2px solid #ccc;
+	color: green;
+	text-align: center;
+	font-weight: bold;
+}
+li{
+	list-style: none;
+	border: 1px solid;
+	background: #ddd;
+	margin: 3px;
+	padding: 3px;
+}
+.marksContainer input{
+	width: 45px;
+}
+.errMsg{
+	color: red;
+}
+#container.li{
+	font-weight: 'bold';
+
+}
