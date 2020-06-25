@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Custom Date Formats</title>
+</head>
+<body>
+     <script type="text/javascript">
+     	var Cdate= new Date();
+     	var Days= ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Satday" ];
+     	var Months= ["jan", "feb", "mar","apr","may","june","jully", "aug", "sept", "oct", "nov", "dec"];
+     	console.log(Cdate);
+     	console.log(Cdate.getDate());
+     	console.log(Cdate.getDay());
+     	var DayIndex= Cdate.getDay();
+     	console.log(Days[DayIndex]);
+     	var MonthIndex= Cdate.getMonth();
+     	console.log(Months[MonthIndex]);
+     	console.log("Date Format (mm/dd/yyyy) : " + Months[MonthIndex]+ "/" + Cdate.getDate() +"/" + Cdate.getFullYear()+  "time"+Cdate.getHours() );
+     	console.log("Date Format (dd/mm/yyyy) : " + Cdate.getDate() +"/" + Months[MonthIndex] + "/" +Cdate.getFullYear());
+     	console.log("Date Format (yyyy/dd/mm) : "+Cdate.getFullYear()+"/" + Cdate.getDate() +"/" + Months[MonthIndex]);
+
+
+     </script>
+</body>
+</html>

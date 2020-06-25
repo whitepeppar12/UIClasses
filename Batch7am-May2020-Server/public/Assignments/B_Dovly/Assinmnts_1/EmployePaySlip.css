@@ -1,0 +1,53 @@
+h2{
+	
+	
+	color: red;
+	text-align: right;
+	
+}
+h1{
+	text-align: center;
+	color: red;
+	margin: 0;
+	
+
+}
+h3{
+	text-align: center;
+	margin: 0;
+}
+
+.container{
+	margin: 10px auto;
+	padding: 3px;
+	width: 600px;
+	height: 500px;
+	border: 2px solid black;
+
+}
+
+li{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+
+}
+#ButtonContainer{
+	text-align: center;
+}
+li input{
+	}
+ul{
+	border: 2px solid black;
+	padding: 0px;
+	background: #ccc;
+
+}
+.FinalPay{
+
+	margin: 40px auto;
+
+}
+.FinalPaySlip li{
+	text-align: center;
+} 
