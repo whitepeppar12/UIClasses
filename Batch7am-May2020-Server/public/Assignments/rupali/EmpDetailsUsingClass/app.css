@@ -1,0 +1,48 @@
+body{
+    margin-left: 400px !important;
+}
+
+.container, .container1 {
+    margin: 10px;
+    padding: 20px;
+    max-width: 600px;
+    border: 1px dotted black;
+
+}
+
+h3{
+    border: 1px dotted;
+    margin: 10px;
+    padding: 20px;
+    max-width: 600px;
+    background-color: rgb(141, 177, 219);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+li{
+    height: 30px;
+    list-style:none;
+    padding: 5px 5px;
+    margin: 5px;
+    border: 1px solid black;
+    background: rgb(235, 233, 233);
+}
+
+.btn{
+    padding: 10px 20px;
+    margin-left: 230px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color:  rgb(141, 177, 219);;
+    border: 1px dotted !important;
+    font-weight: 600;
+} 
+
+.label {
+    float: left;
+    width: 140px;
+}
+.inputCntlr {
+    float: left;
+}
