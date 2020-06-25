@@ -14,6 +14,11 @@
 			try {
 				console.log("inside try block")
 				document.querySelector("#abc").innerHTML = "Hi every one";
+				try {
+					document.querySelector("#test").innerHTML =" sample";
+				} catch (e) {
+
+				}
 				console.log("done with try bock");
 			} catch(error){
 				console.log("error got generated");

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Pseudo Classes
+		</title>
+		<style type="text/css">
+			a {
+				text-decoration: none;
+
+			}
+			a:hover {
+				color: red;
+				text-decoration: underline;
+			}
+
+			.abc:focus {
+				background: yellow;
+				font-size: 20px;
+			}
+			
+			div:first-child {
+				color: blue;
+				font-size: 20px;
+			}
+			div:last-child {
+				color: red;
+				font-size: 25px;
+			}
+			div:nth-child(2) {
+				border: 2px solid;
+			}
+		</style>
+	</head>
+	<body>
+		click here to visit
+		<a href="http://www.google.com" class="abc">
+			google 
+		</a>
+		page
+		<br/>
+		click to visit to 
+		<a href="http://amazon.com" class="abc">amazon</a>
+		<div>
+			<div> Prasad</div>
+			<div> Neha</div>
+			<div > Raj</div>
+			<div> Teena</div>				
+		</div>
+		<p>test</p>
+	</body>
+</html>
