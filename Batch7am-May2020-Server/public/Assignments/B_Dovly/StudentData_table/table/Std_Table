@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StdentData_Table</title>
+        <link rel="stylesheet" type="text/css" href="StudentData_Table.css">
+        <script type="text/javascript" src="StudentData_Table.js"></script>
+        
+        
+    </head>
+    <body>
+        
+        <div class="Mail_Container">
+        <h3><u><b>Student Data For Registration</b></u></h3>
+        <ul>
+            <li>
+                Student Name:<input type="text" name="sname" id="Sname" placeholder="Name of the student" onkeypress="return validateName(event)">
+            </li><br>
+            <li>
+                Student Age:<input type="text" name="sage" id="Sage" placeholder="Age" onkeypress="return validateAge(event)">
+            </li><br>
+            <li>
+                Student Gender:
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+
+            </li><br>
+            <li>
+                Country:
+                <select id="Scountry">
+                    <option>--Select Country--</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>AUS</option>
+                    <option>Africa</option>
+                </select>
+            </li><br>
+            <li>
+                <input type="submit" name="submit" value="Register" onclick="GetStudent_details()">
+            </li>
+        </ul>
+        </div>
+        <div id="Table_Container"></div>
+    </body>
+</html>
