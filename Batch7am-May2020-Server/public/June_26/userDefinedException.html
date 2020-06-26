@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Userdefined exceptions
+		</title>
+		<style type="text/css">
+			ul {
+ 				border: 2px solid;
+ 				margin: 100px auto;
+ 				padding: 10px;
+ 				width: 600px;
+			}
+			li {
+				list-style: none;
+				border: 1px solid;
+				padding: 10px;
+				margin: 10px;
+				background: #ccc;
+			}
+			#nameErr {
+				display: none;
+			}
+			.err {
+				color: red;
+				font-size: 13px;
+			}
+
+			.popupContainer {
+				border: 1px solid;
+				height: 200px;
+				width: 400px;
+				border-radius: 10px;
+				position: absolute;
+				top: 20%;
+				left: 35%;
+				background: red;
+				display: none;
+			}
+			.pHeader {
+				background: #ccc;
+				color: #fff;
+				font-weight: bolder;
+				padding: 10px;
+				border-radius: 10px 10px 0 0;
+			}
+			.dialogContainer {
+				padding: 40px;
+				text-align: center;
+			}
+			.closeBtn {
+				color: #000;
+				cursor: pointer;
+				float: right;
+			}
+			.maskBlock {
+				background: green;
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				bottom: 5px;
+				right: 5px;
+				display: none;
+				opacity: 0.3
+			}
+		</style>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+		<div class="maskBlock"></div>
+		<div class="popupContainer">
+			<div class="pHeader">
+				Error Dialog
+				<span class="closeBtn" onclick="closeDialog()">
+					X
+				</span>
+			</div>
+			<div class="dialogContainer">
+				you want to copy the content?
+			</div>
+		</div>
+		<ul>
+			<li>
+				Etner user name: <input type="text" id="uname">
+				<div class="err" id="nameErr">
+					Name is mandatry...
+				</div>
+			</li>
+			<li>
+				Enter user Age: <input type="text" id="userAge">
+				<div class="err" id="ageErr"></div>
+			</li>
+			<li>
+				<input type="button" value="Register" onclick="registerDetails()">
+			</li>
+		</ul>
+		<script type="text/javascript">
+			
+			function closeDialog() {
+				document.querySelector(".popupContainer").style.display = 'none';
+				document.querySelector(".maskBlock").style.display = 'none';
+			}
+			function displaydialog(msg) {
+				document.querySelector(".maskBlock").style.display = 'block';
+				document.querySelector(".popupContainer").style.display = 'block';
+				document.querySelector(".dialogContainer").innerText = msg;
+			}
+		</script>
+	</body>
+</html>
