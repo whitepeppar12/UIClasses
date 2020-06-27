@@ -1,1 +1,51 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSON Object Example</title>
+</head>
+<body>
+     <script type="text/javascript">
+
+     	var EmpContactDetails = {
+     		Name: "Name:Dovly",
+     		Nationality: "Nationality:indian",
+     		Address: {
+     			OfficeAddress: {
+     				FullOfficeAddress:"hydearabad madapur plot no 65",
+     				city: "hyderabad",
+     				pin: 500008,
+     				country: "India"
+
+     			},
+     			PersonalAdrress: {
+     				FullPersonalAddress:"hydearabad kukatpally plot no 65",
+     				city: "Vjayavada",
+     				pin: 520001,
+     				country: "India"
+     			}
+     		},
+     		
+     		ContactNo: { 
+     			OfficeContact: 040-664326666,
+     			personalContact: [8888888888,66468946464,4861416741]
+     		},
+     		EmailID: {
+     			OfficeMailID: "dovly@office.com",
+     			PersonalMailID: ["dovly@office.com","dovly@office.com","dovly@office.com"]
+     		},
+     		SocialMedia:{
+     			Twitter: "Dovly6",
+     			Instagram: "Dovly.b",
+     			Facebook: "Dovly006"
+     		}
+     	};
+     	console.log(EmpContactDetails.Address.OfficeAddress.FullOfficeAddress);
+     	console.log(EmpContactDetails.Address.OfficeAddress.city);
+     	/*console.log(EmpContactDetails[Address[OfficeAddress[city]]]);*/
+     	for(var temp in EmpContactDetails){
+     		console.log(EmpContactDetails[temp]);
+     	}
+     </script>
+</body>
+</html>

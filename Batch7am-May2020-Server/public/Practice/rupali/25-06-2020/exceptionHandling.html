@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Demonstarting exception Handling
+        </title>
+        <style type="text/css">
+            .title{
+                text-align: center;
+                border: 1px solid;
+                margin: 5px;
+                padding: 5px;
+                color: green;
+            }
+            .Tcontainer{
+                border: 2px solid;
+                width: 600px;
+                margin: 10px;
+                padding: 10px;
+                position: absolute;
+                top: 30%;
+                left : 30%;
+                height: 200px;
+            }
+            #thaxBlock{
+                border: 1px solid #ccc;
+                position: absolute;
+                bottom: 20px;
+                padding: 10px;
+                width: 300px;
+            }
+        </style>
+        <script type="text/javascript" src="exceptionHandling.js"></script>
+    </head>
+    <body>
+        <h3 class="title">
+            Task teller
+        </h3>
+        <div> 
+            Enter your name : <input type="text" id="uname"> 
+            <input type="button" value="Save" onclick="readUserName()">
+            <input type="button" value="Create Container" onclick="createContainer()">
+            <input type="button" value="Show Task" onclick="showTask()">
+        </div>
+        <div id="thaxBlock"></div>
+    </body>
+</html>

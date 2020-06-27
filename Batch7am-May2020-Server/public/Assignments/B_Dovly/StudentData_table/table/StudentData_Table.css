@@ -1,0 +1,27 @@
+.Mail_Container{
+    width: 600px;
+    border: 2px solid;
+    background: #ccc;
+    margin: 40px auto;
+}
+h3{
+    text-align: center;
+    color: red;
+
+}
+li{
+    list-style: none;
+}
+#Table_Container{
+    width: 600px;
+    border: 2px solid;
+    background: #ccc;
+    margin: 40px auto;
+}
+#Delete_Item{
+    display: none;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}

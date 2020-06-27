@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample Registration Form</title>
+		<link rel="stylesheet" type="text/css" href="SampleRestrationForm.css">
+		<script type="text/javascript" src="SampleRestrationForm.js"></script>
+	</head>
+	<body>
+		<div class="MainContainer">	
+			<h3><u>Sample Registration Form</u></h3>
+			<ul>
+				<li>Name:<input type="text" name="Name" id="Sname" onkeypress="return validateName(event)" >
+				</li><br>
+
+				<li>Age: <input type="text" name="Age" id="SAge" onkeypress="return validateAge(event)"></li><br>
+				
+				<li>Contry: 
+					<select id="SContry">
+						<option></option>
+						<option>India</option>
+						<option>America</option>
+						<option>Aus</option>
+					</select>
+				</li><br>
+
+				<li>State: 
+					<select id="SState">
+						<option></option>
+						<option>India</option>
+						<option>America</option>
+						<option>Aus</option>
+					</select>
+				</li><br>
+
+				<li>City: 
+					<select id="SCity">
+						<option></option>
+						<option>India</option>
+						<option>America</option>
+						<option>Aus</option>
+					</select>
+				</li><br>
+				<li><input type="submit" name="submit" value="Register" onclick="Getdata()"></li>
+			</ul>
+		</div>
+		<div id="finalContainer"></div>
+	</body>
+</html>
