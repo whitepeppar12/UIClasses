@@ -1,0 +1,35 @@
+Closures:
+
+    Closers are closed modules  used to add sercurity in javascript code.
+    Using closures we could bind set of javascript instructions (variables, objects, classes, functions/methods etc) as a module. The data defined within closure cannot be accessable outise of closure. It is a self invoked function gets invoked automatically when the controller reaches to it.
+
+        Syntax: (function(){   //closure method
+            ...
+            ...
+            ... // set of javascript code
+        })(<optional params>);
+
+        Example:
+
+        (function(){
+            var a = 10; // private data cannot be accessable outside.
+            function sample() { // cannot be called ouside of closure.
+                ...
+            }
+            var data = {  //object cannot be accesssable ouside of closure.
+                ..
+                ...
+            }
+        })();
+
+    By default data been defined within the closure becomes private, can only be accessable within closure and  cannot be accessable outside of closure. In order to make the closure data to be accessable outside of closure, following are the steps to be followed.
+
+    Step 1: Assign a user defined name to closure.
+
+    Step 2: Return set of method san properties to be accessable from closure, as an object from closure.
+
+    Step 3: From outside of closure, use the closure name to access teh closure data.
+
+    Step 4: Not all the data defined within the closure is accesable, but only the data been returned from it can be accessable outside of closure through closure name.
+    
+     
