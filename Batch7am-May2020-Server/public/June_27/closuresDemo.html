@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>
+            Demonstrating Closures
+        </title>
+    </head>
+    <body>  
+        <script type="text/javascript">
+            var name = "raj";
+            (function(){
+                function studentData() {
+                    this.name = "raj";
+                    this.age = 90;
+                }
+                function test() {
+                    //....
+                }
+                var obj1 = new studentData();
+                console.log("closuer got invoked");
+                var a = 90;
+
+                function sample() {
+                    console.log('am frm sample');
+                }
+                console.log("value of a is " + a);
+                sample();
+            })();        
+            
+            
+
+
+       </script> 
+    </body>
+
+</html>

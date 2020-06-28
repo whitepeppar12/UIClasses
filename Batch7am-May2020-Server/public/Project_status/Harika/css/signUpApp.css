@@ -1,0 +1,110 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(pic1.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.Header{
+	height: 100px;
+	background: black;
+}
+
+.title{
+	color: #fb2525;
+	font-size: 35px;
+	position: absolute;
+	margin-left: 32%;
+	margin-top: 2%; 
+	font-weight: bold;
+	text-align: center;
+}
+
+img{
+	width: 120px;
+	height: 90px;
+	border: 1px solid red;
+	border-radius: 5px;
+	float: left;
+	margin: 5px; 
+}
+
+.text{
+	font-size: 20px;
+	font-weight: bold;
+	color: yellow;
+	margin-bottom: 10px;
+}
+
+.SignUpBox{
+	width: 320px;
+	height: 400px;
+	color: #000;
+	top: 24%;
+	left: 38%;
+	background: black;
+	position: absolute;
+	padding: 70px 30px;
+	box-sizing: border-box;
+}
+
+.avatar{
+	width: 85px;
+	height: 85px;
+	margin-left: 28%;
+	position: absolute;
+	border: none;
+	border-radius: 50px;
+	top: -50px;
+}
+
+h2{
+	color: #fb2525;
+	padding: 0 0 5px;
+	margin-top: -20px;
+	margin-left: 5px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.SignUpBox input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.SignUpBox input[type="text"], input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 25px;
+	color: #fff;
+	font-size: 15px;
+}
+
+.SignUpBox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 30px;
+	background: #fb2525;
+	color: #fff;
+	font-size: 15px;
+	border-radius: 20px;
+}
+
+.SignUpBox input[type="submit"]:hover{
+	cursor: pointer;
+}
+
+.Footer{
+	height: 32px;
+	background: black;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: underline;
+	text-align: center;
+	color: #fb2525;
+	margin-top: 475px;
+	padding: 25px;
+}
