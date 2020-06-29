@@ -8,16 +8,16 @@ function dojob(type) {
     var result;
     switch(type) {
         case 'add':
-            result = doAddition(fval, sval);
+            result = mathUtil.addValues(fval, sval);
             break;
         case 'sub':
-            result = doSubstraction(fval, sval);
+            result = mathUtil.subValues(fval, sval);
             break;
         case 'div':
             result = doDivision(fval, sval);
             break;
         case 'mul':
-            result = doMultiplication(fval, sval);
+            result = mathUtil.doMultiplication(fval, sval);
             break;
     }
     var msg = "The operation " + type + ' is : ' + result;
