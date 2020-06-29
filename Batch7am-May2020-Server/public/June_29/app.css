@@ -1,0 +1,13 @@
+ul {
+    border: 1px solid;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+}
+
+li {
+    list-style: none;
+    border: 1px solid;
+    margin: 10px;
+    padding: 10px;
+}
