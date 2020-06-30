@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating CSS zindex
+		</title>
+		<style type="text/css">
+			.block {
+				border: 1px solid;
+				text-decoration: underline;
+				text-align: center;
+				width: 130px;
+				height: 130px;
+			}
+			.block1 {
+				background: green;
+			}
+			.block2 {
+				background: grey;
+			}
+			.block3 {
+				background: pink;
+				left: 100px;
+			}
+			.block4 {
+				background: yellow;
+				
+			}
+			.block5 {
+				background: #decf00;
+				position: sticky;
+				left: 150px;
+				top: 10px;
+				bottom: 5px;
+			}
+			.block6 {
+				background: brown;
+				
+			}.block7 {
+				background: red;
+				
+			}
+			.container {
+				border: 2px solid;
+				margin: 20px;
+				padding: 20px;
+				height: 350px;
+				width: 400px;
+				overflow: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="block block1"> BLOCK 1</div>
+			<div class="block block2"> BLOCK 2</div>
+			<div class="block block3"> BLOCK 3</div>
+			<div class="block block4"> BLOCK 4</div>
+			<div class="block block5"> BLOCK 5</div>
+			<div class="block block6"> BLOCK 6</div>
+			<div class="block block7"> BLOCK 7</div>
+			<div class="block block4"> BLOCK 4</div>
+			
+		</div>
+		
+	</body>
+</html>
