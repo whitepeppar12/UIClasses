@@ -1,0 +1,42 @@
+
+<html>
+    <head>
+        <title>
+            Demonstrating jqery
+        </title>
+        <style>
+            .content {
+                background-color: green;
+                font-size: 30px;
+                padding: 20px;
+                margin: 20px;
+            }
+            .highlight {
+                border: 2px solid red;
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+        <script src="jquery.js"></script>
+    </head>
+    <body>
+        <input type="button" value="Highlight" onclick="highlightElement()"> 
+        <div id="container" class="content">
+            Hello every one...
+        </div>
+        <script>
+           
+            function addClass() {
+
+            }
+            function highlightElement() {
+                /*var existingClass = document.querySelector("#container").getAttribute("class");
+                var newClassNames = existingClass + ' highlight';
+                document.querySelector("#container").setAttribute("class", newClassNames); */
+
+                jQuery("#container").addClass("highlight");
+            }
+        </script>
+    </body>
+
+</html>
