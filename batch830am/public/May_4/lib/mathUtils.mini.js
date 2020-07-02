@@ -1,1 +1,0 @@
-function addingValues(u,n){return u+n}function subValues(u,n){return u-n}function divValues(u,n){return u/n}function mulValues(u,n){return u*n}
