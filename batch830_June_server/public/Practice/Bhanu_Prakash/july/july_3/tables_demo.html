@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating HTML tables.
+		</title>
+		<style type="text/css">
+			table,th,td{
+				border:1px solid;
+			}
+			.table_container{
+				background: orange;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Employee Details
+		</h3>
+		<table class="table_container"cellpadding="10px" cellspacing="10x">
+			<thead>
+				<tr>
+					<th>S.no</th>
+					<th>Emp Name</th>
+					<th>Salary</th>
+					<th>Current Location</th>
+					<th>Permanent Location</th>
+					<th>Department</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>50000</td>
+					<td>Pune</td>
+					<td>Hyderabad</td>
+					<td>Logistics</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Bhanu</td>
+					<td>35000</td>
+					<td rowspan="2">Bangalore</td>
+					<td>Vijayawada</td>
+					<td>Operations</td>
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td>Prakash</td>
+					<td>25000</td>
+					
+					<td>Tenali</td>
+					<td>It</td>
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td>Venkatesh</td>
+					<td>75000</td>
+					<td>Hyderabad</td>
+					<td>Guntur</td>
+					<td>Electrical</td>
+				</tr>
+
+				<tr>
+					<td>5</td>
+					<td>Ravindra</td>
+					<td>55000</td>
+					<td>Delhi</td>
+					<td>Hyderabad</td>
+					<td>It</td>
+				</tr>
+
+				<tr>
+					<td>6</td>
+					<td>Bhargav</td>
+					<td>40000</td>
+					<td>Kochi</td>
+					<td>Vijayawada</td>
+					<td>Management</td>
+				</tr>
+
+				<tr>
+					<td>7</td>
+					<td>Sai</td>
+					<td>30000</td>
+					<td>Chennai</td>
+					<td>Bangalore</td>
+					<td>Logistics</td>
+				</tr>
+
+				<tr>
+					<td>8</td>
+					<td>Dwaraka</td>
+					<td>25000</td>
+					<td colspan="2">Mumbai</td>
+					
+					<td>It</td>
+				</tr>
+
+				<tr>
+					<td>9</td>
+					<td>Dinesh</td>
+					<td>30000</td>
+					<td>Pune</td>
+					<td>Hyderabad</td>
+					<td>Statistics</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
