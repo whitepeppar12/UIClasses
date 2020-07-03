@@ -1,0 +1,77 @@
+<html>
+  <head>
+   <title>
+      Demonstrating tables
+   </title>
+
+   <style type="text/css">
+      table, th, td  {
+      	border: 1px solid;
+      }
+      .tablecontainer{
+      	background: red;
+      }
+   </style>
+
+  </head>
+
+  <body>
+    <h3>
+       	Employee Details
+    </h3>
+    <table class="tablecontainer" cellspacing="5" cellpadding="5">
+         <thead>
+            <tr>
+               <th>sno</th>
+               <th>emp name</th>
+               <th>salary</th>
+               <th>perm location</th>
+               <th>local location</th>
+               <th>department</th>
+            </tr>
+         </thead>
+
+         <tbody>
+            <tr>
+               <td>1</td>
+               <td>ram</td>
+               <td>5000</td>
+               <td colspan="2">banglore</td>
+               <td>sales</td>
+            </tr>
+            <tr>
+               <td>2</td>
+               <td>Mohan</td>
+               <td>9000</td>
+               <td>pune</td>
+               <td>banglore</td>
+               <td>It</td>
+            </tr>
+            <tr>
+               <td>3</td>
+               <td>soham</td>
+               <td>7000</td>
+               <td>banglore</td>
+               <td rowspan="3">hydrabad</td>
+               <td>Sales</td>
+            </tr>
+            <tr>
+               <td>4</td>
+               <td>rohan</td>
+               <td>8000</td>
+               <td>pune</td>
+               <td>It</td>
+               </tr>
+
+            <tr>
+               <td>5</td>
+               <td>arahn</td>
+               <td>9000</td>
+               <td>banglore</td>
+               <td>Accounts</td>
+            </tr>
+            <tr>   
+         </tbody>
+    </table>
+  </body>
+</html>
