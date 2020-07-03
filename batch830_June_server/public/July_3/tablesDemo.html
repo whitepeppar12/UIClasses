@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Tables
+		</title>
+		<style type="text/css">
+			table, th, td, .abc, #pqr {
+				border: 1px solid;
+			}
+
+			.tablecontainer {
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>
+			Employee Details
+		</h3>
+		<table class="tablecontainer"  cellpadding="10" cellspacing="10">
+			<thead>
+				<tr>
+					<th>Sno</th>
+					<th>Emp Name</th>
+					<th>Salary</th>
+					<th>Current location</th>
+					<th>Prmnt Location</th>
+					<th>Departnemnt</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>45000</td>
+					<td colspan="2">Pune</td>
+					
+					<td>Accounts</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Neha</td>
+					<td>20000</td>
+					<td>Hyderabad</td>
+					<td>Mumbai</td>
+					<td>Sales</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Krish</td>
+					<td>1000</td>
+					<td>Vizag</td>
+					<td>Usa</td>
+					<td>It</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Krish</td>
+					<td>1000</td>
+					<td>Odisha</td>
+					<td>Telangana</td>
+					<td>It</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>Krish</td>
+					<td>1000</td>
+					<td>Pune</td>
+					<td rowspan="2">Hyderabad</td>
+					<td>It</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>Suresh</td>
+					<td>1000</td>
+					<td>Delhi</td>
+					
+					<td>It</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
