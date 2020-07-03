@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating position absolute.
+		</title>
+		<style type="text/css">
+			.block{
+				text-align:center;
+				text-decoration:underline;
+				width: 120px;
+				height: 120px;
+				border:1px solid;
+			}
+			.block1{
+				background: green;
+			}
+			.block2{
+				background: blue;
+				left: 150px;
+				top: 200px;
+				position: absolute; 
+			}
+			.block3{
+				background: yellow;
+			}
+			.container{
+				width: 300px;
+				height: 400px;
+				border:2px solid;
+				margin: 20px;
+				padding: 10px;
+				position: relative;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+				<div class="container"> 
+							<div class="block1 block">
+								Block 1
+							</div>
+
+							<div class="block2 block">
+								Block 2
+							</div>
+
+							<div class="block3 block">
+								Block 3
+							</div>
+				</div>
+		</div>		
+	</body>
+</html>

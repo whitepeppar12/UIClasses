@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating css  z-index
+		</title>
+		<style type="text/css">
+			.block{
+				text-align:center;
+				text-decoration:underline;
+				width: 130px;
+				height: 130px;
+				border:1px solid;
+			}
+			.block1{
+				background: green;
+			}
+			.block2{
+				background: grey;
+				position: relative;
+				left: 30px;
+				top: 20px;
+				z-index: 5;
+			}
+			.block3{
+				background: pink;
+				position: relative;
+				left: 90px;
+				z-index: 2;
+				top: 100px;
+			}
+			.block4{
+				background: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="block1 block">
+			Block 1
+		</div>
+
+		<div class="block2 block">
+			Block 2
+		</div>
+
+		<div class="block3 block">
+			Block 3
+		</div>
+		<div class="block4 block">
+			Block 4
+		</div>
+	</body>
+</html>

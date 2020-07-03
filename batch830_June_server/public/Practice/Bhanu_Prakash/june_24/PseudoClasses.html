@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demosntrating Pseudo Classes
+		</title>
+		<style type="text/css">
+			a{
+				text-decoration: none;
+   			}
+   			a:hover{
+   				color: red;
+   				text-decoration: underline;
+   			}
+   			.abc:focus{
+   				background: blue;
+   				font-size: 20px;
+   			}
+   			.highlight{
+   				color:purple;
+   				font-size: 20px;
+   			}
+   			
+   			div:first-child{
+   				color: purple;
+   				font-size: 20px;
+   			}
+   			div:last-child{
+   				color: purple;
+   				font-size: 20px;
+   			}
+   			div:nth-child(2){
+   				border: 2px solid;
+   			}
+		</style>
+	</head>
+	<body>
+		click here to vist
+		<a href="http://www.google.com" class="abc">
+			google
+		</a>
+		page
+		<br/>
+		click to visit 
+		<a href="http://www.amazon.in" class="abc">
+			amazon
+		</a>
+		page
+		<br/>
+		<div>
+			
+			<div>tharun</div>
+			<div>vishwaksen</div>
+			<div>prudhvi</div>
+			<div class="highlight">Raj</div>
+			<div>pardu</div>
+			<div>prakash</div>
+
+		</div>
+		<p>bhanu</p>
+	</body>
+</html>
