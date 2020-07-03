@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="login-style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="validation.js"></script>
     <title>Login Page</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
                 <span class="loginHeader">Login</span>
                 <div class="input-class">
                     <span class="filedLabel">Username</span>
-                    <div><input class="fieldInput" type="text" name="username" id="" placeholder="Type your username"></div>
+                    <div><input class="fieldInput" type="text" name="username" id="" placeholder="Type your username" onkeypress=" return userNameValidation(event)"></div>
                 </div>
                 <div class="input-class">
                     <span class="filedLabel">Password</span>
@@ -43,6 +44,6 @@
         </div>
         </div>
     </div>
-
+    
 </body>
 </html>

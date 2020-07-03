@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="login-style.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="validation.js"></script>
     <title>Signup Page</title>
 </head>
 <body>
@@ -16,15 +17,15 @@
                 <span class="loginHeader">Sign Up</span>
                 <div class="input-class">
                     <span class="filedLabel">Full Name</span>
-                    <div><input class="fieldInput" type="text" name="name" id="" placeholder="Name.."></div>
+                    <div><input class="fieldInput" type="text" name="name" id="" placeholder="Name.." onkeypress="return textValidation(event)"></div>
                 </div>
                 <div class="input-class">
                     <span class="filedLabel">Email</span>
-                    <div><input class="fieldInput" type="text" name="email" id="" placeholder="Email Address.."></div>
+                    <div><input class="fieldInput" type="text" name="email" id="" placeholder="Email Address.." onkeypress="return emailValidation(event)"></div>
                 </div>
                 <div class="input-class">
                     <span class="filedLabel">Username</span>
-                    <div><input class="fieldInput" type="text" name="username" id="" placeholder="Username.."></div>
+                    <div><input class="fieldInput" type="text" name="username" id="" placeholder="Username.." onkeypress=" return userNameValidation(event)"></div>
                 </div>
                 <div class="input-class">
                     <span class="filedLabel">Password</span>
