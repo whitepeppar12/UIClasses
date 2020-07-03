@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Students Marks with Information
+		</title>
+		<style type="text/css">
+			th,h3,table,img,td,tr{
+				border-top: 1px solid;
+				border-bottom: 1px solid;
+				border-left: 1px solid;
+				border-right: 1px solid;
+			}	
+			img{
+				width: 150px;
+				height: 150px;
+			}
+			h3{
+				text-align: center;
+				margin: 5px;
+				padding: 5px;
+			}
+			table{
+				width: 100%;
+			}
+			.image_border{
+				width: 170px;
+			}
+			.serial_border{
+				width: 30px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h3>
+			Student Details
+		</h3>
+		<table cellpadding="5" cellspacing="5">
+			<thead>
+				<tr>
+					<th class="serial_border">S.No</th>
+					<th>Name</th>
+					<th class="image_border">Student Image</th>
+					<th>Location</th>
+					<th>Class</th>
+					<th>Marks</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Raj</td>
+					<td>
+						<img src="http://localhost:8081/student_images/01.jpg">
+					</td>
+					<td>Hyderabad</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>90</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>70</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Bhanu</td>
+					<td>
+						<img src="http://localhost:8081/student_images/02.jpg">
+					</td>
+					<td>Vijayawada</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>97</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>61</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>79</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>3</td>
+					<td>Prakash</td>
+					<td>
+						<img src="http://localhost:8081/student_images/03.jpg">
+					</td>
+					<td>Tenali</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>53</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>81</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>55</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td>Lakshmi</td>
+					<td>
+						<img src="http://localhost:8081/student_images/04.jpg">
+					</td>
+					<td>Vizag</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>103</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>72</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>91</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>5</td>
+					<td>Venkatesh</td>
+					<td>
+						<img src="http://localhost:8081/student_images/05.jpg">
+					</td>
+					<td>Guntur</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>66</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>110</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>83</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>6</td>
+					<td>Ravindra</td>
+					<td>
+						<img src="http://localhost:8081/student_images/06.jpg">
+					</td>
+					<td>Ongole</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>79</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>55</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>93</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>7</td>
+					<td>Bhargav Sai</td>
+					<td>
+						<img src="http://localhost:8081/student_images/07.jpg">
+					</td>
+					<td>Tirupathi</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>71</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>66</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>77</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>8</td>
+					<td>Vamsi</td>
+					<td>
+						<img src="http://localhost:8081/student_images/08.jpg">
+					</td>
+					<td>Chennai</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>96</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>56</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>88</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>9</td>
+					<td>Pradeep</td>
+					<td>
+						<img src="http://localhost:8081/student_images/09.jpg">
+					</td>
+					<td>Rajamundry</td>
+					<td>B.Sc</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>66</td>
+									</tr>
+									<tr>
+										<td>Computers</td>
+										<td>120</td>
+										<td>52</td>
+										<td>102</td>
+									</tr>
+									<tr>
+										<td>Java</td>
+										<td>100</td>
+										<td>40</td>
+										<td>65</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+
+				<tr>
+					<td>10</td>
+					<td>Geetha Madhuri</td>
+					<td>
+						<img src="http://localhost:8081/student_images/10_VandeDonk.jpg">
+					</td>
+					<td>Bangalore</td>
+					<td>B.Stat</td>
+					<td>
+						<table class="marks_container">
+								<thead>
+									<tr>
+										<th>Subject</th>
+										<th>Max Marks</th>
+										<th>Pass Marks</th>
+										<th>Marks Obtained</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Statistics</td>
+										<td>120</td>
+										<td>52</td>
+										<td>99</td>
+									</tr>
+									<tr>
+										<td>Maths</td>
+										<td>75</td>
+										<td>21</td>
+										<td>72</td>
+									</tr>
+									<tr>
+										<td>Accounts</td>
+										<td>100</td>
+										<td>40</td>
+										<td>68</td>
+									</tr>
+								<tbody>
+						</table>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
