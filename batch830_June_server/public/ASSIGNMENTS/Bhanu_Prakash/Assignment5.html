@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 5: Mock up on Position</title>
+		<style type="text/css">
+			.c,
+			.centre_top_left,
+			.centre_top_right,
+			.centre_bottom_left,
+			.centre_bottom_right{
+				border-left: 2px solid;
+				border-right: 2px solid;
+				border-top: 2px solid;
+				border-bottom: 2px solid;
+				width: 100px;
+				height: 130px;
+				text-align: center;
+				padding: 5px;
+			}
+			.centre{
+				border-left: 2px solid;
+				border-right: 2px solid;
+				border-top: 2px solid;
+				border-bottom: 2px solid;
+				width: 130px;
+				height: 130px;
+				text-align: center;
+				padding: 5px;
+			}
+			.c1{
+				position: absolute;
+				left: 40px;
+				top:70px;
+			}
+			.top_right_corner{
+				position: absolute;
+				right: 0px;
+				top: 5px;
+			}
+			.c2{
+				position: absolute;
+				right: 40px;
+				top:70px;
+			}
+			.page_centre{
+				border-left: 0px solid;
+				border-right: 0px solid;
+				border-top: 0px solid;
+				border-bottom: 0px solid;
+				position: absolute;
+				top: 100%;
+				right: 50%;
+				left: 50%;
+			}
+			.centre_top_left{
+				position: absolute;
+				top: -80%;
+				left: -80px;
+			}
+			.centre_top_right{
+				position: absolute;
+				top: -80%;
+				left: 110px;
+			}
+			.centre_bottom_left{
+				position: absolute;
+				top: 80%;
+				left: -80px;
+			}
+			.centre_bottom_right{
+				position: absolute;
+				top: 80%;
+				left: 110px;
+			}
+			.bottom_left_corner{
+				position: absolute;
+				top: 200%;
+			}
+			.c3{
+				position: absolute;
+				left: 40px;
+				top: -50%;
+			}
+			.bottom_right_corner{
+				position: absolute;
+				right: 0px;
+				top: 200%;
+
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div class="top_left_corner"> 
+				<div class="c">1</div>
+				<div class="c c1">2</div>
+			</div>
+
+			<div class="top_right_corner"> 
+				<div class="c">3</div>
+				<div class="c c2">4</div>
+			</div>
+
+			<div class="page_centre"> 
+				<div class="centre">5</div>
+				<div class="centre_top_left ">6</div>
+				<div class="centre_top_right ">7</div>
+				<div class="centre_bottom_left ">8</div>
+				<div class="centre_bottom_right ">9</div>
+			</div>
+
+			<div class="bottom_left_corner"> 
+				<div class="c c3">10</div>
+				<div class="c ">11</div>
+			</div>
+
+			<div class="bottom_right_corner"> 
+				<div class="c">12</div>
+				<div class="c c3">13</div>
+			</div>
+		</div>
+	</body>
+</html>
