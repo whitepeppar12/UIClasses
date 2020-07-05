@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			SignUp Page
+		</title>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/signUpApp.css">
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
+	<body>
+		<div class="Header">
+				<img src="images/logo.jpg">
+			<div class="title">	
+				Rika Online Shopping 
+				<marquee behavior="alternate" class="text">
+						Always in Style!
+				</marquee>
+			</div>
+		</div>
+		<div class="SignUpBox">
+			<img src="images/avatar.png" class="avatar">
+				<h2>Sign Up</h2>
+			<div>
+				<input type="text" placeholder="Enter Username" id="uname" onkeypress="return validateUname(event)">
+				<div class="unameError error">
+					*User name is mandatory
+				</div>
+				
+				<input type="Password" placeholder="Enter Password" class="password" size="8" id="upwd" maxlength="8">
+				<i class="show fa fa-eye" aria-hidden="true" id="eye" onclick="toggle()"></i>
+
+				<div id="pwdvalid"></div>
+
+				<div class="upwdError error">
+					*Password is mandatory
+				</div>
+				
+				<input type="Password" placeholder="Re-enter Password" class="password" size="8" id="Repwd" maxlength="8">
+
+				<!--<div class="pwdmatch error">
+					**Password did not match
+				</div>-->
+				
+				<div class="RepwdError error">
+					*Re-enter Password
+				</div>
+			
+				<input type="text" placeholder="Enter Mobile No." id ="Unum" onkeypress="return validateUnum(event)">
+				<div class="UnumError error">
+					*Mobile no. is mandatory
+				</div>
+
+				<input type="text" placeholder="Enter Email-ID" id="MailId" onkeypress="return validateEmail(event)">
+				<div class="MailIdError error">
+					*Email is mandatory
+				</div>
+
+				<input type="submit" value="SignUp" onclick="readData()">
+			</div>
+		</div>
+		<div class="Footer">
+			@CopyRights2020
+		</div>		
+	</body>
+</html>

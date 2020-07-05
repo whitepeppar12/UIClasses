@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Forgot Pwd Page
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/Fpwd.css">
+		<script type="text/javascript" src="js/app.js"></script>
+		<script type="text/javascript" src="js/popupemail.js"></script>
+	</head>
+	<body>
+		<div class="Header">
+				<img src="images/logo.jpg">
+			<div class="title">	
+				Rika Online Shopping 
+				<marquee behavior="alternate" class="text">
+						Always in Style!
+				</marquee>
+			</div>
+		</div>
+		<div class="maskBlock"></div>
+		<div class="FpwdBox">
+			<div class="maskBlock"></div>
+			<div class="popupContainer">
+				<div class="pHeader">
+					Attention!
+					<span class="CloseBtn" onclick="closeDialog()">
+						X
+					</span>
+				</div>
+				<div class="DialogContainer">
+					Enter your Email-id
+				</div>
+			</div>
+			<div>
+				Email ID:<input type="text" id="eMailId" onkeypress="return validateEmail(event)">
+				<div class="error" id="mailerror"></div>
+
+				<input type="submit"value="Done" onclick="readData()">
+			</div>
+		</div>
+
+		<div class="Footer">
+			@CopyRights2020
+		</div>
+		</body>
+</html>
