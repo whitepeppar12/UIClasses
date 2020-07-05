@@ -62,7 +62,7 @@ img{
 h2{
 	color: #fb2525;
 	padding: 0 0 5px;
-	margin-top: -35px;
+	margin-top: -39px;
 	margin-left: 30%;
 	position: absolute;
 	text-align: center;
@@ -79,7 +79,7 @@ h2{
 	border-bottom: 1px solid #fff;
 	background: transparent;
 	outline: none;
-	height: 23px;
+	height: 25px;
 	color: #fff;
 	font-size: 15px;
 }
