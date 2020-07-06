@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Demonstrating Image Spriting.
+		</title>
+		<style type="text/css">
+			.details {
+				border: 2px solid;
+				background: #ccc;
+				margin: 10px;
+				padding: 10px;
+			}
+			.imgBlock {
+				border: 1px solid;
+				width: 120px;
+				height: 120px;
+				background-image: url("images/empImagesSprite.png");
+			}
+			.emp2 {
+				background-position: -162px -1px;
+			}
+			.emp3 {
+				background-position: 131px 138px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="details">
+				<div>Name: Prasad</div>
+				<div>gender: Male</div>
+				<div>Age: 20</div>
+				<div class="imgBlock emp1"></div>
+			</li>
+			<li class="details">
+				<div>Name: Prasad</div>
+				<div>gender: Male</div>
+				<div>Age: 20</div>
+				<div class="imgBlock emp2"></div>
+			</li>
+			<li class="details">
+				<div>Name: Prasad</div>
+				<div>gender: Male</div>
+				<div>Age: 20</div>
+				<div class="imgBlock emp3"></div>
+			</li>
+			<li class="details">
+				<div>Name: Prasad</div>
+				<div>gender: Male</div>
+				<div>Age: 20</div>
+				<img src="http://localhost:8081/July_6/images/empImagesSprite.png" />
+			</li>
+		</ul>
+	</body>
+</html>
