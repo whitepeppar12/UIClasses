@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Product Details.
+		</title>
+		<link rel="stylesheet" type="text/css" href="produtStyles.css">
+		<script src="../../jquery.js"></script>
+		<script type="text/javascript" src="productDetailsLoad.js"></script>
+		<style>
+			.oldPrice {
+				text-decoration: line-through;
+			}
+			.loadingBlock {
+				position: absolute;
+				top: 30%;
+				left: 44%;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="loadingBlock">
+			<img src="https://cdn.lowgif.com/full/bbd4dc3b1f8a454b-loading-gif-transparent-11-gif-images-download.gif" alt="">
+		</div>
+		<div class="header">
+			Welcome to online product deals page...
+		</div>
+		<input type="button" value="Load Products" onclick="getProductDetails()">
+		<div class="container"></div>		
+	</body>
+</html>
